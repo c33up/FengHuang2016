@@ -61,16 +61,17 @@ class ArticleController extends BaseController {
             }
             }
             $model = M("article");
-           // $model->imageURL=$imageurl;
-           // $model->category=$category;
             if (!$model->create()) {
                 // 如果创建失败 表示验证没有通过 输出错误提示信息
                 $this->error($model->getError());
                 exit();
             } else {
+                $date['title']=I('title');
                 $date['intro']=I('intro');
+                $date['content']=I('content');
                 $date['imageURL']=$imageurl;
                 $date['category']=$category;
+                //dump($date);
                 if ($model->add($date)) {
                     $this->success("图片添加成功", U('article/index',array('category'=>$category)));
                 } else {
@@ -91,6 +92,7 @@ class ArticleController extends BaseController {
     	
         //默认显示添加表单
         if (!IS_POST) {
+            $time=date("Y-m-d h:i:sa");
             $id = intval(I('id'));
             $category=iconv('gb2312','utf-8', I('category'));
             $where['id']=$id;
@@ -98,6 +100,7 @@ class ArticleController extends BaseController {
             $model = M('article')->where($where)->find();
             //dump($model);
             $this->assign('model',$model);
+            $this->assign('time',$time);
             $this->display();
         }
         if (IS_POST) {
@@ -128,10 +131,10 @@ class ArticleController extends BaseController {
                 $category=I('category');
                 $where['id']=intval(I('id'));
                 $where['category']=$category;
+                $date['title']=I('title');
                 $date['intro']=I('intro');
+                $date['content']=I('content');
                 $date['imageURL']=$imageurl;
-                //dump($where);
-                //dump($date);
                 if ($model->where($where)->save($date)) {
                     $this->success("更新成功", U('article/index',array('category'=>$category)));
                 } else {

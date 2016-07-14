@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>上海烽凰后台管理主页</title>
+        <title>添加<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -146,129 +146,44 @@
 </html>
 
 <div id="content">
- <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
-  </div>
-<!--Action boxes-->
-  <div class="container-fluid">
-    <div class="quick-actions_homepage">
-      <ul class="quick-actions">
-        <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
-        <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
-        <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
-        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
-        <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
-        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Elements</a> </li>
-        <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Calendar</a> </li>
-        <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
-
-      </ul>
-    </div>
-<!--End-Action boxes-->  
-				
-				<div class="row-fluid">
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>Recent Posts</h5><span title="54 total posts" class="label label-info tip-left">54</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-posts">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: neytiri on 2 Aug 2012, 09:27 AM, IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: john on on 24 Jun 2012, 04:12 PM, IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: michelle on 22 Jun 2012, 02:44 PM, IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all posts" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>Recent Comments</h5><span title="88 total comments" class="label label-info tip-left">88</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-comments">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: michelle on IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: john on IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: neytiri on IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all comments" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
+<div id="content-header">
+  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="tip-bottom"><?php echo ($model["category"]); ?></a> <a href="#" class="current"><?php echo ($model["category"]); ?>详情</a> </div>
+  <h1>添加<?php echo ($model["category"]); ?></h1>
 </div>
-
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+           <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('article/update',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('article/delete',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">删除</a>
+        </div>
+        <div class="widget-content nopadding">
+            <div class="control-group">
+              <div class="controls">
+                  <h2><?php echo ($model["title"]); ?></h2>
+                  <p>发表时间：<?php echo ($model["createdate"]); ?></p>
+               </div>
+            </div>
+            <div class="control-group">
+                <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
+                 <div class="controls">
+                  <?php echo ($model["intro"]); ?>
+               </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                <?php echo ($model["content"]); ?>                  
+              </div>
+            </div>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+</div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

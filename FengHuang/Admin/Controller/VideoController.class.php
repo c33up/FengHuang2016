@@ -189,8 +189,8 @@ class VideoController extends BaseController {
                 $date['videoURL']=I('videoURL');
                 $date['localVideo']=$localvideo;
                 $date['imageUrl']=$imgurl;
-                dump($where);
-                dump($date);
+                //dump($where);
+                //dump($date);
                 if ($model->where($where)->save($date)) {
                     $this->success("视频添加成功", U('video/index',array('category'=>$category)));
                 } else {

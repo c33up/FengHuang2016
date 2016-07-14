@@ -176,9 +176,9 @@
                 <td><?php echo ($a["title"]); ?></td>
                 <td><?php echo ($a["intro"]); ?></td>
                 <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
-                <td><?php echo ($u["createdate"]); ?></td>
+                <td><?php echo ($a["createdate"]); ?></td>
                 <td class="center">
-                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>">修改</a> | <a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除</a>
+                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>">修改</a> |<a href="<?php echo U('article/details',array('category'=>$a['category'],'id'=>$a['id']));?>">详情</a> |<a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">直接删除</a>
                 </td>
             </tr><?php endforeach; endif; ?>
                   
@@ -193,12 +193,12 @@
               <div class="pull-right">
                   <div class="pagination">
                           <ul>
-                            <li><a href="#">Prev</a></li>
+                            <li><a href="#">《</a></li>
                             <li class="active"> <a href="#">1</a> </li>
                             <li><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#">4</a></li>
-                            <li><a href="#">Next</a></li>
+                            <li><a href="#">》</a></li>
                           </ul>
                     </div>
               </div>

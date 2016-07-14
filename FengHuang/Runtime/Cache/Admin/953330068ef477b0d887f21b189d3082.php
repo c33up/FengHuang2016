@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>上海烽凰后台管理主页</title>
+        <title>添加<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -146,129 +146,153 @@
 </html>
 
 <div id="content">
- <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
-  </div>
-<!--Action boxes-->
-  <div class="container-fluid">
-    <div class="quick-actions_homepage">
-      <ul class="quick-actions">
-        <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
-        <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
-        <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
-        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
-        <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
-        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Elements</a> </li>
-        <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Calendar</a> </li>
-        <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
-
-      </ul>
-    </div>
-<!--End-Action boxes-->  
-				
-				<div class="row-fluid">
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>Recent Posts</h5><span title="54 total posts" class="label label-info tip-left">54</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-posts">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: neytiri on 2 Aug 2012, 09:27 AM, IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: john on on 24 Jun 2012, 04:12 PM, IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: michelle on 22 Jun 2012, 02:44 PM, IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all posts" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>Recent Comments</h5><span title="88 total comments" class="label label-info tip-left">88</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-comments">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: michelle on IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: john on IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: neytiri on IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all comments" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
+<div id="content-header">
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="tip-bottom"><?php echo ($model["category"]); ?></a> <a href="#" class="current">修改<?php echo ($model["category"]); ?></a> </div>
+  <h1>修改<?php echo ($model["category"]); ?></h1>
 </div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>修改<?php echo ($model["category"]); ?></h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form action="<?php echo U('article/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
+              <input type="hidden" name="id" value="<?php echo ($model["id"]); ?>">
+              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
+            <div class="control-group">
+              <label for="normal" class="control-label">标题</label>
+              <div class="controls">
+                <input type="text" name="title" class="span8 mask text" value="<?php echo ($model["title"]); ?>">
+               </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">简介</label>
+              <div class="controls">
+                  <textarea name="intro" class="textarea_editor span8" rows="6"><?php echo ($model["intro"]); ?></textarea>
+               </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">内容</label>
+              <div class="controls">
+                 <textarea id="editor" name="content" class="span8"><?php echo ($model["content"]); ?></textarea>
+                  
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">上传封面图片</label>
+              <div class="controls">
+               <input type="hidden" name="eximageURL" value="<?php echo ($model["imageurl"]); ?>"/>
+               <input type="file" id="imageUpload" name="imageURL"/>
+               <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>
+				<div id="preview" class="preview"></div>
+              </div>
+                <style>
+                    .preview{margin-top: 20px; position: relative; width: 900px;height: 250px;}
+                    .preview .item{position: absolute; width: 250px; height: 250px;}
+                    .preview img{max-width: 224px;max-height: 224px;cursor: url(../images/big.cur), auto;  box-shadow: 0px 1px 1px 1px #AAA3A3;}
+                    .preview img:hover{box-shadow: 0px 1px 1px 2px #83ABD2;}
+                    .preview .big{z-index: 2;}
+                    .preview .big img{max-width: none; max-height: none; cursor: url(../images/small.cur), auto;box-shadow: 2px 2px 10px 2px #666;}
+                </style>
+                 <script type="text/javascript">
+                    var Upload = (function(){
+                        var upimg = document.getElementById('imageUpload');
+                        var show  = document.getElementById('preview');
+                        var eximg  = document.getElementById('eximg');
+                        function init(){
+                            if(!(window.FileReader && window.File && window.FileList && window.Blob)){
+                                show.innerHTML = '您的浏览器不支持fileReader';
+                                upimg.setAttribute('disabled', 'disabled');
+                                return false;
+                            }
+                            handler();
+                        }
 
+                        function handler(){
+                            upimg.addEventListener('change', function(e){
+                                var files = this.files;
+                                if(files.length){
+                                    checkFile(this.files);
+                                }
+                            });
+
+                            show.addEventListener('click', function(e){
+                                var target = e.target;
+                                if(target.tagName.toUpperCase()=='IMG'){
+                                    var parent = target.parentNode;
+                                    var big = parent.className.indexOf('big')>=0;
+                                    var item = this.childNodes;
+                                    for(var i=0; i<item.length; i++){
+                                        item[i].className = 'item';
+                                        item[i].firstElementChild.style.cssText = '';
+                                    }
+
+                                    var parent = target.parentNode;
+                                    if(!big){
+                                        // 点击放大
+                                        target.style.cssText = 'width:'+target.naturalWidth+'px; height:'+target.naturalHeight+'px;'; // 关键
+                                        parent.className += ' big';
+                                    }
+                                }
+                            }, false)
+                        }
+
+        
+                        function checkFile(files){
+        	                var file = files[0];
+        	                var reader = new FileReader();
+        	                // show表示<div id='show'></div>，用来展示图片预览的
+        	                if(!/image\/\w+/.test(file.type)){
+                                show.innerHTML = "请确保文件为图像类型";
+                                return false;
+                            }
+                            // onload是异步操作
+        	                reader.onload = function(e){
+        		                show.innerHTML = '<img src="'+e.target.result+'" alt="img">';
+                                if (eximg!= null){
+                                      eximg.parentNode.removeChild(eximg);
+                                 }
+        	                }
+        	                reader.readAsDataURL(file);
+                        }
+                        return {
+                            init : init
+                        }
+                    })();
+                    Upload.init();
+                    </script>
+            </div>
+
+            <div class="control-group">
+              <label for="normal" class="control-label">修改时间：</label>
+              <div class="controls">
+                <span class="span8"><?php echo ($time); ?></span> </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                  <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
+                  <button type="reset" name="submit" class="btn btn-primary">清空</button> </div>
+            </div>
+          </form>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="/Public/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="/Public/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('editor',{
+        initialFrameHeight:400
+    });
+</script>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

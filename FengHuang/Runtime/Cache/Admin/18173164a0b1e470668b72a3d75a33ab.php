@@ -147,7 +147,7 @@
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="#" class="tip-bottom"><?php echo $category;?></a> <a href="#" class="current">添加<?php echo ($category); ?></a> </div>
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$category));?>" class="tip-bottom"><?php echo ($category); ?></a> <a href="#" class="current">添加<?php echo ($category); ?></a> </div>
   <h1>添加<?php echo ($category); ?></h1>
 </div>
 <div class="container-fluid">
@@ -177,10 +177,7 @@
               <label for="text" class="control-label">内容</label>
               <div class="controls">
                  <textarea id="editor" name="content" class="span8"></textarea>
-                  <script type="text/javascript">
-                    var editor = new UE.ui.Editor({initialFrameHeight:400 }); 
-                    editor.render("editor");   
-                </script>
+                  
               </div>
             </div>
             <div class="control-group">
@@ -284,8 +281,12 @@
 <script type="text/javascript" src="/Public/ueditor/ueditor.config.js"></script>
 <!-- 编辑器源码文件 -->
 <script type="text/javascript" src="/Public/ueditor/ueditor.all.js"></script>
-<link rel="stylesheet" href="/Public/ueditor/themes/default/ueditor.css"/>  
-
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('editor',{
+        initialFrameHeight:400
+    });
+</script>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
