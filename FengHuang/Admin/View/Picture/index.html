@@ -12,19 +12,19 @@
         </article>
         <div class="clear"></div>
         <ul class="thumbnails thumbnails-1 list-services">
-               <foreach name="article" item="a">
+               <foreach name="picture" item="p">
                      <li class="span4">
                          <div class="thumbnail thumbnail-1">
-                             <a href="{:U('picture/details',array('category'=>$a['category'],'id'=>$a['id']))}" class="link-1"><img src="{$a.imageurl}" alt="{$a.intro}" width="320" height="320"/></a>
+                             <a href="{:U('picture/details',array('category'=>$p['category'],'id'=>$p['id']))}" class="link-1"><img src="{$p.imageurl}" alt="{$p.intro}" width="320" height="320"/></a>
                             <section>
-                                <a href="{:U('picture/details',array('category'=>$a['category'],'id'=>$a['id']))}" class="link-1">{$a.intro}</a>
+                                <a href="{:U('picture/details',array('category'=>$p['category'],'id'=>$p['id']))}" class="link-1">{$p.intro}</a>
                             </section>
                          </div>
                      <div class="actions">
-                         <a href="{:U('picture/update',array('category'=>$a['category'],'id'=>$a['id']))}">
+                         <a href="{:U('picture/update',array('category'=>$p['category'],'id'=>$p['id']))}">
                             <i class="icon-pencil icon-white"></i>
                         </a>
-                         <a href="{:U('picture/delete',array('category'=>$a['category'],'id'=>$a['id']))}">
+                         <a href="{:U('picture/delete',array('category'=>$p['category'],'id'=>$p['id']))}">
                              <i class="icon-remove icon-white"></i>
                          </a>
                      </div>

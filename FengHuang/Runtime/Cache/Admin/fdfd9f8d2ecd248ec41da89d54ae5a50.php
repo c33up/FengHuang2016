@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><?php echo ($category); ?>-上海烽凰后台管理主页</title>
+        <title><?php echo ($category); ?>管理-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -10,9 +10,6 @@
         <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/ueditor.config.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/ueditor.all.min.js"> </script>
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/lang/zh-cn/zh-cn.js"></script>
     </head>
     <body>
         <!--Header-part-->
@@ -49,33 +46,33 @@
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
             <li><a href="<?php echo U('article/index',array('category'=>'公司简介'));?>">公司简介</a></li>
-            <li><a href="/articleList.php?category=公司历史">公司历史</a></li>
-            <li><a href="/articleList.php?category=团队介绍">团队介绍</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公司历史'));?>">公司历史</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>新闻信息</span></a>
           <ul>
-            <li><a href="/articleList.php?category=公司动态">公司动态</a></li>
-            <li><a href="/articleList.php?category=行业新闻">行业新闻</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公司动态'));?>">公司动态</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>">行业新闻</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a> 
           <ul>
-            <li><a href="/articleList.php?category=烽凰方法论">烽凰方法论</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>">烽凰方法论</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例</span></a>
           <ul>
-            <li><a href="/articleList.php?category=公益营销">公益营销</a></li>
-            <li><a href="/articleList.php?category=事件营销">事件营销</a></li>
-            <li><a href="/articleList.php?category=危机公关">危机公关</a></li>
-            <li><a href="/articleList.php?category=新闻营销">新闻营销</a></li>
-            <li><a href="/articleList.php?category=娱乐文化营销">娱乐文化营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公益营销'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'事件营销'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'危机公关'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'新闻营销'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'娱乐文化营销'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>产品服务</span></a>
           <ul>
-            <li><a href="/articleList.php?category=产品服务">产品服务</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'产品服务'));?>">产品服务</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
@@ -148,38 +145,67 @@
     </body>
 </html>
 
-
- <div id="content">
-     <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current"><?php echo ($category); ?>管理</a> </div>
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current"><?php echo ($category); ?>管理</a> </div>
     <h1><?php echo ($category); ?>管理</h1>
   </div>
-<div class="container">
-          <div class="row">
-        <article class="span12">
-            <a href="<?php echo U('picture/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a><hr/>
-        </article>
-        <div class="clear"></div>
-        <ul class="thumbnails thumbnails-1 list-services">
-               <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li class="span4">
-                         <div class="thumbnail thumbnail-1">
-                             <a href="<?php echo U('picture/details',array('category'=>$p['category'],'id'=>$p['id']));?>" class="link-1"><img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" width="320" height="320"/></a>
-                            <section>
-                                <a href="<?php echo U('picture/details',array('category'=>$p['category'],'id'=>$p['id']));?>" class="link-1"><?php echo ($p["intro"]); ?></a>
-                            </section>
-                         </div>
-                     <div class="actions">
-                         <a href="<?php echo U('picture/update',array('category'=>$p['category'],'id'=>$p['id']));?>">
-                            <i class="icon-pencil icon-white"></i>
-                        </a>
-                         <a href="<?php echo U('picture/delete',array('category'=>$p['category'],'id'=>$p['id']));?>">
-                             <i class="icon-remove icon-white"></i>
-                         </a>
-                     </div>
-                     </li><?php endforeach; endif; ?>
-            </ul>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5><?php echo ($category); ?>列表</h5>
+          </div>
+           <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>标题</th>
+                  <th>简介</th>
+                  <th>封面图片</th>
+                  <th>创建时间</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+        <?php if(is_array($article)): foreach($article as $key=>$a): ?><tr class="gradeX">
+                <td><?php echo ($a["id"]); ?></td>
+                <td><?php echo ($a["title"]); ?></td>
+                <td><?php echo ($a["intro"]); ?></td>
+                <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
+                <td><?php echo ($u["createdate"]); ?></td>
+                <td class="center">
+                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>">修改</a> | <a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除</a>
+                </td>
+            </tr><?php endforeach; endif; ?>
+                  
+            </tbody>
+            </table>
+          </div>
+        </div>
+          <div>
+              <div class="pull-left">
+                   <a href="<?php echo U('article/add',array('category'=>$category));?>" class="btn btn-large btn-primary ">添加<?php echo ($category); ?></a>
+               </div>
+              <div class="pull-right">
+                  <div class="pagination">
+                          <ul>
+                            <li><a href="#">Prev</a></li>
+                            <li class="active"> <a href="#">1</a> </li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">Next</a></li>
+                          </ul>
+                    </div>
+              </div>
+          </div>
       </div>
-  </div>
+    </div>
+  </div></div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
