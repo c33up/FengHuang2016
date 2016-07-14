@@ -163,7 +163,7 @@
         <ul class="thumbnails thumbnails-1 list-services">
                <?php if(is_array($video)): foreach($video as $key=>$v): ?><li class="span4">
                          <div class="thumbnail thumbnail-1">
-                             <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" width="320" height="320"/></a>
+                             <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" width="240" height="240"/></a>
                             <section>
                                 <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><?php echo ($v["intro"]); ?></a>
                             </section>

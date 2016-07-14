@@ -85,14 +85,14 @@
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
       <ul>
-        <li><a href="/videoList.php?category=案例视频">案例视频</a></li>
-        <li><a href="/videoList.php?category=公司活动">公司活动视频</a></li>
+        <li><a href="<?php echo U('video/index',array('category'=>'案例视频'));?>">案例视频</a></li>
+        <li><a href="<?php echo U('video/index',array('category'=>'公司活动'));?>">公司活动视频</a></li>
       </ul>
     </li>
           <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
       <ul>
         <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index?category=二维码');?>">二维码</a></li>
+        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
       </ul>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>

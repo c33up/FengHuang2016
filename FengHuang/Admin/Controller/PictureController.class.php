@@ -42,6 +42,9 @@ class PictureController extends BaseController {
             $this->display();
         }
         if (IS_POST) {
+            if(empty($_FILES["imageURL"][tmp_name])){
+                $this->error("请上传图片");
+            }else{
             if(isset($_FILES['imageURL'])){
                 $upload = new \Think\Upload();// 实例化上传类
                 //$upload->maxSize = 3145728 ;// 设置附件上传大小
@@ -55,9 +58,10 @@ class PictureController extends BaseController {
                 $this->error($upload->getError());
                 }else{// 上传成功 获取上传文件信息
                     foreach($info as $file){
-                    $imageurl='/Uploads/'.$file['savepath'].$file['savename'];
+                    $imageurl='/Uploads/Image/'.$file['savepath'].$file['savename'];
                     }
                 }
+            }
             }
             $model = M("picture");
            // $model->imageURL=$imageurl;
@@ -116,7 +120,7 @@ class PictureController extends BaseController {
                 $this->error($upload->getError());
                 }else{// 上传成功 获取上传文件信息
                     foreach($info as $file){
-                    $imageurl='/Uploads/'.$file['savepath'].$file['savename'];
+                    $imageurl='/Uploads/Image/'.$file['savepath'].$file['savename'];
                     }
                 }
             }

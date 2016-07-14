@@ -15,7 +15,7 @@
                <foreach name="video" item="v">
                      <li class="span4">
                          <div class="thumbnail thumbnail-1">
-                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" width="320" height="320"/></a>
+                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" width="240" height="240"/></a>
                             <section>
                                 <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1">{$v.intro}</a>
                             </section>

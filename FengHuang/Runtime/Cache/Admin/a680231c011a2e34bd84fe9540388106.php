@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>添加<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
+        <title><?php echo ($model["category"]); ?>详情-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -149,132 +149,57 @@
 </html>
 
 <div id="content">
-<div id="content-header">
-  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="tip-bottom"><?php echo ($model["category"]); ?>管理</a> <a href="#" class="current">修改<?php echo ($model["category"]); ?>图片</a> </div>
-  <h1>修改<?php echo ($model["category"]); ?>图片</h1>
-</div>
-<div class="container-fluid">
-  <hr>
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改<?php echo ($model["category"]); ?>图片</h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form action="<?php echo U('picture/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
-              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
-              <input type="hidden" name="id" value="<?php echo ($model["id"]); ?>">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="current"><?php echo ($model["category"]); ?></a>  <a href="#" class="current"><?php echo ($model["category"]); ?>详情</a></div>
+    <h1><?php echo ($model["category"]); ?>详情</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <a href="<?php echo U('video/index',array('category'=>$model['category']));?>" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('video/update',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('video/delete',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">删除</a>
+          </div>
+          <div class="widget-content nopadding">
             <div class="control-group">
-              <label for="normal" class="control-label">图片介绍</label>
               <div class="controls">
-                  <textarea name="intro" class="textarea_editor span8" rows="6"><?php echo ($model["intro"]); ?></textarea>
+               <h4><?php echo ($model["intro"]); ?></h4>
+               </div>
+            </div>
+              <div class="control-group">
+              <div class="controls">
+                <p>发表时间：<?php echo ($model["createdate"]); ?></p>
                </div>
             </div>
             <div class="control-group">
-              <label class="control-label">上传图片</label>
-              <div class="controls">
-                  <input type="hidden" name="eximageURL" value="<?php echo ($model["imageurl"]); ?>"/>
-               <input type="file" id="imageUpload" name="imageURL"/>
-                  <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>
-				<div id="preview" class="preview"></div>
-              </div>
-                <style>
-                    .preview{margin-top: 20px; position: relative; width: 900px;height: 250px;}
-                    .preview .item{position: absolute; width: 250px; height: 250px;}
-                    .preview img{max-width: 224px;max-height: 224px;cursor: url(../images/big.cur), auto;  box-shadow: 0px 1px 1px 1px #AAA3A3;}
-                    .preview img:hover{box-shadow: 0px 1px 1px 2px #83ABD2;}
-                    .preview .big{z-index: 2;}
-                    .preview .big img{max-width: none; max-height: none; cursor: url(../images/small.cur), auto;box-shadow: 2px 2px 10px 2px #666;}
-                </style>
-                 <script type="text/javascript">
-                    var Upload = (function(){
-                        var upimg = document.getElementById('imageUpload');
-                        var show  = document.getElementById('preview');
-                        var eximg  = document.getElementById('eximg');
-
-                        function init(){
-                            if(!(window.FileReader && window.File && window.FileList && window.Blob)){
-                                show.innerHTML = '您的浏览器不支持fileReader';
-                                upimg.setAttribute('disabled', 'disabled');
-                                return false;
-                            }
-                            handler();
-                        }
-
-                        function handler(){
-                            upimg.addEventListener('change', function(e){
-                                var files = this.files;
-                                if(files.length){
-                                    checkFile(this.files);
-                                }
-                            });
-
-                            show.addEventListener('click', function(e){
-                                var target = e.target;
-                                if(target.tagName.toUpperCase()=='IMG'){
-                                    var parent = target.parentNode;
-                                    var big = parent.className.indexOf('big')>=0;
-                                    var item = this.childNodes;
-                                    for(var i=0; i<item.length; i++){
-                                        item[i].className = 'item';
-                                        item[i].firstElementChild.style.cssText = '';
-                                    }
-
-                                    var parent = target.parentNode;
-                                    if(!big){
-                                        // 点击放大
-                                        target.style.cssText = 'width:'+target.naturalWidth+'px; height:'+target.naturalHeight+'px;'; // 关键
-                                        parent.className += ' big';
-                                    }
-                                }
-                            }, false)
-                        }
-
-        
-                        function checkFile(files){
-        	                var file = files[0];
-        	                var reader = new FileReader();
-        	                // show表示<div id='show'></div>，用来展示图片预览的
-        	                if(!/image\/\w+/.test(file.type)){
-                                show.innerHTML = "请确保文件为图像类型";
-                                return false;
-                            }
-                            // onload是异步操作
-        	                reader.onload = function(e){
-        		                show.innerHTML = '<img src="'+e.target.result+'" alt="img">';
-                                 if (eximg!= null){
-                                      eximg.parentNode.removeChild(eximg);
-                                 }
-        	                }
-        	                reader.readAsDataURL(file);
-                        }
-                        return {
-                            init : init
-                        }
-                    })();
-                    Upload.init();
-                    </script>
+                <div class="controls">
+                    <div>
+                        <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
+                   </div>
+                   <div>
+                    <p>发表时间：<?php echo ($model["intro"]); ?></p>
+                   </div>
+                </div>
             </div>
-
-            <div class="control-group">
-              <label for="normal" class="control-label">发表时间：</label>
+              <div class="control-group">
               <div class="controls">
-                <span class="span8"><?php echo ($time); ?> </span> </div>
+                  <?php if($model['videourl'] != ''): ?><video width="640" height="480" controls>
+                      <source src="<?php echo ($model["videourl"]); ?>" type="video/mp4">
+                    </video><?php endif; ?>
+                <?php if($model['localvideo'] != ''): ?><video width="640" height="480" controls>
+                      <source src="<?php echo ($model["localvideo"]); ?>" type="video/mp4">
+                    </video><?php endif; ?>
+               </div>
             </div>
-            <div class="control-group">
-              <div class="controls">
-                  <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
-                  <button type="reset" name="submit" class="btn btn-primary">清空</button> </div>
             </div>
-          </form>
-        </div>
-      </div>   
+      </div>
     </div>
   </div>
 </div>
-</div>
-
+    </div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

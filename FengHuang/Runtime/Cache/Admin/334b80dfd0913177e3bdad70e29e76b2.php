@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>添加<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
+        <title>修改<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -150,8 +150,8 @@
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="tip-bottom"><?php echo ($model["category"]); ?>管理</a> <a href="#" class="current">修改<?php echo ($model["category"]); ?>图片</a> </div>
-  <h1>修改<?php echo ($model["category"]); ?>图片</h1>
+  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="#" class="tip-bottom"><?php echo ($model["category"]); ?>管理</a> <a href="#" class="current">修改<?php echo ($model["category"]); ?></a> </div>
+  <h1><?php echo ($model["category"]); ?></h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -159,24 +159,48 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改<?php echo ($model["category"]); ?>图片</h5>
+          <h5>修改<?php echo ($model["category"]); ?></h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="<?php echo U('picture/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
-              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
+          <form action="<?php echo U('video/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
               <input type="hidden" name="id" value="<?php echo ($model["id"]); ?>">
+              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
             <div class="control-group">
-              <label for="normal" class="control-label">图片介绍</label>
+              <label for="normal" class="control-label">视频标题</label>
+              <div class="controls">
+                <input type="text" name="title" class="span8 mask text" value="<?php echo ($model["title"]); ?>">
+               </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">视频简介</label>
               <div class="controls">
                   <textarea name="intro" class="textarea_editor span8" rows="6"><?php echo ($model["intro"]); ?></textarea>
                </div>
             </div>
-            <div class="control-group">
-              <label class="control-label">上传图片</label>
+              <div class="control-group">
               <div class="controls">
-                  <input type="hidden" name="eximageURL" value="<?php echo ($model["imageurl"]); ?>"/>
+                 <label for="text" class="control-label">提示：填写视频地址或上传视频只需填写一个</label>
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">视频链接地址</label>
+              <div class="controls">
+                 <textarea id="editor" name="videoURL" class="span8" rows="6"><?php echo ($model["videourl"]); ?></textarea>
+              </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">上传本地视频</label>
+              <div class="controls">
+                 <input type="file" id="localvideo" name="localvideo"/>
+                  <input type="hidden" name="exvideo" value="<?php echo ($model["localvideo"]); ?>">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">上传视频封面图片</label>
+              <div class="controls">
                <input type="file" id="imageUpload" name="imageURL"/>
-                  <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>
+                <input type="hidden" name="eximg" value="<?php echo ($model["imageurl"]); ?>">
+                <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>
 				<div id="preview" class="preview"></div>
               </div>
                 <style>
@@ -260,7 +284,7 @@
             <div class="control-group">
               <label for="normal" class="control-label">发表时间：</label>
               <div class="controls">
-                <span class="span8"><?php echo ($time); ?> </span> </div>
+                <span class="span8"><?php echo ($time); ?></span> </div>
             </div>
             <div class="control-group">
               <div class="controls">
@@ -274,7 +298,6 @@
   </div>
 </div>
 </div>
-
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

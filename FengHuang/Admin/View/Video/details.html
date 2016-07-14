@@ -1,11 +1,58 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+<include file="Public/header" title="{$model.category}详情-上海烽凰后台管理主页" />
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="current">{$model.category}</a>  <a href="#" class="current">{$model.category}详情</a></div>
+    <h1>{$model.category}详情</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <a href="{:U('video/index',array('category'=>$model['category']))}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="{:U('video/update',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="{:U('video/delete',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">删除</a>
+          </div>
+          <div class="widget-content nopadding">
+            <div class="control-group">
+              <div class="controls">
+               <h4>{$model.intro}</h4>
+               </div>
+            </div>
+              <div class="control-group">
+              <div class="controls">
+                <p>发表时间：{$model.createdate}</p>
+               </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div>
+                        <img src="{$model.imageurl}" alt="{$model.title}" width="240" height="240"/>
+                   </div>
+                   <div>
+                    <p>发表时间：{$model.intro}</p>
+                   </div>
+                </div>
+            </div>
+              <div class="control-group">
+              <div class="controls">
+                  <if  condition="$model['videourl'] neq ''">
+                  <video width="640" height="480" controls>
+                      <source src="{$model.videourl}" type="video/mp4">
+                    </video>
+                  </if>
+                <if  condition="$model['localvideo'] neq ''">
+                  <video width="640" height="480" controls>
+                      <source src="{$model.localvideo}" type="video/mp4">
+                    </video>
+                  </if>
+               </div>
+            </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+<include file="Public/footer" />
