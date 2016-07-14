@@ -1,0 +1,46 @@
+ <include file="Public/header" title="修改用户密码-上海烽凰后台管理系统"/>
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#">用户管理</a> <a href="#" class="current">修改用户密码</a> </div>
+    <h1>修改用户密码</h1>
+  </div>
+  <div class="container-fluid"><hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-pencil"></i> </span>
+            <h5>修改用户密码</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <form id="form-wizard" class="form-horizontal" action="{:U('user/update')}" method="post">
+              <div id="form-wizard-1" class="step">
+                <div class="control-group">
+                  <label class="control-label">用户名:</label>
+                  <div class="controls">
+                    <h4>{$model.username}</h4>
+                    <input id="username" type="hidden" name="username" value="{$model.username}"/>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <label class="control-label">新密码：</label>
+                  <div class="controls">
+                    <input id="password" type="password" name="password"/>
+                  </div>
+                </div>
+              </div>
+        
+              <div class="form-actions">
+                  <input type="hidden" name="id" value="{$model.id}">
+                <button  type="reset" class="btn btn-primary">重置</button>
+                 <button type="submit" class="btn btn-success" name="submit">确定</button>
+                <div id="status"></div>
+              </div>
+              <div id="submitted"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <include file="Public/footer" />

@@ -1,0 +1,36 @@
+<include file="Public/header" title="{$category}-上海烽凰后台管理主页" />
+
+ <div id="content">
+     <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">{$category}管理</a> </div>
+    <h1>{$category}管理</h1>
+  </div>
+<div class="container">
+          <div class="row">
+        <article class="span12">
+            <a href="{:U('video/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a><hr/>
+        </article>
+        <div class="clear"></div>
+        <ul class="thumbnails thumbnails-1 list-services">
+               <foreach name="video" item="v">
+                     <li class="span4">
+                         <div class="thumbnail thumbnail-1">
+                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" width="320" height="320"/></a>
+                            <section>
+                                <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1">{$v.intro}</a>
+                            </section>
+                         </div>
+                     <div class="actions">
+                         <a href="{:U('video/update',array('category'=>$v['category'],'id'=>$v['id']))}">
+                            <i class="icon-pencil icon-white"></i>
+                        </a>
+                         <a href="{:U('video/delete',array('category'=>$v['category'],'id'=>$v['id']))}">
+                             <i class="icon-remove icon-white"></i>
+                         </a>
+                     </div>
+                     </li>
+               </foreach>
+            </ul>
+      </div>
+  </div>
+<include file="Public/footer" />

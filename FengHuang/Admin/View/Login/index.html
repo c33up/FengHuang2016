@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>上海烽凰后台管理系统</title>
+        <link rel="stylesheet" href="__CSS_URL__/bootstrap.min.css" />
+		<link rel="stylesheet" href="__CSS_URL__/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="__CSS_URL__/matrix-login.css" />
+        <link href="__PUBLIC_URL__/css/font-awesome.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+        <div id="loginbox">            
+            <form id="loginform" class="form-vertical" action="{:U('login/login')}" method="post">
+				 <div class="control-group normal_text"> <h3>上海烽凰后台管理系统</h3></div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <span class="add-on bg_lg"><i class="icon-user"></i></span>
+                            <input type="text" placeholder="用户名" name="username"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="main_input_box">
+                            <span class="add-on bg_ly"><i class="icon-lock"></i></span>
+                            <input type="password" placeholder="密码" name="password"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-success pull-right" name="submit">登录</button>
+                </div>
+            </form>
+        </div>
+        <include file="Public/footer" />
+        <script src="__JS_URL__/jquery.min.js"></script>  
+        <script src="__JS_URL__/matrix.login.js"></script> 
+    </body>
+</html>

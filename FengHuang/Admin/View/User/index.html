@@ -1,0 +1,55 @@
+ <include file="Public/header" title="用户管理-上海烽凰后台管理系统"/>
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">用户管理</a> </div>
+    <h1>用户管理</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>用户列表</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>用户名</th>
+                  <th>创建时间</th>
+                  <th>登录时间</th>
+                  <th>登录IP地址</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+                   <foreach name="user" item="u">
+            <tr class="gradeX">
+                <td>{$u.id}</td>
+                <td>{$u.username}</td>
+                <td>{$u.create_at|date="Y/m/d H:i:s",###}</td>
+                <td>{$u.update_at|date="Y/m/d H:i:s",###}</td>
+                <td>{$u.login_ip}</td>
+                <if condition="$u.username eq session('username')">
+                <td class="center"><a href="{:U('user/update',array('id'=>$u['id']))}">修改密码</a></td>
+                <else/>
+                     <td class="center"><a href="{:U('user/update',array('id'=>$u['id']))}">修改密码</a> | <a href="{:U('user/delete',array('id'=>$u['id']))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">删除</a></td>
+                </if>
+            </tr>
+        </foreach>
+            <tr>
+                <td colspan="6">
+                    <a href="{:U('user/add')}" class="btn btn-primary">添加用户</a>
+                </td>
+            </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <include file="Public/footer" />

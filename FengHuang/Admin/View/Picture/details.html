@@ -1,0 +1,33 @@
+<include file="Public/header" title="{$model.category}详情-上海烽凰后台管理主页" />
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="#" class="current">{$model.category}</a>  <a href="#" class="current">{$model.category}详情</a></div>
+    <h1>{$model.category}详情</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <a href="{:U('picture/index',array('category'=>$model['category']))}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="{:U('picture/update',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="{:U('picture/delete',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">删除</a>
+          </div>
+          <div class="widget-content nopadding">
+              <div>
+                  <h4>{$model.intro}</h4>
+                  <p>发表时间：{$model.createdate}</p>
+              </div>
+              <hr/>
+              <div class="row-fluid">
+                  <div class="span12">
+                      <img src="{$model.imageurl}" alt="{$model.intro}"/>
+                  </div>
+               </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<include file="Public/footer" />
