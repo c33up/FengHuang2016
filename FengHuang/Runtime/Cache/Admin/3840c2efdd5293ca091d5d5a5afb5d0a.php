@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>添加<?php echo ($category); ?>-上海烽凰后台管理主页</title>
+        <title>联系我们-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -146,146 +146,62 @@
 </html>
 
 <div id="content">
-<div id="content-header">
-  <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="#" class="tip-bottom"><?php echo ($category); ?>管理</a> <a href="#" class="current">添加<?php echo ($category); ?></a> </div>
-  <h1><?php echo ($category); ?></h1>
-</div>
-<div class="container-fluid">
-  <hr>
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>添加<?php echo ($category); ?></h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form action="<?php echo U('video/add');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
-              <input type="hidden" name="category" value="<?php echo ($category); ?>">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="tip-bottom">联系我们</a> <a href="#" class="current">修改联系方式</a></div>
+    <h1>联系方式</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>联系方式</h5>
+          </div>
+          <div class="widget-content nopadding">
+             <form action="<?php echo U('contact/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
             <div class="control-group">
-              <label for="normal" class="control-label">视频标题</label>
+              <label for="normal" class="control-label">公司地址：</label>
               <div class="controls">
-                <input type="text" name="title" class="span8 mask text">
+                 <textarea name="address" class="textarea_editor span8" rows="6"><?php echo ($model["address"]); ?></textarea>
                </div>
             </div>
             <div class="control-group">
-              <label for="text" class="control-label">视频简介</label>
+              <label for="text" class="control-label">手机：</label>
               <div class="controls">
-                  <textarea name="intro" class="textarea_editor span8" rows="6"></textarea>
+                  <input type="tel" name="phone" class="span8 mask text" value="<?php echo ($model["mobilephone"]); ?>"/>
                </div>
             </div>
-              <div class="control-group">
+            <div class="control-group">
+              <label for="text" class="control-label">座机：</label>
               <div class="controls">
-                 <label for="text" class="control-label">填写视频地址或上传视频</label>
+                 <input type="tel" name="telPhone" class="span8 mask text" value="<?php echo ($model["telphone"]); ?>"/>
               </div>
             </div>
             <div class="control-group">
-              <label for="text" class="control-label">视频链接地址</label>
+              <label class="control-label">Email:</label>
               <div class="controls">
-                 <textarea id="editor" name="videoURL" class="span8" rows="6"></textarea>
-              </div>
-            </div>
-            <div class="control-group">
-              <label for="text" class="control-label">上传本地视频</label>
-              <div class="controls">
-                 <input type="file" id="localvideo" name="localvideo"/>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">上传视频封面图片</label>
-              <div class="controls">
-               <input type="file" id="imageUpload" name="imageURL"/>
-				<div id="preview" class="preview"></div>
-              </div>
-                <style>
-                    .preview{margin-top: 20px; position: relative; width: 900px;height: 250px;}
-                    .preview .item{position: absolute; width: 250px; height: 250px;}
-                    .preview img{max-width: 224px;max-height: 224px;cursor: url(../images/big.cur), auto;  box-shadow: 0px 1px 1px 1px #AAA3A3;}
-                    .preview img:hover{box-shadow: 0px 1px 1px 2px #83ABD2;}
-                    .preview .big{z-index: 2;}
-                    .preview .big img{max-width: none; max-height: none; cursor: url(../images/small.cur), auto;box-shadow: 2px 2px 10px 2px #666;}
-                </style>
-                 <script type="text/javascript">
-                    var Upload = (function(){
-                        var upimg = document.getElementById('imageUpload');
-                        var show  = document.getElementById('preview');
-
-                        function init(){
-                            if(!(window.FileReader && window.File && window.FileList && window.Blob)){
-                                show.innerHTML = '您的浏览器不支持fileReader';
-                                upimg.setAttribute('disabled', 'disabled');
-                                return false;
-                            }
-                            handler();
-                        }
-
-                        function handler(){
-                            upimg.addEventListener('change', function(e){
-                                var files = this.files;
-                                if(files.length){
-                                    checkFile(this.files);
-                                }
-                            });
-
-                            show.addEventListener('click', function(e){
-                                var target = e.target;
-                                if(target.tagName.toUpperCase()=='IMG'){
-                                    var parent = target.parentNode;
-                                    var big = parent.className.indexOf('big')>=0;
-                                    var item = this.childNodes;
-                                    for(var i=0; i<item.length; i++){
-                                        item[i].className = 'item';
-                                        item[i].firstElementChild.style.cssText = '';
-                                    }
-
-                                    var parent = target.parentNode;
-                                    if(!big){
-                                        // 点击放大
-                                        target.style.cssText = 'width:'+target.naturalWidth+'px; height:'+target.naturalHeight+'px;'; // 关键
-                                        parent.className += ' big';
-                                    }
-                                }
-                            }, false)
-                        }
-
-        
-                        function checkFile(files){
-        	                var file = files[0];
-        	                var reader = new FileReader();
-        	                // show表示<div id='show'></div>，用来展示图片预览的
-        	                if(!/image\/\w+/.test(file.type)){
-                                show.innerHTML = "请确保文件为图像类型";
-                                return false;
-                            }
-                            // onload是异步操作
-        	                reader.onload = function(e){
-        		                show.innerHTML = '<img src="'+e.target.result+'" alt="img">';
-        	                }
-        	                reader.readAsDataURL(file);
-                        }
-                        return {
-                            init : init
-                        }
-                    })();
-                    Upload.init();
-                    </script>
+               <input type="email" name="Email" class="span8 mask text" value="<?php echo ($model["email"]); ?>"/>
+				</div>
             </div>
 
             <div class="control-group">
-              <label for="normal" class="control-label">发表时间：</label>
+              <label for="normal" class="control-label">QQ：</label>
               <div class="controls">
-                <span class="span8"><?php echo ($time); ?></span> </div>
+                <input type="text" name="QQ" class="span8 mask text" value="<?php echo ($model["qq"]); ?>"/>
+                  </div>
             </div>
             <div class="control-group">
               <div class="controls">
                   <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
-                  <button type="reset" name="submit" class="btn btn-primary">清空</button> </div>
+                  <button type="reset" name="submit" class="btn btn-primary">重置</button> </div>
             </div>
           </form>
+          </div>
         </div>
-      </div>   
+      </div>
     </div>
   </div>
-</div>
 </div>
 <footer class="row-fluid">
 <!--Footer-part-->

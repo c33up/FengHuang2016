@@ -73,9 +73,9 @@ class ArticleController extends BaseController {
                 $date['category']=$category;
                 //dump($date);
                 if ($model->add($date)) {
-                    $this->success("图片添加成功", U('article/index',array('category'=>$category)));
+                    $this->success("添加成功", U('article/index',array('category'=>$category)));
                 } else {
-                    $this->error("图片添加失败");
+                    $this->error("添加失败");
                 }
             } 
          }

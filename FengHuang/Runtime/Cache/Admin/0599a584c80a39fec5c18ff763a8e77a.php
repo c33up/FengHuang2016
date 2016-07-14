@@ -10,9 +10,6 @@
         <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/ueditor.config.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/ueditor.all.min.js"> </script>
-        <script type="text/javascript" charset="utf-8" src="/ueditor/utf8-php/lang/zh-cn/zh-cn.js"></script>
     </head>
     <body>
         <!--Header-part-->
@@ -48,39 +45,39 @@
   <ul>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index?category=公司简介');?>">公司简介</a></li>
-            <li><a href="/articleList.php?category=公司历史">公司历史</a></li>
-            <li><a href="/articleList.php?category=团队介绍">团队介绍</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公司简介'));?>">公司简介</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公司历史'));?>">公司历史</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>新闻信息</span></a>
           <ul>
-            <li><a href="/articleList.php?category=公司动态">公司动态</a></li>
-            <li><a href="/articleList.php?category=行业新闻">行业新闻</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公司动态'));?>">公司动态</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>">行业新闻</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a> 
           <ul>
-            <li><a href="/articleList.php?category=烽凰方法论">烽凰方法论</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>">烽凰方法论</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例</span></a>
           <ul>
-            <li><a href="/articleList.php?category=公益营销">公益营销</a></li>
-            <li><a href="/articleList.php?category=事件营销">事件营销</a></li>
-            <li><a href="/articleList.php?category=危机公关">危机公关</a></li>
-            <li><a href="/articleList.php?category=新闻营销">新闻营销</a></li>
-            <li><a href="/articleList.php?category=娱乐文化营销">娱乐文化营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'公益营销'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'事件营销'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'危机公关'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'新闻营销'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'娱乐文化营销'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>产品服务</span></a>
           <ul>
-            <li><a href="/articleList.php?category=产品服务">产品服务</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'产品服务'));?>">产品服务</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
       <ul>
-        <li><a href="/contact.php?category=联系方式">联系方式</a></li>
+        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
       </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
@@ -267,7 +264,6 @@
   </div>
 </div>
 </div>
-
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

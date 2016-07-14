@@ -1,11 +1,61 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+<include file="Public/header" title="联系我们-上海烽凰后台管理主页" />
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">联系我们</a> </div>
+    <h1>联系方式</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>联系方式</h5>
+          </div>
+          <div class="widget-content nopadding">
+              <table class="table table-bordered table-striped">
+              <tbody>
+                     <tr>
+                         <td class="center">地址</td>
+                         <td>{$contact.address}</td>
+                     </tr>
+                     <tr>
+                         <td class="center">手机</td>
+                         <td>{$contact.mobilephone}</td>
+                     </tr>
+                     <tr>
+                         <td class="center">座机</td>
+                         <td>{$contact.telphone}</td>
+                     </tr>
+                     <tr>
+                         <td class="center">邮箱</td>
+                         <td>{$contact.email}</td>
+                     </tr>
+                     <tr>
+                         <td class="center">QQ</td>
+                         <td>{$contact.qq}</td>
+                     </tr>     
+                    
+                  
+                      <if condition="$count eq 0">
+                          <tr>
+                          <td colspan="2">
+                            <a href="{:U('contact/add')}" class="btn btn-large btn-primary ">添加联系方式</a>
+                      </td>
+                            </tr>
+                          <else />
+                           <tr>
+                         <td colspan="2">
+                             <a href="{:U('contact/update')}" class='btn btn-large btn-primary'>修改联系方式</a>
+                         </td>
+                     </tr>
+                      </if>
+            </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<include file="Public/footer"/>

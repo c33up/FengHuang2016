@@ -1,11 +1,61 @@
-<!DOCTYPE html>
+<include file="Public/header" title="添加联系方式-上海烽凰后台管理主页" />
+<div id="content">
+<div id="content-header">
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="{：U('contact/index')}" class="tip-bottom">联系方式</a> <a href="#" class="current">添加联系方式</a> </div>
+  <h1>添加联系方式</h1>
+</div>
+<div class="container-fluid">
+  <hr>
+  <div class="row-fluid">
+    <div class="span12">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+          <h5>添加联系方式</h5>
+        </div>
+        <div class="widget-content nopadding">
+          <form action="{:U('contact/add')}" method="post" class="form-horizontal" enctype="multipart/form-data">
+              <input type="hidden" name="category" value="<?php echo $category;?>">
+            <div class="control-group">
+              <label for="normal" class="control-label">公司地址：</label>
+              <div class="controls">
+                 <textarea name="address" class="textarea_editor span8" rows="6"></textarea>
+               </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">手机：</label>
+              <div class="controls">
+                  <input type="tel" name="mobilephone" class="span8 mask text"/>
+               </div>
+            </div>
+            <div class="control-group">
+              <label for="text" class="control-label">座机：</label>
+              <div class="controls">
+                 <input type="tel" name="telPhone" class="span8 mask text"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Email:</label>
+              <div class="controls">
+               <input type="email" name="email" class="span8 mask text"/>
+				</div>
+            </div>
 
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title></title>
-    </head>
-    <body>
-        
-    </body>
-</html>
+            <div class="control-group">
+              <label for="normal" class="control-label">QQ：</label>
+              <div class="controls">
+                <input type="text" name="qq" class="span8 mask text"/>
+                  </div>
+            </div>
+            <div class="control-group">
+              <div class="controls">
+                  <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
+                  <button type="reset" name="submit" class="btn btn-primary">重置</button> </div>
+            </div>
+          </form>
+        </div>
+      </div>   
+    </div>
+  </div>
+</div>
+</div>
+<include file="Public/footer"/>
