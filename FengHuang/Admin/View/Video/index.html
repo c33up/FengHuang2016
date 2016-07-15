@@ -8,13 +8,13 @@
 <div class="container">
           <div class="row">
         <div class="span12">
-            <a href="{:U('video/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a><hr/>
+            <a href="{:U('video/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a>
                           
                 <form action="{:U('video/index')}" method="post"  class="navbar-form pull-right">
                     <input type="hidden" name="category" value="{$category}"/>
                     <input type="text" name="key" placeholder="搜索..."/>
                     <button type="submit"><i class="icon-search icon-white"></i></button>
-                </form>
+                </form><hr/>
         </div>
         <div class="clear"></div>
         <ul class="thumbnails thumbnails-1 list-services">

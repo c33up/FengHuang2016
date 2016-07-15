@@ -182,13 +182,13 @@
 <div class="container">
           <div class="row">
         <div class="span12">
-            <a href="<?php echo U('video/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a><hr/>
+            <a href="<?php echo U('video/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a>
                           
                 <form action="<?php echo U('video/index');?>" method="post"  class="navbar-form pull-right">
                     <input type="hidden" name="category" value="<?php echo ($category); ?>"/>
                     <input type="text" name="key" placeholder="搜索..."/>
                     <button type="submit"><i class="icon-search icon-white"></i></button>
-                </form>
+                </form><hr/>
         </div>
         <div class="clear"></div>
         <ul class="thumbnails thumbnails-1 list-services">

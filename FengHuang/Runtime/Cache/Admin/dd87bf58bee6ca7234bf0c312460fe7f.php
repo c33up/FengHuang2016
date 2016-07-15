@@ -184,7 +184,6 @@
         <div class="span12">
             <a href="<?php echo U('picture/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a>
 
-              
                 <form action="<?php echo U('picture/index');?>" method="post"  class="navbar-form pull-right">
                     <input type="hidden" name="category" value="<?php echo ($category); ?>"/>
                     <input type="text" name="key" placeholder="搜索..."/>
@@ -216,6 +215,10 @@
                      </li><?php endforeach; endif; ?>
             </ul>
       </div>
+    <hr/>
+    <div  class="pull-right">
+     <?php echo ($page); ?>
+    </div>
   </div>
 <footer class="row-fluid">
 <!--Footer-part-->

@@ -10,7 +10,6 @@
         <div class="span12">
             <a href="{:U('picture/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a>
 
-              
                 <form action="{:U('picture/index')}" method="post"  class="navbar-form pull-right">
                     <input type="hidden" name="category" value="{$category}"/>
                     <input type="text" name="key" placeholder="搜索..."/>
@@ -44,5 +43,9 @@
                </foreach>
             </ul>
       </div>
+    <hr/>
+    <div  class="pull-right">
+     {$page}
+    </div>
   </div>
 <include file="Public/footer" />
