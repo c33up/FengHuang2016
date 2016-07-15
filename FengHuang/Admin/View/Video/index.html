@@ -2,19 +2,25 @@
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">{$category}管理</a> </div>
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">{$category}管理</a> </div>
     <h1>{$category}管理</h1>
   </div>
 <div class="container">
           <div class="row">
-        <article class="span12">
+        <div class="span12">
             <a href="{:U('video/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a><hr/>
-        </article>
+                          
+                <form action="{:U('video/index')}" method="post"  class="navbar-form pull-right">
+                    <input type="hidden" name="category" value="{$category}"/>
+                    <input type="text" name="key" placeholder="搜索..."/>
+                    <button type="submit"><i class="icon-search icon-white"></i></button>
+                </form>
+        </div>
         <div class="clear"></div>
         <ul class="thumbnails thumbnails-1 list-services">
                <foreach name="video" item="v">
                      <li class="span4">
-                         <div class="thumbnail thumbnail-1">
+                         <div class="thumbnail">
                              <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" width="240" height="240"/></a>
                             <section>
                                 <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1">{$v.intro}</a>

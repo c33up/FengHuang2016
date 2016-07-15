@@ -2,27 +2,37 @@
 namespace Admin\Controller;
 use Think\Controller;
 class ArticleController extends BaseController {
-    public function index($key=""){
-      $category=I('category');
+    public function index($key=""){   
         if($key === ""){
+            if (IS_POST) {
+                $category=I('category'); 
+                $where['category'] =  $category;
+            } else{
+                $category=iconv('gb2312','utf-8',I('category')); 
+                $where['category'] =  $category;
+            }
             $model = M('article');  
-            $where['category'] = iconv('gb2312','utf-8', $category);
+            
         }else{
-            $where['category'] = iconv('gb2312','utf-8', $category);
-            $where['key'] = array('like',"%$key%");
-            $where['_logic'] = 'or';
+            $category=I('category');
+            $condition['title'] = array('like',"%$key%");
+            $condition['intro'] = array('like',"%$key%");
+            $condition['content'] = array('like',"%$key%");
+            $condition['_logic'] = 'or';
+            $where['_complex']=$condition;
+            $where['category'] =$category;
             $model = M('article')->where($where); 
         } 
         
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
-        $Page = new \Extend\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(10)
         $show = $Page->show();// 分页显示输出
         $article = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id ASC')->select();
         //dump($article);
-        
         $this->assign('article', $article);
-        $this->assign('category', iconv('gb2312','utf-8', $category));
         $this->assign('page',$show);
+        $this->assign('category',$category);
+        //dump($show);
         $this->display();     
     }
     //保存上传配置
@@ -83,7 +93,7 @@ class ArticleController extends BaseController {
 
 
         /**
-     * 更新图片信息
+     * 更新文章
      * @param  [type] $id [文章ID]
      * @return [type]     [description]
      */
@@ -152,7 +162,9 @@ class ArticleController extends BaseController {
             $where['category']=$category;
             $model = M('article')->where($where)->find();
             //dump($model);
+            $content=htmlspecialchars_decode(html_entity_decode($model['content']));
             $this->assign('model',$model);
+            $this->assign('content',$content);
             $this->display();
     }
 

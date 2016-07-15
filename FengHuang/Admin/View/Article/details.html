@@ -14,23 +14,22 @@
               <a href="{:U('article/update',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
               <a href="{:U('article/delete',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">删除</a>
         </div>
-        <div class="widget-content nopadding">
-            <div class="control-group">
-              <div class="controls">
+        <div class="span12 widget-content">
+            <div class="span10">
                   <h2>{$model.title}</h2>
                   <p>发表时间：{$model.createdate}</p>
-               </div>
+                <hr></hr>
             </div>
-            <div class="control-group">
-                <img src="{$model.imageurl}" alt="{$model.title}" width="240" height="240"/>
-                 <div class="controls">
-                  {$model.intro}
-               </div>
+            <div class="span10">
+                <div class="span4">
+                    <img src="{$model.imageurl}" alt="{$model.title}" width="240" height="240"/>
+                    </div>
+                <div class="span8">
+                    <p>{$model.intro}</p>
+                </div>
             </div>
-            <div class="control-group">
-              <div class="controls">
-                {$model.content}                  
-              </div>
+            <div class="span10 widget-box">
+                {$content}                  
             </div>
         </div>
       </div>   

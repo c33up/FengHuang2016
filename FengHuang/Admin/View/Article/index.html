@@ -1,7 +1,7 @@
 <include file="Public/header" title="{$category}管理-上海烽凰后台管理主页" />
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">{$category}管理</a> </div>
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">{$category}管理</a> </div>
     <h1>{$category}管理</h1>
   </div>
   <div class="container-fluid">
@@ -11,6 +11,15 @@
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
             <h5>{$category}列表</h5>
+              <div class="pull-right">
+                    <div id="search">
+                        <form action="{:U('article/index')}" method="post">
+                            <input type="hidden" name="category" value="{$category}"/>
+                            <input type="text" name="key" placeholder="搜索..."/>
+                            <button type="submit" class="tip-bottom" title="搜索"><i class="icon-search icon-white"></i></button>
+                        </form>
+                    </div>
+                </div>
           </div>
            <div class="widget-content nopadding">
             <table class="table table-bordered data-table">
@@ -47,16 +56,7 @@
                    <a href="{:U('article/add',array('category'=>$category))}" class="btn btn-large btn-primary ">添加{$category}</a>
                </div>
               <div class="pull-right">
-                  <div class="pagination">
-                          <ul>
-                            <li><a href="#">《</a></li>
-                            <li class="active"> <a href="#">1</a> </li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">》</a></li>
-                          </ul>
-                    </div>
+                   {$page}
               </div>
           </div>
       </div>

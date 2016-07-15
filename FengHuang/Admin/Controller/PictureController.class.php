@@ -3,27 +3,30 @@ namespace Admin\Controller;
 use Think\Controller;
 class PictureController extends BaseController {
     public function index($key=""){
-        $category=I('category');
+  
         if($key === ""){
-            $model = M('picture');  
-            $where['category'] = iconv('gb2312','utf-8', $category);
-            // 把查询条件传入查询方法
-            //$model=$User->where($where)->select();
+            if (IS_POST) {
+                $category=I('category'); 
+                $where['category'] =  $category;
+            } else{
+                $category=iconv('gb2312','utf-8',I('category')); 
+                $where['category'] =  $category;
+            }
+            $model = M('picture'); 
+            
         }else{
-            $where['category'] = iconv('gb2312','utf-8', $category);
-            $where['key'] = array('like',"%$key%");
-            $where['_logic'] = 'or';
-            $model = M('picture')->where($where); 
+            $category=I('category'); 
+            $where['category'] = $category;
+            $where['intro'] = array('like',"%$key%");
+            $model = M('picture')->where($where);               
         } 
-        
+
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
-        $Page = new \Extend\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
+        $Page = new \Think\Page($count,10);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $show = $Page->show();// 分页显示输出
         $picture = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id ASC')->select();
-        //dump($article);
-        
         $this->assign('picture', $picture);
-        $this->assign('category', iconv('gb2312','utf-8', $category));
+        $this->assign('category',$category);
         $this->assign('page',$show);
         $this->display();     
     }

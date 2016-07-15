@@ -2,23 +2,35 @@
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="#" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">{$category}管理</a> </div>
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">{$category}管理</a> </div>
     <h1>{$category}管理</h1>
   </div>
 <div class="container">
           <div class="row">
-        <article class="span12">
-            <a href="{:U('picture/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a><hr/>
-        </article>
-        <div class="clear"></div>
+        <div class="span12">
+            <a href="{:U('picture/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a>
+
+              
+                <form action="{:U('picture/index')}" method="post"  class="navbar-form pull-right">
+                    <input type="hidden" name="category" value="{$category}"/>
+                    <input type="text" name="key" placeholder="搜索..."/>
+                    <button type="submit"><i class="icon-search icon-white"></i></button>
+                </form>
+           
+            <hr></hr>
+        </div>
+
+        <div class="clear">
+     
+        </div>
         <ul class="thumbnails thumbnails-1 list-services">
                <foreach name="picture" item="p">
-                     <li class="span4">
-                         <div class="thumbnail thumbnail-1">
-                             <a href="{:U('picture/details',array('category'=>$p['category'],'id'=>$p['id']))}" class="link-1"><img src="{$p.imageurl}" alt="{$p.intro}" width="320" height="320"/></a>
-                            <section>
+                     <li class="span2">
+                         <div class="thumbnail">
+                             <a href="{:U('picture/details',array('category'=>$p['category'],'id'=>$p['id']))}" class="link-1"><img src="{$p.imageurl}" alt="{$p.intro}"/></a>
+                            <p>
                                 <a href="{:U('picture/details',array('category'=>$p['category'],'id'=>$p['id']))}" class="link-1">{$p.intro}</a>
-                            </section>
+                            </p>
                          </div>
                      <div class="actions">
                          <a href="{:U('picture/update',array('category'=>$p['category'],'id'=>$p['id']))}">

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>上海烽凰后台管理主页</title>
+        <title>主页-上海烽凰后台管理</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -10,6 +10,30 @@
         <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   
+        <script type="text/javascript">
+        function showtime(){
+        var now=new Date();
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+        time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+        var clock=document.getElementById('clock');
+        clock.innerHTML=time;
+        }
+        function letstart(){
+        taskId=setInterval(showtime,500);
+        }
+
+        window.onload=function(){
+	        /*var div1=document.getElementById('div1');
+	        div1.onclick=letstart;*/
+	        letstart();
+        }
+        </script>
+
     </head>
     <body>
         <!--Header-part-->
@@ -31,18 +55,22 @@
         <li><a href="<?php echo U('login/logout');?>"><i class="icon-key"></i> 退出登录</a></li>
       </ul>
     </li>
+       <li class=""><a title="" href="#"><i class="icon icon-cog"></i>当前时间：<span class="text" id="clock"></span></a></li>
   </ul>
 </div>
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
 <div id="search">
-  <input type="text" placeholder="搜索..."/>
+    <form action="<?php echo U('index/search');?>" method="get">
+  <input type="text" name="search" placeholder="搜索..."/>
   <button type="submit" class="tip-bottom" title="搜索"><i class="icon-search icon-white"></i></button>
+        </form>
 </div>
 <!--close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
+      <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
             <li><a href="<?php echo U('article/index',array('category'=>'公司简介'));?>">公司简介</a></li>
@@ -147,126 +175,37 @@
 
 <div id="content">
  <div id="content-header">
-    <div id="breadcrumb"> <a href="index.html" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+    <div id="breadcrumb"> <a href="#" title="主页" class="tip-bottom"><i class="icon-home"></i>主页</a></div>
   </div>
 <!--Action boxes-->
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
-        <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span> My Dashboard </a> </li>
-        <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
-        <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> Widgets </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> Tables</a> </li>
-        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> Full width</a> </li>
-        <li class="bg_lo span3"> <a href="form-common.html"> <i class="icon-th-list"></i> Forms</a> </li>
-        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> Buttons</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>Elements</a> </li>
-        <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> Calendar</a> </li>
-        <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> Error</a> </li>
-
+        <li class="bg_lb"> <a href="<?php echo U('user/index');?>"> <i class="icon-dashboard"></i>用户管理</a> </li>
+        <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'公司简介'));?>"> <i class="icon-dashboard"></i>公司简介</a> </li>
+        <li class="bg_lg"> <a href="<?php echo U('article/index',array('category'=>'公司历史'));?>"> <i class="icon-signal"></i> 公司历史</a> </li>
+        <li class="bg_ly"> <a href="<?php echo U('article/index',array('category'=>'团队介绍'));?>"> <i class="icon-inbox"></i>团队介绍</a> </li>
+        <li class="bg_lo"> <a href="<?php echo U('article/index',array('category'=>'公司动态'));?>"> <i class="icon-th"></i>公司动态</a> </li>
+        <li class="bg_ls"> <a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>"> <i class="icon-fullscreen"></i>行业新闻</a> </li>
+        <li class="bg_lo"> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"> <i class="icon-th-list"></i> 烽凰方法论</a> </li>
+        <li class="bg_ls"> <a href="<?php echo U('article/index',array('category'=>'公益营销'));?>"> <i class="icon-tint"></i>公益营销</a> </li>
+        <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'事件营销'));?>"> <i class="icon-pencil"></i>事件营销</a> </li>
+        <li class="bg_lg"> <a href="<?php echo U('article/index',array('category'=>'危机公关'));?>"> <i class="icon-calendar"></i> 危机公关</a> </li>
+        <li class="bg_lr"> <a href="<?php echo U('article/index',array('category'=>'新闻营销'));?>"> <i class="icon-info-sign"></i>新闻营销</a> </li>
+        <li class="bg_ls"> <a href="<?php echo U('article/index',array('category'=>'娱乐文化营销'));?>"> <i class="icon-tint"></i>娱乐文化营销</a> </li>
+        <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'产品服务'));?>"> <i class="icon-pencil"></i>产品服务</a> </li>
+        <li class="bg_lg"> <a href="<?php echo U('contact/index');?>"> <i class="icon-calendar"></i> 联系我们</a> </li>
+        <li class="bg_lr"> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"> <i class="icon-info-sign"></i>案例视频</a> </li>
+        <li class="bg_ls"> <a href="<?php echo U('video/index',array('category'=>'公司活动'));?>"> <i class="icon-tint"></i>公司活动视频</a> </li>
+        <li class="bg_lb"> <a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>"> <i class="icon-pencil"></i>轮播图片</a> </li>
+        <li class="bg_lg"> <a href="<?php echo U('picture/index',array('category'=>'二维码'));?>"> <i class="icon-calendar"></i> 二维码图片</a> </li>
+        <li class="bg_lr"> <a href="#"> <i class="icon-info-sign"></i>回网站首页</a> </li>
+        <li class="bg_lr"> <a href="<?php echo U('login/logout');?>"> <i class="icon-info-sign"></i>退出登录</a> </li>
       </ul>
     </div>
-<!--End-Action boxes-->  
-				
-				<div class="row-fluid">
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-file"></i></span><h5>Recent Posts</h5><span title="54 total posts" class="label label-info tip-left">54</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-posts">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: neytiri on 2 Aug 2012, 09:27 AM, IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: john on on 24 Jun 2012, 04:12 PM, IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="article-post">
-											<span class="user-info"> By: michelle on 22 Jun 2012, 02:44 PM, IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Publish</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all posts" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="span6">
-						<div class="widget-box">
-							<div class="widget-title"><span class="icon"><i class="icon-comment"></i></span><h5>Recent Comments</h5><span title="88 total comments" class="label label-info tip-left">88</span></div>
-							<div class="widget-content nopadding">
-								<ul class="recent-comments">
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av1.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: michelle on IP: 172.10.56.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av3.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: john on IP: 192.168.24.3 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li>
-										<div class="user-thumb">
-											<img width="40" height="40" alt="User" src="img/demo/av2.jpg" />
-										</div>
-										<div class="comments">
-											<span class="user-info"> User: neytiri on IP: 186.56.45.7 </span>
-											<p>
-												<a href="#">Vivamus sed auctor nibh congue, ligula vitae tempus pharetra...</a>
-											</p>
-											<a href="#" class="btn btn-primary btn-mini">Edit</a> <a href="#" class="btn btn-success btn-mini">Approve</a> <a href="#" class="btn btn-warning btn-mini">Mark as spam</a> <a href="#" class="btn btn-danger btn-mini">Delete</a>
-										</div>
-									</li>
-									<li class="viewall">
-										<a title="View all comments" class="tip-top" href="#"> + View all + </a>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				</div>
+<!--End-Action boxes-->  				
+
+	</div>
 </div>
 
 <footer class="row-fluid">

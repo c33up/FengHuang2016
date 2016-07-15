@@ -10,6 +10,30 @@
         <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   
+        <script type="text/javascript">
+        function showtime(){
+        var now=new Date();
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+        time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+        var clock=document.getElementById('clock');
+        clock.innerHTML=time;
+        }
+        function letstart(){
+        taskId=setInterval(showtime,500);
+        }
+
+        window.onload=function(){
+	        /*var div1=document.getElementById('div1');
+	        div1.onclick=letstart;*/
+	        letstart();
+        }
+        </script>
+
     </head>
     <body>
         <!--Header-part-->
@@ -31,6 +55,7 @@
         <li><a href="<?php echo U('login/logout');?>"><i class="icon-key"></i> 退出登录</a></li>
       </ul>
     </li>
+       <li class=""><a title="" href="#"><i class="icon icon-cog"></i>当前时间：<span class="text" id="clock"></span></a></li>
   </ul>
 </div>
 <!--close-top-Header-menu-->
@@ -77,7 +102,7 @@
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
       <ul>
-        <li><a href="/contact.php?category=联系方式">联系方式</a></li>
+        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
       </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
@@ -160,23 +185,22 @@
               <a href="<?php echo U('article/update',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
               <a href="<?php echo U('article/delete',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">删除</a>
         </div>
-        <div class="widget-content nopadding">
-            <div class="control-group">
-              <div class="controls">
+        <div class="span12 widget-content">
+            <div class="span10">
                   <h2><?php echo ($model["title"]); ?></h2>
                   <p>发表时间：<?php echo ($model["createdate"]); ?></p>
-               </div>
+                <hr></hr>
             </div>
-            <div class="control-group">
-                <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
-                 <div class="controls">
-                  <?php echo ($model["intro"]); ?>
-               </div>
+            <div class="span10">
+                <div class="span4">
+                    <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
+                    </div>
+                <div class="span8">
+                    <p><?php echo ($model["intro"]); ?></p>
+                </div>
             </div>
-            <div class="control-group">
-              <div class="controls">
-                <?php echo ($model["content"]); ?>                  
-              </div>
+            <div class="span10 widget-box">
+                <?php echo ($content); ?>                  
             </div>
         </div>
       </div>   
