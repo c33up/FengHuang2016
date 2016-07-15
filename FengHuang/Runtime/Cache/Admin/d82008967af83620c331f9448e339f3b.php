@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><?php echo ($category); ?>-上海烽凰后台管理主页</title>
+        <title>搜索结果-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -173,48 +173,54 @@
     </body>
 </html>
 
-
- <div id="content">
-     <div id="content-header">
-    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current"><?php echo ($category); ?>管理</a> </div>
-    <h1><?php echo ($category); ?>管理</h1>
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">搜索结果</a> </div>
+    <h1>搜索结果</h1>
   </div>
-<div class="container">
-          <div class="row">
-        <div class="span12">
-            <a href="<?php echo U('video/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a>
-                          
-                <form action="<?php echo U('video/index');?>" method="post"  class="navbar-form pull-right">
-                    <input type="hidden" name="category" value="<?php echo ($category); ?>"/>
-                    <input type="text" name="key" placeholder="搜索..."/>
-                    <button type="submit"><i class="icon-search icon-white"></i></button>
-                </form><hr/>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>结果列表</h5>
+          </div>
+           <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>标题</th>
+                  <th>简介</th>
+                  <th>封面图片</th>
+                  <th>创建时间</th>
+                  <th>类别</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+        <?php if(is_array($article)): foreach($article as $key=>$a): ?><tr class="gradeX">
+                <td><?php echo ($a["id"]); ?></td>
+                <td><?php echo ($a["title"]); ?></td>
+                <td><?php echo ($a["intro"]); ?></td>
+                <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
+                <td><?php echo ($a["createdate"]); ?></td>
+                <td><?php echo ($a["category"]); ?></td>
+                <td>
+                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>">修改</a> |<a href="<?php echo U('article/details',array('category'=>$a['category'],'id'=>$a['id']));?>">详情</a> |<a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">直接删除</a>
+                </td>
+            </tr><?php endforeach; endif; ?>
+            </tbody>
+            </table>
+          </div>
         </div>
-        <div class="clear"></div>
-        <ul class="thumbnails thumbnails-1 list-services">
-               <?php if(is_array($video)): foreach($video as $key=>$v): ?><li class="span4">
-                         <div class="thumbnail">
-                             <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" width="240" height="240"/></a>
-                            <section>
-                                <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><?php echo ($v["intro"]); ?></a>
-                            </section>
-                         </div>
-                     <div class="actions">
-                         <a href="<?php echo U('video/update',array('category'=>$v['category'],'id'=>$v['id']));?>">
-                            <i class="icon-pencil icon-white"></i>
-                        </a>
-                         <a href="<?php echo U('video/delete',array('category'=>$v['category'],'id'=>$v['id']));?>">
-                             <i class="icon-remove icon-white"></i>
-                         </a>
-                     </div>
-                     </li><?php endforeach; endif; ?>
-            </ul>
+          <div>
+             
+          </div>
       </div>
-      <hr/>
-    <div  class="pull-right">
-     <?php echo ($page); ?>
     </div>
-  </div>
+  </div></div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
