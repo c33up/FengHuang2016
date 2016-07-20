@@ -61,9 +61,9 @@
 <!--close-top-Header-menu-->
 <!--start-top-serch-->
 <div id="search">
-    <form action="<?php echo U('index/search');?>" method="get">
-  <input type="text" placeholder="搜索..."/>
-  <button type="submit" class="tip-bottom" title="搜索"><i class="icon-search icon-white"></i></button>
+    <form action="<?php echo U('index/search');?>" method="post">
+  <input type="text" name="key" placeholder="搜索文章..."/>
+  <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
         </form>
 </div>
 <!--close-top-serch-->

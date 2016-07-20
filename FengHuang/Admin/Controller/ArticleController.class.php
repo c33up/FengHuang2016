@@ -51,7 +51,7 @@ class ArticleController extends BaseController {
         }
         if (IS_POST) {
             if(empty($_FILES["imageURL"][tmp_name])){
-                $this->error("请上传图片");
+                //$this->error("请上传图片");
             }else{
             if(isset($_FILES['imageURL'])){
                 $upload = new \Think\Upload();// 实例化上传类
@@ -170,7 +170,7 @@ class ArticleController extends BaseController {
     }
 
     /**
-     * 删除图片
+     * 删除文章
      * @param  [type] $id $category [description]
      * @return [type]     [description]
      */

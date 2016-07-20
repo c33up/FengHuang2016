@@ -33,6 +33,19 @@ PRIMARY KEY (id)
 )DEFAULT CHARSET=utf8;
 
 -- ----------------------------
+-- Table structure for `intro`
+-- ----------------------------
+DROP TABLE IF EXISTS intro;
+CREATE TABLE IF NOT EXISTS intro (
+id INT NOT NULL AUTO_INCREMENT, 
+title VARCHAR(50),
+content TEXT,
+createDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+category VARCHAR(50),
+PRIMARY KEY (id)
+)DEFAULT CHARSET=utf8;
+
+-- ----------------------------
 -- Table structure for `video`
 -- ----------------------------
 DROP TABLE IF EXISTS video;
