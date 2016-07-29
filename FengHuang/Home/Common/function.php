@@ -1,7 +1,7 @@
 <?php
     function showAriticle($where){
        
-        $article=M('article')->where($where)->order('id DESC')->select();
+        $article=M('article')->limit(4)->where($where)->order('id DESC')->select();
         return $article;
     }
 

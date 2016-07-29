@@ -182,9 +182,9 @@
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
         <li class="bg_lb"> <a href="<?php echo U('user/index');?>"> <i class="icon-dashboard"></i>用户管理</a> </li>
-        <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'公司简介'));?>"> <i class="icon-dashboard"></i>公司简介</a> </li>
-        <li class="bg_lg"> <a href="<?php echo U('article/index',array('category'=>'公司历史'));?>"> <i class="icon-signal"></i> 公司历史</a> </li>
-        <li class="bg_ly"> <a href="<?php echo U('article/index',array('category'=>'团队介绍'));?>"> <i class="icon-inbox"></i>团队介绍</a> </li>
+        <li class="bg_lb"> <a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>"> <i class="icon-dashboard"></i>公司简介</a> </li>
+        <li class="bg_lg"> <a href="<?php echo U('intro/index',array('category'=>'公司历史'));?>"> <i class="icon-signal"></i> 公司历史</a> </li>
+        <li class="bg_ly"> <a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>"> <i class="icon-inbox"></i>团队介绍</a> </li>
         <li class="bg_lo"> <a href="<?php echo U('article/index',array('category'=>'公司动态'));?>"> <i class="icon-th"></i>公司动态</a> </li>
         <li class="bg_ls"> <a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>"> <i class="icon-fullscreen"></i>行业新闻</a> </li>
         <li class="bg_lo"> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"> <i class="icon-th-list"></i> 烽凰方法论</a> </li>

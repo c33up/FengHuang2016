@@ -17,6 +17,22 @@ a:active {
 	clear:both;
 }
 
+.intro {
+    position:relative;
+    line-height:1.4em;
+    /* 3 times the line-height to show 3 lines */
+    height:4.2em;
+    overflow:hidden;
+}
+.intro::after {
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+}  
+
+
 h1,h2, h3, h4, h5, h6 {
 	font-family:'Open Sans', Arial, sans-serif;
 	font-weight:700;
@@ -121,7 +137,7 @@ header .navbar-default .navbar-nav > .open > a:focus {
 
 
 header .navbar {
-    min-height: 80px; 
+    min-height: 70px; 
 	padding:18px 0;
 }
 
@@ -266,6 +282,14 @@ ul.nav li.dropdown a {
 	z-index:1000;
 	display:block;
 }
+
+/** Title Dropdown style **/
+
+.dropdown.open .hidden_layer, .outer_lyr{	left:auto; right:0 !important; width:400px; display:inline-block; border:1px solid #e2e2e2; background:#fff;  margin:0; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;  box-shadow:none;}
+.dropdown .inner, .inner_lyr{ border: 3px solid #F7F7F7;  display: block;    padding:20px; -webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box; background:#fff;    overflow: hidden;text-align:left;}
+
+/** Button Hover styles **/
+.dropdown:hover .dropdown-menu{ display:block;}
 
  select.selectmenu {
 	display:none;

@@ -5,6 +5,7 @@
         <meta charset="utf-8" />
         <title>[title]</title>
         <!-- css -->
+        <link href="_CSS_URL_/bootstrap.css" rel="stylesheet" />
         <link href="_CSS_URL_/bootstrap.min.css" rel="stylesheet" />
         <link href="_CSS_URL_/fancybox/jquery.fancybox.css" rel="stylesheet">
         <link href="_CSS_URL_/jcarousel.css" rel="stylesheet" />
@@ -20,8 +21,13 @@
     </head>
     <body>
 <div id="wrapper">    <!-- start header -->
+    
 	<header>
-        <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <a  href="#"><img src="_IMAGES_/logo.jpg" alt="logo"/></a>
+        </div>
+	</header>
+	<!-- end header --><div class="container">  <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -29,19 +35,49 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a  href="#"><img src="_IMAGES_/logo.jpg" alt="logo"/></a>
+                    
                 </div>
-                <div class="navbar-collapse collapse ">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">首页</a></li> 
-						<li><a href="#">走进烽凰</a></li>
-						<li><a href="#">烽凰方法论</a></li>
-                        <li><a href="#">案例分析</a></li>
-                        <li><a href="#">产品服务</a></li>
+                <div class="navbar-collapse collapse " id="cssmenu">
+                    <ul class="nav navbar-nav  navbar-left">
+                        <li class="active"><a href="#one">首页</a></li> 
+                        <li class="dropdown">
+                          <a href="#three" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">走进烽凰<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">烽凰简介</a></li>
+                            <li><a href="#">烽凰团队</a></li>
+                          </ul>
+                        </li>
+						<li><a href="#three">烽凰方法论</a></li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">案例赏析<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">新闻营销</a></li>
+                            <li><a href="#">公益营销</a></li>
+                            <li><a href="#">娱乐文化营销</a></li>
+                            <li><a href="#">事件营销</a></li>
+                            <li><a href="#">危机公关</a></li>
+                          </ul>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#five" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">我们的服务<span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">媒体发布</a></li>
+                            <li><a href="#">公关活动</a></li>
+                            <li><a href="#">危机公关处理</a></li>
+                            <li><a href="#">广告代理发布</a></li>
+                            <li><a href="#">网络推广</a></li>
+                            <li><a href="#">VI设计</a></li>
+                            <li><a href="#">全案策划服务</a></li>
+                          </ul>
+                        </li>
                         <li><a href="#">联系我们</a></li>
+                         <li class="dropdown"> <a class="dropdown-toggle" href="#">  About<b class="caret"></b> </a>
+						<ul class="dropdown-menu">
+							<li><a href="team.html"> Organizers</a></li>
+							<li><a href="career.html">Careers</a></li>
+						</ul>
+					  </li>
                     </ul>
                 </div>
             </div>
-        </div>
-	</header>
-	<!-- end header --><section id="featured">
+        </nav>     </div>
