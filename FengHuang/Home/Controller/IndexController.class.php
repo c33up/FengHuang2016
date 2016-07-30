@@ -3,21 +3,24 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends BaseController {
     public function index(){
-        $model=M('picture');
-        $where['category']="轮播图片";
-        $picture=$model->where($where)->select();
+
+        //轮播
+        $picture=showPicture();
         //dump($picture);
-        $a['category']="烽凰方法论";
-        $article=showAriticle($a);
+        
+        //方法论
+        $article=showAriticle();
 
-        $toWhewe['category']="二维码";
-        $twoCode=showTwoDimensionCode($toWhewe);
-
+        //视频
         $video=showVideo();
+
+        //案例
+        $case=showCase();
+
         $this->assign('picture',$picture);
         $this->assign('article',$article);
-        $this->assign('twoCode',$twoCode);
-         $this->assign('video',$video);
+        $this->assign('video',$video);
+        $this->assign('video',$case);
         //dump($video);
         $this->display();     
     }

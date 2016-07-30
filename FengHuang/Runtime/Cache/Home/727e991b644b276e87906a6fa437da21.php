@@ -86,89 +86,22 @@
                     </ul>
                 </div>
             </div>
-        </nav>     </div>   <div class="container"><section id="featured">
-<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-                <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li>
-                <img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" />
-              </li><?php endforeach; endif; ?>
-            </ul>
-        </div>
-	<!-- end slider -->
-    </section>
-</div>
-
-	<section class="callaction">
+        </nav>     </div>   
+<section class="callaction">
 	<div class="container">
 		<div class="row">
-         <div class="col-md-12">
-             <div class="col-md-6">
-                 <div class="page-header">
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li><h3>烽凰方法论</h3></li>
-                    </ul>
+               <div class="page-header">    
+                      <h3><?php echo ($model["title"]); ?><small><?php echo ($model["createdate"]); ?></small></h3>       
                  </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-                       </div><?php endforeach; endif; ?>
-		        </div>
-                </div>
-        </div>
-                <div class="col-md-6" >
-                 <div class="page-header" >
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li><h3>视频中心</h3></li>
-                    </ul>
-            
-                 </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-                       </div><?php endforeach; endif; ?>
-		        </div>
-                </div>
-            </div>
-             </div>
-                </div>
-	        </div>
-	        </section>
+           
+                 <div class="col-md-12">
+                     <?php echo ($content); ?>
 
-	<section class="content" id="two">
-        <div class="container">
-	        <div class="row">
-            <div class="col-md-12">
-              <div class="page-header">
-                  <ul class="list-unstyled">
-                  <li class="pull-right"><h4>more>></h4></li>
-                  <li><a href="./help/#support"><h3>案例赏析</h3></a></li>
-                  </ul>
-            </div>
-	        </div>
-                  <div class="col-md-12">
-
-             
-               <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-3 md-margin-bottom-40">
-		        <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		      <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-               </div><?php endforeach; endif; ?>
-              </div>
-            </div> 
-	        </div>         </section> 
-    </div>
-	<footer>
+		        </div>
+		</div>
+		
+	</div>
+	</section>	<footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">

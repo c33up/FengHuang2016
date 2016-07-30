@@ -1412,7 +1412,11 @@ footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
 	color:#000;
 }
 
-footer address strong{
+footer address{
+	line-height:1.6em;
+}
+
+footer address p strong{
     color: #000;
 	line-height:1.6em;
 }

@@ -41,7 +41,7 @@
                     <ul class="nav navbar-nav  navbar-left">
                         <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li> 
                         <li class="dropdown">
-                          <a href="<?php echo U('intro/index');?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
+                          <a href="<?php echo U('intro/index');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="<?php echo U('intro/index');?>">烽凰简介</a></li>
                                <li class="divider"></li>
@@ -50,35 +50,35 @@
                         </li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
                         <li class="dropdown">
-                          <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle">案例赏析<span class="caret"></span></a>
+                          <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">案例赏析<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'1'));?>">公益营销</a></li>
+                            <li><a href="<?php echo U('fhcase/index');?>">新闻营销</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'2'));?>">事件营销</a></li>
+                            <li><a href="<?php echo U('fhcase/index');?>">公益营销</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'3'));?>">危机公关</a></li>
+                            <li><a href="<?php echo U('fhcase/index');?>">娱乐文化营销</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'4'));?>">新闻营销</a></li>
+                            <li><a href="<?php echo U('fhcase/index');?>">事件营销</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'5'));?>">娱乐文化营销</a></li>
+                            <li><a href="<?php echo U('fhcase/index');?>">危机公关</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
-                          <a href="<?php echo U('service/index');?>" class="dropdown-toggle">我们的服务<span class="caret"></span></a>
+                          <a href="<?php echo U('service/index');?>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">我们的服务<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('service/service',array('cid'=>'1'));?>">媒体发布</a></li>
+                            <li><a href="<?php echo U('service/index');?>">媒体发布</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'2'));?>">公关活动</a></li>
+                            <li><a href="<?php echo U('service/index');?>">公关活动</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'3'));?>">危机公关处理</a></li>
+                            <li><a href="<?php echo U('service/index');?>">危机公关处理</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'4'));?>">广告代理发布</a></li>
+                            <li><a href="<?php echo U('service/index');?>">广告代理发布</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'5'));?>">网络推广</a></li>
+                            <li><a href="<?php echo U('service/index');?>">网络推广</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'6'));?>">VI设计</a></li>
+                            <li><a href="<?php echo U('service/index');?>">VI设计</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/service',array('cid'=>'7'));?>">全案策划服务</a></li>
+                            <li><a href="<?php echo U('service/index');?>">全案策划服务</a></li>
                           </ul>
                         </li>
                         <li><a href="<?php echo U('contact/index');?>">联系我们</a></li>
@@ -86,89 +86,22 @@
                     </ul>
                 </div>
             </div>
-        </nav>     </div>   <div class="container"><section id="featured">
-<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-                <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li>
-                <img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" />
-              </li><?php endforeach; endif; ?>
-            </ul>
-        </div>
-	<!-- end slider -->
-    </section>
-</div>
-
-	<section class="callaction">
+        </nav>     </div>   
+<section class="callaction">
 	<div class="container">
 		<div class="row">
-         <div class="col-md-12">
-             <div class="col-md-6">
-                 <div class="page-header">
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li><h3>烽凰方法论</h3></li>
-                    </ul>
+               <div class="page-header">    
+                      <h3><?php echo ($model["title"]); ?><small><?php echo ($model["createdate"]); ?></small></h3>       
                  </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-                       </div><?php endforeach; endif; ?>
-		        </div>
-                </div>
-        </div>
-                <div class="col-md-6" >
-                 <div class="page-header" >
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li><h3>视频中心</h3></li>
-                    </ul>
-            
-                 </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-                       </div><?php endforeach; endif; ?>
-		        </div>
-                </div>
-            </div>
-             </div>
-                </div>
-	        </div>
-	        </section>
+           
+                 <div class="col-md-12">
+                     <?php echo ($content); ?>
 
-	<section class="content" id="two">
-        <div class="container">
-	        <div class="row">
-            <div class="col-md-12">
-              <div class="page-header">
-                  <ul class="list-unstyled">
-                  <li class="pull-right"><h4>more>></h4></li>
-                  <li><a href="./help/#support"><h3>案例赏析</h3></a></li>
-                  </ul>
-            </div>
-	        </div>
-                  <div class="col-md-12">
-
-             
-               <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-3 md-margin-bottom-40">
-		        <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		      <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			   
-               </div><?php endforeach; endif; ?>
-              </div>
-            </div> 
-	        </div>         </section> 
-    </div>
-	<footer>
+		        </div>
+		</div>
+		
+	</div>
+	</section>	<footer>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-3">
