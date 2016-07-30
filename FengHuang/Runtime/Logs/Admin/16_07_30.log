@@ -1,0 +1,7 @@
+[ 2016-07-30T12:16:32+08:00 ] ::1 /admin.php/fhcase/index/category/1.html
+ERR: 无法加载控制器:Fhcase
+
+[ 2016-07-30T14:21:31+08:00 ] ::1 /admin.php/fhcase/update.html
+ERR: 1146:Table 'fhdb.f_hcase' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `f_hcase`
+

@@ -125,6 +125,20 @@
               <div class="controls">
                 <span class="span8">{$time}</span> </div>
             </div>
+               <div class="control-group">
+                       <input type="hidden" name="exishome" value="{$model.ishome}">
+                  <div class="controls">
+                        <div class="checkbox">
+                          <label>
+                               <if condition="$model['ishome'] eq 'yes'">
+                                        <input type="checkbox" name="ishome">取消放到首页 
+                                   <else />
+                                        <input type="checkbox" name="ishome">放到首页
+                               </if>
+                          </label>
+                        </div>
+                    </div>
+                </div>
             <div class="control-group">
               <div class="controls">
                   <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>

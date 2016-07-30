@@ -94,6 +94,12 @@ class VideoController extends BaseController {
                 $this->error($model->getError());
                 exit();
             } else {
+                 $ishome=I('ishome');
+                 if($ishome=='on'){
+                     $ishome='yes';
+                 }else{
+                     $ishome='no';
+                 }
                 $category=I('category');
                 $date['title']=I('title');
                 $date['intro']=I('intro');
@@ -101,6 +107,7 @@ class VideoController extends BaseController {
                 $date['localVideo']=$localvideo;
                 $date['imageUrl']=$imgurl;
                 $date['category']=$category;
+                 $date['ishome']=$ishome;
                 //dump($date);
                 if ($model->add($date)) {
                     $this->success("视频添加成功", U('video/index',array('category'=>$category)));
@@ -187,6 +194,22 @@ class VideoController extends BaseController {
                 $this->error($model->getError());
                 exit();
             } else {
+                 $exishome=I('exishome');
+                if($exishome=='yes'){
+                     $ishome=I('ishome');
+                     if($ishome=='on'){
+                         $ishome='no';
+                     }else{
+                          $ishome='yes';
+                     }
+                }else{
+                     $ishome=I('ishome');
+                     if($ishome=='on'){
+                         $ishome='yes';
+                     }else{
+                         $ishome='no';
+                     }
+                }
                 $id = intval(I('id'));
                 $category=I('category');
                 $where['id']=$id;
@@ -196,12 +219,13 @@ class VideoController extends BaseController {
                 $date['videoURL']=I('videoURL');
                 $date['localVideo']=$localvideo;
                 $date['imageUrl']=$imgurl;
+                $date['ishome']=$ishome;
                 //dump($where);
                 //dump($date);
                 if ($model->where($where)->save($date)) {
-                    $this->success("视频添加成功", U('video/index',array('category'=>$category)));
+                    $this->success("视频更新成功", U('video/index',array('category'=>$category)));
                 } else {
-                    $this->error("视频添加失败");
+                    $this->error("视频更新失败");
                 }
             } 
          

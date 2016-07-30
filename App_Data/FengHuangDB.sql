@@ -25,11 +25,44 @@ INSERT INTO `user` VALUES ('1', 'admin', '21232f297a57a5a743894a0e4a801fc3','0',
 DROP TABLE IF EXISTS article;
 CREATE TABLE IF NOT EXISTS article (
 id INT NOT NULL AUTO_INCREMENT, title VARCHAR(50),
-intro TEXT,content TEXT,
+intro TEXT,
+content TEXT,
 imageURL VARCHAR(50),
 createDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-ishome TINYINT NOT NULL DEFAULT '0',
-num INT,
+ishome VARCHAR(50),
+num INT DEFAULT '0',
+category VARCHAR(50),
+PRIMARY KEY (id)
+)DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for `FHcase`
+-- ----------------------------
+DROP TABLE IF EXISTS Fhcase;
+CREATE TABLE IF NOT EXISTS Fhcase (
+id INT NOT NULL AUTO_INCREMENT, title VARCHAR(50),
+intro TEXT,
+content TEXT,
+imageURL VARCHAR(50),
+createDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ishome VARCHAR(50),
+num INT DEFAULT '0',
+category VARCHAR(50),
+PRIMARY KEY (id)
+)DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for `server`
+-- ----------------------------
+DROP TABLE IF EXISTS service;
+CREATE TABLE IF NOT EXISTS service (
+id INT NOT NULL AUTO_INCREMENT, title VARCHAR(50),
+intro TEXT,
+content TEXT,
+imageURL VARCHAR(50),
+createDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ishome VARCHAR(50),
+num INT DEFAULT '0',
 category VARCHAR(50),
 PRIMARY KEY (id)
 )DEFAULT CHARSET=utf8;
@@ -59,8 +92,8 @@ videoURL VARCHAR(150),
 localVideo VARCHAR(150),
 imageUrl VARCHAR(150),
 createDate TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-ishome TINYINT NOT NULL DEFAULT '0',
-num INT,
+ishome VARCHAR(50),
+num INT DEFAULT '0',
 category VARCHAR(50),
 PRIMARY KEY (id)
 )DEFAULT CHARSET=utf8;

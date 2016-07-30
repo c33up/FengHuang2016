@@ -191,35 +191,40 @@ header .nav .caret {
 	margin-bottom: 0;
 }
 
-header .nav li .dropdown-menu  {
+nav .nav li .dropdown-menu  {
    padding: 0;
 }
 
-header .nav li .dropdown-menu li a {
+nav .nav li .dropdown-menu li a {
+   font-size: 18px;
    line-height: 28px;
-   padding: 3px 12px;
+   text-align: center;
+   padding: 10px 0;
 }
 
 /* --- menu --- */
 
+nav{
+    margin-top:10px;
+}
 header .navigation {
 	float:right;
 }
 
-header ul.nav li {
+nav ul.nav li {
 	border:none;
 	margin:0;
 }
 
-header ul.nav li a {	
-	font-size: 13px;
+nav ul.nav li a {	
+	font-size: 20px;
 	border:none;
 	font-weight: normal;
 	text-transform:uppercase;
 }
 
-header ul.nav li ul li a {	
-	font-size:12px;
+nav ul.nav li ul li a {	
+	font-size:18px;
 	border:none;
 	font-weight:300;
 	text-transform:uppercase;
@@ -1007,8 +1012,9 @@ ul.link-list li{
 	list-style:none;
 }
 footer{
-background: #222222;
+background: #eee;
 }
+
 footer ul.link-list li a{
 	color:#A9A9A9;
 }
@@ -1403,10 +1409,11 @@ footer a:hover {
 }
 
 footer h1, footer h2, footer h3, footer h4, footer h5, footer h6{
-	color:#eee;
+	color:#000;
 }
 
-footer address {
+footer address strong{
+    color: #000;
 	line-height:1.6em;
 }
 
@@ -1540,7 +1547,6 @@ article img.pull-right, article .align-right{
 	float:right;
 	margin:5px 0 15px 15px;
 }
- ============================= */
 
 .clear-marginbot{
 	margin-bottom:0;
@@ -1578,7 +1584,6 @@ article img.pull-right, article .align-right{
 .margintop40{
 	margin-top:40px;
 }
-
 
 /*  Media queries 
 ============================= */

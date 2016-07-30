@@ -5,7 +5,7 @@
         <meta charset="utf-8" />
         <title>首页</title>
         <!-- css -->
-        <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
+       
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/fancybox/jquery.fancybox.css" rel="stylesheet">
         <link href="/FengHuang/Home/View//Public/css/jcarousel.css" rel="stylesheet" />
@@ -24,7 +24,7 @@
     
 	<header>
         <div class="container">
-            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.jpg" alt="logo"/></a>
+            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
         </div>
 	</header>
 	<!-- end header --><div class="container">  <nav class="navbar navbar-default navbar-static-top">
@@ -44,6 +44,7 @@
                           <a href="#three" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="#">烽凰简介</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">烽凰团队</a></li>
                           </ul>
                         </li>
@@ -52,9 +53,13 @@
                           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">案例赏析<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="#">新闻营销</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">公益营销</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">娱乐文化营销</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">事件营销</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">危机公关</a></li>
                           </ul>
                         </li>
@@ -62,21 +67,22 @@
                           <a href="#five" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">我们的服务<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
                             <li><a href="#">媒体发布</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">公关活动</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">危机公关处理</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">广告代理发布</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">网络推广</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">VI设计</a></li>
+                               <li class="divider"></li>
                             <li><a href="#">全案策划服务</a></li>
                           </ul>
                         </li>
                         <li><a href="#">联系我们</a></li>
-                         <li class="dropdown"> <a class="dropdown-toggle" href="#">  About<b class="caret"></b> </a>
-						<ul class="dropdown-menu">
-							<li><a href="team.html"> Organizers</a></li>
-							<li><a href="career.html">Careers</a></li>
-						</ul>
-					  </li>
+                         
                     </ul>
                 </div>
             </div>
@@ -101,7 +107,7 @@
                  <div class="page-header">
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li class="panel-title"><h2>烽凰方法论</h2></li>
+                      <li class="panel-title"><h3>烽凰方法论</h3></li>
                     </ul>
                  </div>
 		 
@@ -119,7 +125,7 @@
                  <div class="page-header" >
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
-                      <li class="panel-title"><h2>视频中心</h2></li>
+                      <li class="panel-title"><h3>视频中心</h3></li>
                     </ul>
             
                  </div>
@@ -145,7 +151,7 @@
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
-                  <li class="pull-right"><h4>more>></h4></li>
+                  <li class="pull-right"><h3>more>></h3></li>
                   <li class="panel-title"><a href="./help/#support"><h2>视频中心</h2></a></li>
                   </ul>
             </div>
@@ -161,9 +167,7 @@
               </div>
             </div> 
 	        </div>         </section> 
-    </div>
-
-
+    </div>
 	<footer>
 	<div class="container">
 		<div class="row">
@@ -203,15 +207,6 @@
 					</ul>
 				</div>
 			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">扫一扫，关注我们</h5>
-					<div class="wrapper">
-                        <?php if(is_array($twoCode)): foreach($twoCode as $key=>$t): ?><figure class="img-indent"><img src="<?php echo ($t["imageurl"]); ?>" alt="" /></figure>
-                            <br/><?php endforeach; endif; ?>
-          </div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<div id="sub-footer">
@@ -224,15 +219,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-6">
-					<ul class="social-network">
-						<li><a href="#" data-placement="top" title="Facebook"><i class="fa fa-facebook"></i></a></li>
-						<li><a href="#" data-placement="top" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-						<li><a href="#" data-placement="top" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
-						<li><a href="#" data-placement="top" title="Pinterest"><i class="fa fa-pinterest"></i></a></li>
-						<li><a href="#" data-placement="top" title="Google plus"><i class="fa fa-google-plus"></i></a></li>
-					</ul>
-				</div>
+			
 			</div>
 		</div>
 	</div>

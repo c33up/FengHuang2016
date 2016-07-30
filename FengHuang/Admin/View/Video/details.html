@@ -23,6 +23,9 @@
               <div class="control-group">
               <div class="controls">
                 <p>发表时间：{$model.createdate}</p>
+                  <if condition="$model['ishome'] eq 'yes'">          
+                        <p>已放到首页</p>
+                </if>
                </div>
             </div>
             <div class="control-group">

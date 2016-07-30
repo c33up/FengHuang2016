@@ -73,34 +73,30 @@
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">公司简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司历史'));?>">公司历史</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">烽凰简介</a></li>
             <li><a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>新闻信息</span></a>
+    <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
+    </li>
+    <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例赏析</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'公司动态'));?>">公司动态</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>">行业新闻</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'1'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'2'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'3'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'4'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'5'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a> 
+    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>我们的服务</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>">烽凰方法论</a></li>
-          </ul>
-    </li>
-    <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例</span></a>
-          <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'公益营销'));?>">公益营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'事件营销'));?>">事件营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'危机公关'));?>">危机公关</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'新闻营销'));?>">新闻营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'娱乐文化营销'));?>">娱乐文化营销</a></li>
-          </ul>
-    </li>
-    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>产品服务</span></a>
-          <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'产品服务'));?>">产品服务</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'1'));?>">媒体发布</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'2'));?>">公关活动</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'3'));?>">危机公关处理</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'4'));?>">广告代理发布</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'5'));?>">网络推广</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'6'));?>">VI设计</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
@@ -108,11 +104,7 @@
         <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
       </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
-      <ul>
-        <li><a href="<?php echo U('video/index',array('category'=>'案例视频'));?>">案例视频</a></li>
-        <li><a href="<?php echo U('video/index',array('category'=>'公司活动'));?>">公司活动视频</a></li>
-      </ul>
+    <li> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"><i class="icon icon-file"></i> <span>视频锦集</span></a>
     </li>
           <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
       <ul>
@@ -204,6 +196,7 @@
                   <th>简介</th>
                   <th>封面图片</th>
                   <th>创建时间</th>
+                  <th>首页显示</th>
                   <th>操作</th>
                 </tr>
               </thead>
@@ -214,8 +207,9 @@
                 <td><?php echo ($a["intro"]); ?></td>
                 <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
                 <td><?php echo ($a["createdate"]); ?></td>
+                 <td><?php echo ($a["ishome"]); ?></td>
                 <td class="center">
-                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>">修改</a> |<a href="<?php echo U('article/details',array('category'=>$a['category'],'id'=>$a['id']));?>">详情</a> |<a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">直接删除</a>
+                    <a href="<?php echo U('article/update',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">修改</a> <a href="<?php echo U('article/details',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">详情</a> <a href="<?php echo U('article/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">直接删除</a>
                 </td>
             </tr><?php endforeach; endif; ?>
                   

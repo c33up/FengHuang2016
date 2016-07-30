@@ -17,13 +17,16 @@
                 </form><hr/>
         </div>
         <div class="clear"></div>
-        <ul class="thumbnails thumbnails-1 list-services">
+        <ul class="thumbnails">
                <foreach name="video" item="v">
-                     <li class="span4">
+                     <li class="span3">
                          <div class="thumbnail">
-                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" width="240" height="240"/></a>
+                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" class="img-responsive"/></a>
                             <section>
                                 <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1">{$v.intro}</a>
+                                <if condition="$v['ishome'] eq 'yes'">          
+                                        <p>已放到首页</p>
+                                </if>
                             </section>
                          </div>
                      <div class="actions">

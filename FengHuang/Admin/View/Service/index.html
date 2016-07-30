@@ -1,0 +1,67 @@
+<include file="Public/header" title="{$category}管理-上海烽凰后台管理主页" />
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="#" class="current">{$category}管理</a> </div>
+    <h1>{$category}管理</h1>
+  </div>
+  <div class="container-fluid">
+    <hr>
+    <div class="row-fluid">
+      <div class="span12">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <h5>{$category}列表</h5>
+              <div class="pull-right">
+                    <div id="search">
+                        <form action="{:U('service/index')}" method="post">
+                            <input type="hidden" name="category" value="{$category}"/>
+                            <input type="text" name="key" placeholder="搜索..."/>
+                            <button type="submit" class="tip-bottom" title="搜索"><i class="icon-search icon-white"></i></button>
+                        </form>
+                    </div>
+                </div>
+          </div>
+           <div class="widget-content nopadding">
+            <table class="table table-bordered data-table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>标题</th>
+                  <th>简介</th>
+                  <th>封面图片</th>
+                  <th>创建时间</th>
+                  <th>首页显示</th>
+                  <th>操作</th>
+                </tr>
+              </thead>
+              <tbody>
+        <foreach name="article" item="a">
+            <tr class="gradeX">
+                <td>{$a.id}</td>
+                <td>{$a.title}</td>
+                <td>{$a.intro}</td>
+                <td><img src="{$a.imageurl}" alt="{$a.title}" width="100" height="100"/></td>
+                <td>{$a.createdate}</td>
+                <td>{$a.ishome}</td>
+                <td class="center">
+                    <a href="{:U('service/update',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">修改</a> <a href="{:U('service/details',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">详情</a> <a href="{:U('service/delete',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">直接删除</a>
+                </td>
+            </tr>
+        </foreach>
+                  
+            </tbody>
+            </table>
+          </div>
+        </div>
+          <div>
+              <div class="pull-left">
+                   <a href="{:U('service/add',array('category'=>$cid))}" class="btn btn-large btn-primary ">添加{$category}</a>
+               </div>
+              <div class="pull-right">
+                   {$page}
+              </div>
+          </div>
+      </div>
+    </div>
+  </div></div>
+<include file="Public/footer"/>

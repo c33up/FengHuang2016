@@ -77,11 +77,18 @@ class ArticleController extends BaseController {
                 $this->error($model->getError());
                 exit();
             } else {
+                $ishome=I('ishome');
+                 if($ishome=='on'){
+                     $ishome='yes';
+                 }else{
+                     $ishome='no';
+                 }
                 $date['title']=I('title');
                 $date['intro']=I('intro');
                 $date['content']=I('content');
                 $date['imageURL']=$imageurl;
                 $date['category']=$category;
+                $date['ishome']=$ishome;
                 //dump($date);
                 if ($model->add($date)) {
                     $this->success("添加成功", U('article/index',array('category'=>$category)));
@@ -139,6 +146,22 @@ class ArticleController extends BaseController {
             if (!$model->create()) {
                 $this->error($model->getError());
             }else{
+                $exishome=I('exishome');
+                if($exishome=='yes'){
+                     $ishome=I('ishome');
+                     if($ishome=='on'){
+                         $ishome='no';
+                     }else{
+                          $ishome='yes';
+                     }
+                }else{
+                     $ishome=I('ishome');
+                     if($ishome=='on'){
+                         $ishome='yes';
+                     }else{
+                         $ishome='no';
+                     }
+                }
                 $category=I('category');
                 $where['id']=intval(I('id'));
                 $where['category']=$category;
@@ -146,6 +169,8 @@ class ArticleController extends BaseController {
                 $date['intro']=I('intro');
                 $date['content']=I('content');
                 $date['imageURL']=$imageurl;
+                $date['ishome']=$ishome;
+                //dump($date);
                 if ($model->where($where)->save($date)) {
                     $this->success("更新成功", U('article/index',array('category'=>$category)));
                 } else {
