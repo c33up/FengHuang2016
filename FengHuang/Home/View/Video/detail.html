@@ -1,24 +1,24 @@
 <include file="Public/header" title="首页"/>   
 <section class="callaction">
-	<div class="container">
-		<div class="row">
-               <div class="page-header">    
-                      <h3>{$model.title}<small>{$model.createdate}</small></h3>       
-                 </div>
-           
-                 <div class="col-md-12">
-                     <if condition="$model['category'] eq '1' ">
-                         {$videourl} 
-                     <else />
-                         <video width="640" height="480" controls>
-                              <source src="{$model.localvideo}" type="video/mp4"/>
-                              <source src="{$model.localvideo}" type="video/wmv"/>
-                              <source src="{$model.localvideo}" type="video/avi"/>
-                          </video>
-                     </if>
+	
+	<div class="row">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="page-header">    
+                    <h3>{$model.title}</h3>       
+                </div>
+                <if condition="$model['category'] eq '1' ">
+                    {$videourl} 
+                <else />
+                    <video width="640" height="480" controls>
+                        <source src="{$model.localvideo}" type="video/mp4"/>
+                        <source src="{$model.localvideo}" type="video/wmv"/>
+                        <source src="{$model.localvideo}" type="video/avi"/>
+                    </video>
+                </if>
 
-		        </div>
-		</div>
+		    </div>
+	    </div>
 		
-	</div>
-	</section><include file="Public/footer"/>
+    </div>
+</section><include file="Public/footer"/>

@@ -38,7 +38,7 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -59,14 +59,14 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
-<!--start-top-serch-->
+<!--start-top-serch
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
   <input type="text" name="key" placeholder="搜索文章..."/>
   <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
         </form>
 </div>
-<!--close-top-serch-->
+close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>

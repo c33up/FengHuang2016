@@ -29,8 +29,8 @@
                 <div class="row service-v1 margin-bottom-40">
                  <foreach name="article" item="a">
                       <div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		              <a href="{:U('article/detail',array('id'=>$a['id']))}"><p class="intro">{$a.intro}</p></a>
+		                <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		              <h4 class="intro">{$a.intro}</h4></a>
 			   
                        </div>
              
@@ -51,8 +51,8 @@
                 <div class="row service-v1 margin-bottom-40">
                  <foreach name="video" item="a">
                       <div class="col-md-6 md-margin-bottom-40">
-		                <img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		              <a href="{:U('video/detail',array('id'=>$a['id']))}"><p class="intro">{$a.intro}</p></a>
+		                 <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		             <h4 class="intro">{$a.intro}</h4></a>
 			   
                        </div>
              
@@ -65,14 +65,14 @@
 	        </div>
 	        </section>
 
-	<section class="content" id="two">
+	<section class="callaction">
         <div class="container">
 	        <div class="row">
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
                   <li class="pull-right"><a href="{:U('fhcase/index')}"><h4>more</h4></a></li>
-                  <li><a href="./help/#support"><h3>案例赏析</h3></a></li>
+                  <li><h3>案例赏析</h3></a></li>
                   </ul>
             </div>
 	        </div>
@@ -81,8 +81,8 @@
              
                <foreach name="case" item="a">
               <div class="col-md-3 md-margin-bottom-40">
-		        <img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		      <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><p class="intro">{$a.intro}</p></a>
+		        <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		      <h4 class="intro">{$a.intro}</h4></a>
 			   
                </div>
              

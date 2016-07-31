@@ -1,31 +1,28 @@
 <include file="Public/header" title="首页"/>   
-<section class="callaction">
+<section id="content">
 	<div class="container">
-		<div class="row">
-             <div class="col-md-12">
-               <div class="page-header">    
-                      <h3>视频锦集</h3>       
-                 </div>
-                  <div class="row service-v1 margin-bottom-40">
-            <foreach name="article" item="a">
-                 <div class="col-md-4 md-margin-bottom-40">
-               <img class="img-responsive" src="{$a.imageurl}" alt="{$a.intro}">   
-              <ul class="list-unstyled">
-                          <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
-                          <li><i class="fa fa-eye"></i><span> {$a.num}</span></li>
-                    </ul>
-                 <a href="{:U('video/detail',array('id'=>$a['id']))}" class="link-1"><p class="intro">{$a.intro}</p> </a>       
-            </div>
 		
-            </foreach>
+            
+            <div class="page-header">    
+                    <h3>视频集锦</h3>       
             </div>
+
+            <div class="row">
+                <foreach name="article" item="a">
+                    <div class="col-md-4 marginbot30">
+                         <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.intro}"/>  </a>  
+                        
+                        <a href="{:U('video/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4> </a>       
+                    </div>
+		
+                </foreach>
             </div>
+
             <div class="col-md-12">
-            <div class="pull-right">
-                   {$page}
-              </div>
-                </div>
-		</div>
-		
+                <div class="pull-right">
+                       {$page}
+                  </div>
+            </div>
+	
 	</div>
 	</section><include file="Public/footer"/>

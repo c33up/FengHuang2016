@@ -1,36 +1,35 @@
-<include file="Public/header" title="首页"/>   
+<include file="Public/header" title="烽凰方法论"/>   
 <section class="callaction">
-	<div class="container">
+	
 		<div class="row">
-               <div class="page-header">    
-                      <h3>烽凰方法论</h3>       
-                 </div>
+            <div class="container">
+                 <div class="col-md-12">
+                   <div class="page-header">    
+                          <h3>烽凰方法论</h3>       
+                     </div>
 		 
-            <foreach name="article" item="a">
-                 <div class="col-md-12 marginbot40">
-		            <div class="col-md-4">
-		            <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div><h1> <a href="#">{$a.title}</a></h1>
-                                        <div>
-                                <ul class="list-unstyled">
-                                    <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
-                                    <li><i class="fa fa-eye"></i><span> {$a.num}</span></li>
-                                </ul>
+                    <foreach name="article" item="a">
+                         <div class="col-md-12 marginbot40">
+		                    <div class="col-md-4">
+		                    <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
+		                    </div>
+		                    <div class="col-md-8">
+			                    <div><a href="{:U('article/detail',array('id'=>$a['id']))}"><h1> {$a.title}</h1></a>
+                                                <div>
+                                
+                                        </div>
+                                    <a href="{:U('article/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4></a>
+			                    </div>
                                 </div>
-                            <a href="{:U('article/detail',array('id'=>$a['id']))}"><p class="intro">{$a.intro}</p></a>
-			            </div>
-                        </div>
-		            </div>
+		                    </div>
  
-            </foreach>
-            <div class="col-md-12">
-            <div class="pull-right">
-                   {$page}
-              </div>
-                </div>
+                    </foreach>
+                    <div class="col-md-12">
+                         <div class="pull-right">
+                           {$page}
+                        </div>
+                    </div>
+            </div>
 		</div>
-		
 	</div>
 	</section><include file="Public/footer"/>

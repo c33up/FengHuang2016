@@ -159,3 +159,9 @@ ERR: 1054:Unknown column 'fhcase.title' in 'where clause'
 ERR: 1146:Table 'fhdb.article,fhcase,service' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase,service`
 
+[ 2016-07-31T17:23:37+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T17:32:52+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
