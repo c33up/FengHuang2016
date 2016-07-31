@@ -38,7 +38,7 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -59,22 +59,22 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
-<!--start-top-serch-->
+<!--start-top-serch
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
   <input type="text" name="key" placeholder="搜索文章..."/>
   <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
         </form>
 </div>
-<!--close-top-serch-->
+close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
@@ -99,18 +99,15 @@
             <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
-      <ul>
-        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
-      </ul>
+    <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+        <ul>
+            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
+            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
+        </ul>
     </li>
-          <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
-      <ul>
-        <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
-      </ul>
+    <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
@@ -203,6 +200,7 @@
             <div class="control-group">
               <label class="control-label">上传封面图片</label>
               <div class="controls">
+                  <div class="alert alert-warning">上传图片大小：宽830px、高550px</div>
                <input type="file" id="imageUpload" name="imageURL"/>
 				<div id="preview" class="preview"></div>
               </div>

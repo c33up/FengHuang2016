@@ -10,11 +10,35 @@
         <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
   
+        <script type="text/javascript">
+        function showtime(){
+        var now=new Date();
+        var year=now.getFullYear();
+        var month=now.getMonth()+1;
+        var day=now.getDate();
+        var hours=now.getHours();
+        var minutes=now.getMinutes();
+        var seconds=now.getSeconds();
+        time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+        var clock=document.getElementById('clock');
+        clock.innerHTML=time;
+        }
+        function letstart(){
+        taskId=setInterval(showtime,500);
+        }
+
+        window.onload=function(){
+	        /*var div1=document.getElementById('div1');
+	        div1.onclick=letstart;*/
+	        letstart();
+        }
+        </script>
+
     </head>
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -31,66 +55,59 @@
         <li><a href="<?php echo U('login/logout');?>"><i class="icon-key"></i> 退出登录</a></li>
       </ul>
     </li>
+       <li class=""><a title="" href="#"><i class="icon icon-cog"></i>当前时间：<span class="text" id="clock"></span></a></li>
   </ul>
 </div>
 <!--close-top-Header-menu-->
-<!--start-top-serch-->
+<!--start-top-serch
 <div id="search">
-  <input type="text" placeholder="搜索..."/>
-  <button type="submit" class="tip-bottom" title="搜索"><i class="icon-search icon-white"></i></button>
+    <form action="<?php echo U('index/search');?>" method="post">
+  <input type="text" name="key" placeholder="搜索文章..."/>
+  <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
+        </form>
 </div>
-<!--close-top-serch-->
+close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
+      <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'公司简介'));?>">公司简介</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'公司历史'));?>">公司历史</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-signal"></i> <span>新闻信息</span></a>
+    <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
+    </li>
+    <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例赏析</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'公司动态'));?>">公司动态</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'行业新闻'));?>">行业新闻</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'1'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'2'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'3'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'4'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('fhcase/index',array('category'=>'5'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a> 
+    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>我们的服务</span></a>
           <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>">烽凰方法论</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'1'));?>">媒体发布</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'2'));?>">公关活动</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'3'));?>">危机公关处理</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'4'));?>">广告代理发布</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'5'));?>">网络推广</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'6'));?>">VI设计</a></li>
+            <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
-    <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例</span></a>
-          <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'公益营销'));?>">公益营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'事件营销'));?>">事件营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'危机公关'));?>">危机公关</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'新闻营销'));?>">新闻营销</a></li>
-            <li><a href="<?php echo U('article/index',array('category'=>'娱乐文化营销'));?>">娱乐文化营销</a></li>
-          </ul>
-    </li>
-    <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>产品服务</span></a>
-          <ul>
-            <li><a href="<?php echo U('article/index',array('category'=>'产品服务'));?>">产品服务</a></li>
-          </ul>
-    </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
-      <ul>
-        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
-      </ul>
+    <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
     <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
-      <ul>
-        <li><a href="<?php echo U('video/index',array('category'=>'案例视频'));?>">案例视频</a></li>
-        <li><a href="<?php echo U('video/index',array('category'=>'公司活动'));?>">公司活动视频</a></li>
-      </ul>
+        <ul>
+            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
+            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
+        </ul>
     </li>
-          <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
-      <ul>
-        <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
-      </ul>
+    <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
@@ -168,15 +185,15 @@
                </div>
             </div>
             <div class="control-group">
-              <label for="text" class="control-label">手机：</label>
+              <label for="text" class="control-label">传真：</label>
               <div class="controls">
-                  <input type="tel" name="mobilephone" class="span8 mask text"/>
+                  <input type="tel" name="fax" class="span8 mask text"/>
                </div>
             </div>
             <div class="control-group">
-              <label for="text" class="control-label">座机：</label>
+              <label for="text" class="control-label">电话：</label>
               <div class="controls">
-                 <input type="tel" name="telPhone" class="span8 mask text"/>
+                 <input type="tel" name="telphone" class="span8 mask text"/>
               </div>
             </div>
             <div class="control-group">

@@ -5,3 +5,9 @@ ERR: 无法加载控制器:Fhcase
 ERR: 1146:Table 'fhdb.f_hcase' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `f_hcase`
 
+[ 2016-07-30T22:35:54+08:00 ] ::1 /admin.php/fhcase/fhcase/cid/1.html
+ERR: 非法操作:fhcase
+
+[ 2016-07-30T22:36:28+08:00 ] ::1 /admin.php/fhcase/fhcase/cid/2.html
+ERR: 非法操作:fhcase
+

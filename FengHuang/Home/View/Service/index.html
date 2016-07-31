@@ -13,19 +13,19 @@
                     </ul>            
                  </div>
             <foreach name="media" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -41,19 +41,19 @@
                              
                  </div>
             <foreach name="public" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -69,19 +69,19 @@
                     </ul>       
                  </div>
             <foreach name="crisis" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -97,19 +97,19 @@
                          
                  </div>
             <foreach name="advertisement" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -125,19 +125,19 @@
                            
                  </div>
             <foreach name="web" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -153,19 +153,19 @@
                            
                  </div>
             <foreach name="vi" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div> <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1>{$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                       <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"> <h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 
@@ -181,19 +181,19 @@
                            
                  </div>
             <foreach name="plan" item="n"> 
-                 <div class="col-md-12">
+                 <div class="col-md-12 marginbot20">
 		        <div class="col-md-4">
 		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><h1> <a href="#">{$n.title}</a></h1>
+			        <div><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h1> {$n.title}</h1></a>
                                     <div>
                             <ul class="list-unstyled">
                               <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
                               <li><i class="fa fa-eye"></i><span> {$n.num}</span></li>
                             </ul>
                          </div>
-                        <p class="intro"><a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}">{$n.intro}</a></p>
+                        <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4 class="intro">{$n.intro}</h4></a>
 			        </div>
                     </div>  
                       </div> 

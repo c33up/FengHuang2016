@@ -7,23 +7,23 @@
                  </div>
 		 
             <foreach name="article" item="a">
-                 <div class="col-md-12">
-		<div class="col-md-4">
-		<img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
-		</div>
-		<div class="col-md-8">
-			<div><h1> <a href="#">{$a.title}</a></h1>
-                            <div>
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
-                      <li><i class="fa fa-eye"></i><span> {$a.num}</span></li>
-                    </ul>
-                 </div>
-                <a href="{:U('article/detail',array('id'=>$a['id']))}"><p class="intro">{$a.intro}</p></a>
-			</div>
-            </div>
-		</div>
-</foreach>
+                 <div class="col-md-12 marginbot40">
+		            <div class="col-md-4">
+		            <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div><a href="{:U('article/detail',array('id'=>$a['id']))}"><h1> {$a.title}</h1></a>
+                                        <div>
+                                <ul class="list-unstyled">
+                                  <li class="pull-right"><i class="fa fa-calendar-o"></i><span> {$a.createdate}</span></li>
+                                  <li><i class="fa fa-eye"></i><span> {$a.num}</span></li>
+                                </ul>
+                             </div>
+                            <a href="{:U('article/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4></a>
+			            </div>
+                        </div>
+		            </div>
+            </foreach>
             <div class="col-md-12">
             <div class="pull-right">
                    {$page}

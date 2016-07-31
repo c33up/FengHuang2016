@@ -24,7 +24,6 @@ class FhcaseController extends BaseController {
         $show = $Page->show();// 分页显示输出
         $article = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id ASC')->select();
         //dump($article);
-       switch($cid){
           switch($cid){
            case '1':
                $category='公益营销';

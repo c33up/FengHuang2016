@@ -39,13 +39,13 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
-                        <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li> 
+                        <li><a href="<?php echo U('index/index');?>">首页</a></li> 
                         <li class="dropdown">
-                          <a href="<?php echo U('intro/index');?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
+                          <a href="<?php echo U('intro/index',array('cid'=>'1'));?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('intro/index');?>">烽凰简介</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('intro/index');?>">烽凰团队</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'2'));?>">烽凰团队</a></li>
                           </ul>
                         </li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
@@ -66,19 +66,19 @@
                         <li class="dropdown">
                           <a href="<?php echo U('service/index');?>" class="dropdown-toggle">我们的服务<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('service/index');?>">媒体发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'1'));?>">媒体发布</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">公关活动</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'2'));?>">公关活动</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">危机公关处理</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'3'));?>">危机公关处理</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">广告代理发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'4'));?>">广告代理发布</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">网络推广</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'5'));?>">网络推广</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">VI设计</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'6'));?>">VI设计</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('service/index');?>">全案策划服务</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'7'));?>">全案策划服务</a></li>
                           </ul>
                         </li>
                         <li><a href="<?php echo U('contact/index');?>">联系我们</a></li>
@@ -94,21 +94,21 @@
                       <h3><?php echo ($category); ?></h3>       
                  </div>
 		 
-            <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12">
-		<div class="col-md-4">
-		<img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
-		</div>
-		<div class="col-md-8">
-			<div><h1> <a href="#"><?php echo ($a["title"]); ?></a></h1>
-                            <div>
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><i class="fa fa-calendar-o"></i><span> <?php echo ($a["createdate"]); ?></span></li>
-                      <li><i class="fa fa-eye"></i><span> <?php echo ($a["num"]); ?></span></li>
-                    </ul>
-                 </div>
-                <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
-			</div>
-            </div>
+            <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
+		            <div class="col-md-4">
+		            <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div><a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>"><h1> <?php echo ($a["title"]); ?></h1></a>
+                                        <div>
+                                <ul class="list-unstyled">
+                                  <li class="pull-right"><i class="fa fa-calendar-o"></i><span> <?php echo ($a["createdate"]); ?></span></li>
+                                  <li><i class="fa fa-eye"></i><span> <?php echo ($a["num"]); ?></span></li>
+                                </ul>
+                             </div>
+                            <a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>"><h4 class="intro"><?php echo ($a["intro"]); ?></h4></a>
+			            </div>
+                        </div>
 		</div><?php endforeach; endif; ?>
             <div class="col-md-12">
             <div class="pull-right">
@@ -119,52 +119,16 @@
 		
 	</div>
 	</section>	<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">联系方式</h5>
-					<address>
-					<strong>地址：</strong><br>
-					上海平阳路1501号803室</address>
-					<p>
-						<i class="icon-phone"></i><strong>电话: </strong>(021) 34550321 <br>
-                        <i class="icon-phone"></i><strong>传真: </strong>021-34550321-802<br>
-						<i class="icon-envelope-alt"></i><strong>Email: </strong>fenghuang_sh@126.com
-					</p>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">快速链接</h5>
-					<ul class="link-list">
-						<li><a href="#">麦西西</a></li>
-						<li><a href="#">天猫</a></li>
-						<li><a href="#">百度</a></li>
-						<li><a href="#">京东</a></li>
-						<li><a href="#">其他</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">服务</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="sub-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="#"></a>
+							Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+						</p>
+                        <p>
+							上海烽凰文化传播有限公司 &copy; 版权所有
 						</p>
 					</div>
 				</div>

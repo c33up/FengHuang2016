@@ -52,15 +52,15 @@ hr{ border-top-color:#dadada;}
 	width: 100%;
 	z-index: -9;
 }
-#header h1 {
-	background: url("../img/logo.png") no-repeat scroll 0 0 transparent;
-	height: 31px;
-	left: 20px;
-	line-height: 600px;
+#header img {
+	
+	height: 80px;
+	left: 10px;
+	line-height: 100px;
 	overflow: hidden;
 	position: relative;
-	top: 26px;
-	width: 191px;
+	top: 10px;
+	width: 190px;
 }
 #header h1 a {
 	display: block;
@@ -209,7 +209,7 @@ hr{ border-top-color:#dadada;}
 	z-index: 20;
 }
 #content-header h1 {
-	color: #fff;
+	color: #000;
 	font-size: 28px;
 	font-weight: normal;
 	float: none;
@@ -243,7 +243,6 @@ hr{ border-top-color:#dadada;}
 #breadcrumb a {
 	padding: 8px 20px 8px 10px;
 	display: inline-block;
-	background-image: url('../img/breadcrumb.png');
 	background-position: center right;
 	background-repeat: no-repeat;
 	font-size: 11px;
@@ -533,6 +532,12 @@ hr{ border-top-color:#dadada;}
 	border: none;
 	margin-top: 0;
 	margin-bottom: 0;
+}
+.widget-title, .modal-header, .table td {
+	font-size: 18px;
+}
+.widget-title, .modal-header, .table th {
+	font-size: 18px;
 }
 .widget-title, .modal-header, .table th, div.dataTables_wrapper .ui-widget-header {
 	 background:#efefef;

@@ -20,7 +20,7 @@ class IndexController extends BaseController {
         $this->assign('picture',$picture);
         $this->assign('article',$article);
         $this->assign('video',$video);
-        $this->assign('video',$case);
+        $this->assign('case',$case);
         //dump($video);
         $this->display();     
     }

@@ -39,13 +39,13 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
-                        <li class="active"><a href="{:U('index/index')}">首页</a></li> 
+                        <li><a href="{:U('index/index')}">首页</a></li> 
                         <li class="dropdown">
-                          <a href="{:U('intro/index')}" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
+                          <a href="{:U('intro/index',array('cid'=>'1'))}" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="{:U('intro/index')}">烽凰简介</a></li>
+                            <li><a href="{:U('intro/index',array('cid'=>'1'))}">烽凰简介</a></li>
                                <li class="divider"></li>
-                            <li><a href="{:U('intro/index')}">烽凰团队</a></li>
+                            <li><a href="{:U('intro/index',array('cid'=>'2'))}">烽凰团队</a></li>
                           </ul>
                         </li>
 						<li><a href="{:U('article/index')}">烽凰方法论</a></li>

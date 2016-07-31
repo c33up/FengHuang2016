@@ -1,7 +1,7 @@
 <include file="Public/header" title="添加{$category}-上海烽凰后台管理主页" />
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('intro/index',array('category'=>$category))}" class="tip-bottom">{$category}</a> <a href="#" class="current">添加{$category}</a> </div>
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('intro/index',array('category'=>$cid))}" class="tip-bottom">{$category}</a> <a href="#" class="current">添加{$category}</a> </div>
   <h1>添加{$category}</h1>
 </div>
 <div class="container-fluid">
@@ -14,7 +14,7 @@
         </div>
         <div class="widget-content nopadding">
           <form action="{:U('intro/add')}" method="post" class="form-horizontal" enctype="multipart/form-data">
-              <input type="hidden" name="category" value="{$category}">
+              <input type="hidden" name="category" value="{$cid}">
             <div class="control-group">
               <label for="normal" class="control-label">标题</label>
               <div class="controls">

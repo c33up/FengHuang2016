@@ -39,13 +39,13 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
-                        <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li> 
+                        <li><a href="<?php echo U('index/index');?>">首页</a></li> 
                         <li class="dropdown">
-                          <a href="<?php echo U('intro/index');?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
+                          <a href="<?php echo U('intro/index',array('cid'=>'1'));?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('intro/index');?>">烽凰简介</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('intro/index');?>">烽凰团队</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'2'));?>">烽凰团队</a></li>
                           </ul>
                         </li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
@@ -106,7 +106,7 @@
              <div class="col-md-6">
                  <div class="page-header">
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
+                      <li class="pull-right"><a href="<?php echo U('article/index');?>"><h4>more</h4></a></li>
                       <li><h3>烽凰方法论</h3></li>
                     </ul>
                  </div>
@@ -115,7 +115,7 @@
                 <div class="row service-v1 margin-bottom-40">
                  <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
 		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
+		              <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
 			   
                        </div><?php endforeach; endif; ?>
 		        </div>
@@ -124,7 +124,7 @@
                 <div class="col-md-6" >
                  <div class="page-header" >
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="./help/#support"><h4>more>></h4></a></li>
+                      <li class="pull-right"><a href="<?php echo U('video/index');?>"><h4>more</h4></a></li>
                       <li><h3>视频中心</h3></li>
                     </ul>
             
@@ -132,9 +132,9 @@
 		 
                 <div class="col-md-12">	
                 <div class="row service-v1 margin-bottom-40">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
+                 <?php if(is_array($video)): foreach($video as $key=>$a): ?><div class="col-md-6 md-margin-bottom-40">
 		                <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		              <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
+		              <a href="<?php echo U('video/detail',array('id'=>$a['id']));?>"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
 			   
                        </div><?php endforeach; endif; ?>
 		        </div>
@@ -151,7 +151,7 @@
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
-                  <li class="pull-right"><h4>more>></h4></li>
+                  <li class="pull-right"><a href="<?php echo U('fhcase/index');?>"><h4>more</h4></a></li>
                   <li><a href="./help/#support"><h3>案例赏析</h3></a></li>
                   </ul>
             </div>
@@ -159,9 +159,9 @@
                   <div class="col-md-12">
 
              
-               <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-3 md-margin-bottom-40">
+               <?php if(is_array($case)): foreach($case as $key=>$a): ?><div class="col-md-3 md-margin-bottom-40">
 		        <img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt=""/>
-		      <a href="#"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
+		      <a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>"><p class="intro"><?php echo ($a["intro"]); ?></p></a>
 			   
                </div><?php endforeach; endif; ?>
               </div>
@@ -169,52 +169,16 @@
 	        </div>         </section> 
     </div>
 	<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">联系方式</h5>
-					<address>
-					<strong>地址：</strong><br>
-					上海平阳路1501号803室</address>
-					<p>
-						<i class="icon-phone"></i><strong>电话: </strong>(021) 34550321 <br>
-                        <i class="icon-phone"></i><strong>传真: </strong>021-34550321-802<br>
-						<i class="icon-envelope-alt"></i><strong>Email: </strong>fenghuang_sh@126.com
-					</p>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">快速链接</h5>
-					<ul class="link-list">
-						<li><a href="#">麦西西</a></li>
-						<li><a href="#">天猫</a></li>
-						<li><a href="#">百度</a></li>
-						<li><a href="#">京东</a></li>
-						<li><a href="#">其他</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">服务</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="sub-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="#"></a>
+							Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+						</p>
+                        <p>
+							上海烽凰文化传播有限公司 &copy; 版权所有
 						</p>
 					</div>
 				</div>

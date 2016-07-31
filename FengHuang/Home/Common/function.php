@@ -43,8 +43,8 @@
     }
 
     function showPicture(){
-        $where['category']='轮播图片';
-        $pic=M('Picture')->where($where)->select();
+       
+        $pic=M('Picture')->select();
         return $pic;
     }
 

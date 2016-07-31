@@ -1,8 +1,8 @@
-<include file="Public/header" title="修改{$model.category}-上海烽凰后台管理主页" />
+<include file="Public/header" title="修改网络视频-上海烽凰后台管理主页" />
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="{:U('index/index')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('video/index',array('category'=>$model['category']))}" class="tip-bottom">{$model.category}管理</a> <a href="#" class="current">修改{$model.category}</a> </div>
-  <h1>{$model.category}</h1>
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('video/index')}" class="tip-bottom">网络视频管理</a> <a href="#" class="current">修改网络视频</a> </div>
+  <h1>网络视频</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -10,12 +10,11 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改{$model.category}</h5>
+          <h5>修改网络视频</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="{:U('video/update')}" method="post" class="form-horizontal" enctype="multipart/form-data">
               <input type="hidden" name="id" value="{$model.id}">
-              <input type="hidden" name="category" value="{$model.category}">
             <div class="control-group">
               <label for="normal" class="control-label">视频标题</label>
               <div class="controls">
@@ -28,27 +27,18 @@
                   <textarea name="intro" class="textarea_editor span8" rows="6">{$model.intro}</textarea>
                </div>
             </div>
-              <div class="control-group">
-              <div class="controls">
-                 <label for="text" class="control-label">提示：填写视频地址或上传视频只需填写一个</label>
-              </div>
-            </div>
+       
             <div class="control-group">
               <label for="text" class="control-label">视频链接地址</label>
               <div class="controls">
                  <textarea id="editor" name="videoURL" class="span8" rows="6">{$model.videourl}</textarea>
               </div>
             </div>
-            <div class="control-group">
-              <label for="text" class="control-label">上传本地视频</label>
-              <div class="controls">
-                 <input type="file" id="localvideo" name="localvideo"/>
-                  <input type="hidden" name="exvideo" value="{$model.localvideo}">
-              </div>
-            </div>
+
             <div class="control-group">
               <label class="control-label">上传视频封面图片</label>
               <div class="controls">
+                  <div class="alert alert-warning">上传图片大小：宽830px、高550px</div>
                <input type="file" id="imageUpload" name="imageURL"/>
                 <input type="hidden" name="eximg" value="{$model.imageurl}">
                 <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="{$model.imageurl}" alt="{$model.intro}"/></div>

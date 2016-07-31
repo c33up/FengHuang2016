@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><?php echo ($model["category"]); ?>详情-上海烽凰后台管理主页</title>
+        <title>网络视频详情-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -73,8 +73,8 @@
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
@@ -99,18 +99,15 @@
             <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
-      <ul>
-        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
-      </ul>
+    <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+        <ul>
+            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
+            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
+        </ul>
     </li>
-          <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
-      <ul>
-        <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
-      </ul>
+    <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
@@ -167,54 +164,49 @@
 
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="<?php echo U('video/index',array('category'=>$model['category']));?>" class="current"><?php echo ($model["category"]); ?></a>  <a href="#" class="current"><?php echo ($model["category"]); ?>详情</a></div>
-    <h1><?php echo ($model["category"]); ?>详情</h1>
+    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="<?php echo U('video/index');?>" class="current">网络视频管理</a>  <a href="#" class="current">网络视频详情</a></div>
+    <h1>网络视频详情</h1>
   </div>
   <div class="container-fluid">
-    <hr>
+
     <div class="row-fluid">
-      <div class="span12">
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
-            <a href="<?php echo U('video/index',array('category'=>$model['category']));?>" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
-              <a href="<?php echo U('video/update',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
-              <a href="<?php echo U('video/delete',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">删除</a>
+      <div class="span10">
+       
+          <div class="widget-title">
+            <a href="<?php echo U('video/index');?>" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('video/update',array('id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="<?php echo U('video/delete',array('id'=>$model['id']));?>" class="btn btn-primary">删除</a>
           </div>
-          <div class="widget-content nopadding">
-            <div class="control-group">
-              <div class="controls">
-               <h4><?php echo ($model["intro"]); ?></h4>
-               </div>
+               <div class="span10">
+              
+                <br/>
+               
             </div>
-              <div class="control-group">
-              <div class="controls">
-                <p>发表时间：<?php echo ($model["createdate"]); ?></p>
-                  <?php if($model['ishome'] == 'yes'): ?><p>已放到首页</p><?php endif; ?>
-               </div>
-            </div>
-            <div class="control-group">
-                <div class="controls">
-                    <div>
-                        <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
+            <div class="span10">
+                
+                    <div class="span2">
+                        <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>"/>
                    </div>
-                   <div>
-                    <p>发表时间：<?php echo ($model["intro"]); ?></p>
+                   <div class="span4">
+                     <p>发表时间：<?php echo ($model["createdate"]); ?></p>
+                      <?php if($model['ishome'] == 'yes'): ?><p>已放到首页</p><?php endif; ?>
+                    <p><?php echo ($model["intro"]); ?></p>
                    </div>
-                </div>
+                
             </div>
-              <div class="control-group">
-              <div class="controls">
-                  <?php if($model['videourl'] != ''): ?><video width="640" height="480" controls>
-                      <source src="<?php echo ($model["videourl"]); ?>" type="video/mp4">
-                    </video><?php endif; ?>
-                <?php if($model['localvideo'] != ''): ?><video width="640" height="480" controls>
-                      <source src="<?php echo ($model["localvideo"]); ?>" type="video/mp4">
-                    </video><?php endif; ?>
+           <div class="span10">
+              
+                <hr/>
+               
+            </div>
+              <div class="span10">
+          
+                  <?php echo ($videourl); ?>
                </div>
+          
             </div>
-            </div>
-      </div>
-    </div>
+      
+   
   </div>
 </div>
     </div>

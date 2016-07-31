@@ -1,0 +1,52 @@
+<include file="Public/header" title="本地视频详情-上海烽凰后台管理主页" />
+<div id="content">
+    <div id="content-header">
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="{:U('localvideo/index')}" class="current">本地视频</a>  <a href="#" class="current">本地视频详情</a></div>
+    <h1>本地视频详情</h1>
+  </div>
+  <div class="container-fluid">
+ 
+    <div class="row-fluid">
+      <div class="span10">
+     
+          <div class="widget-title"> <span class="icon"> <i class="icon-th"></i> </span>
+            <a href="{:U('localvideo/index')}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="{:U('localvideo/update',array('id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="{:U('localvideo/delete',array('id'=>$model['id']))}" class="btn btn-primary">删除</a>
+          </div>
+          <div class="span10"> 
+              <br/>
+          </div>
+            <div class="span10">  
+                    <div class="span3">
+                        <img src="{$model.imageurl}" alt="{$model.title}" width="240" height="240"/>
+                   </div>
+                    <div class="span6">
+                        <p>发表时间：{$model.createdate}</p>
+                          <if condition="$model['ishome'] eq 'yes'">          
+                                <p>已放到首页</p>
+                        </if>
+                        <h4>{$model.intro}</h4>
+                    </div>
+               
+            </div>
+           <div class="span10"> 
+              <hr/>
+          </div>
+              <div class="span10">
+
+                  <video width="640" height="480" controls>
+                      <source src="{$model.localvideo}" type="video/mp4"/>
+                      <source src="{$model.localvideo}" type="video/wmv"/>
+                      <source src="{$model.localvideo}" type="video/avi"/>
+                  </video>
+                 
+               
+            </div>
+            
+   
+    </div>
+  </div>
+</div>
+    </div>
+<include file="Public/footer" />

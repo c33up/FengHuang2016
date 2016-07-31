@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><?php echo ($category); ?>-上海烽凰后台管理主页</title>
+        <title>网络视频锦集管理-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -38,7 +38,7 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -59,22 +59,22 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
-<!--start-top-serch-->
+<!--start-top-serch
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
   <input type="text" name="key" placeholder="搜索文章..."/>
   <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
         </form>
 </div>
-<!--close-top-serch-->
+close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
@@ -99,18 +99,15 @@
             <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
-      <ul>
-        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
-      </ul>
+    <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+        <ul>
+            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
+            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
+        </ul>
     </li>
-          <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
-      <ul>
-        <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
-      </ul>
+    <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
@@ -168,16 +165,15 @@
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current"><?php echo ($category); ?>管理</a> </div>
-    <h1><?php echo ($category); ?>管理</h1>
+    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">网络视频锦集管理</a> </div>
+    <h1>网络视频锦集管理</h1>
   </div>
 <div class="container">
           <div class="row">
         <div class="span12">
-            <a href="<?php echo U('video/add',array('category'=>$category));?>" class="btn btn-primary">添加<?php echo ($category); ?></a>
+            <a href="<?php echo U('video/add');?>" class="btn btn-primary">添加网络视频锦集</a>
                           
                 <form action="<?php echo U('video/index');?>" method="post"  class="navbar-form pull-right">
-                    <input type="hidden" name="category" value="<?php echo ($category); ?>"/>
                     <input type="text" name="key" placeholder="搜索..."/>
                     <button type="submit"><i class="icon-search icon-white"></i></button>
                 </form><hr/>
@@ -186,17 +182,17 @@
         <ul class="thumbnails">
                <?php if(is_array($video)): foreach($video as $key=>$v): ?><li class="span3">
                          <div class="thumbnail">
-                             <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" class="img-responsive"/></a>
+                             <a href="<?php echo U('video/details',array('id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" class="img-responsive"/></a>
                             <section>
-                                <a href="<?php echo U('video/details',array('category'=>$v['category'],'id'=>$v['id']));?>" class="link-1"><?php echo ($v["intro"]); ?></a>
+                                <a href="<?php echo U('video/details',array('id'=>$v['id']));?>" class="link-1"><?php echo ($v["intro"]); ?></a>
                                 <?php if($v['ishome'] == 'yes'): ?><p>已放到首页</p><?php endif; ?>
                             </section>
                          </div>
                      <div class="actions">
-                         <a href="<?php echo U('video/update',array('category'=>$v['category'],'id'=>$v['id']));?>">
+                         <a href="<?php echo U('video/update',array('id'=>$v['id']));?>">
                             <i class="icon-pencil icon-white"></i>
                         </a>
-                         <a href="<?php echo U('video/delete',array('category'=>$v['category'],'id'=>$v['id']));?>">
+                         <a href="<?php echo U('video/delete',array('id'=>$v['id']));?>">
                              <i class="icon-remove icon-white"></i>
                          </a>
                      </div>
@@ -207,7 +203,7 @@
     <div  class="pull-right">
      <?php echo ($page); ?>
     </div>
-  </div>
+  </div>  </div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>

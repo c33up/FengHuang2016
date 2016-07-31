@@ -4,23 +4,11 @@ use Think\Controller;
 class PictureController extends BaseController {
     public function index($key=""){
   
-        if($key === ""){
-            if (IS_POST) {
-                $category=I('category'); 
-                $where['category'] =  $category;
-            } else{
-                $category=iconv('gb2312','utf-8',I('category')); 
-                $where['category'] =  $category;
-            }
-            $model = M('picture'); 
-            
+        if($key === ""){           
         }else{
-            $category=I('category'); 
-            $where['category'] = $category;
-            $where['intro'] = array('like',"%$key%");
-            $model = M('picture')->where($where);               
+            $where['intro'] = array('like',"%$key%");              
         } 
-
+        $model = M('picture')->where($where);   
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
         $Page = new \Think\Page($count,12);// 实例化分页类 传入总记录数和每页显示的记录数(25)
         $Page->parameter = $where;
@@ -28,7 +16,6 @@ class PictureController extends BaseController {
         $picture = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id ASC')->select();
         
         $this->assign('picture', $picture);
-        $this->assign('category',$category);
         $this->assign('page',$show);
         $this->display();     
     }
@@ -36,13 +23,12 @@ class PictureController extends BaseController {
     //保存上传配置
     public function add()
     {
-         $category=I('category');
+
          $time=date("Y-m-d h:i:sa");
          //默认显示添加表单
         if (!IS_POST) {
 
-            //echo $category;
-            $this->assign('category', iconv('gb2312','utf-8', $category));
+        
             $this->assign('time', $time);
             $this->display();
         }
@@ -78,9 +64,9 @@ class PictureController extends BaseController {
             } else {
                 $date['intro']=I('intro');
                 $date['imageURL']=$imageurl;
-                $date['category']=$category;
+             
                 if ($model->add($date)) {
-                    $this->success("图片添加成功", U('picture/index',array('category'=>$category)));
+                    $this->success("图片添加成功", U('picture/index'));
                 } else {
                     $this->error("图片添加失败");
                 }
@@ -100,9 +86,9 @@ class PictureController extends BaseController {
         //默认显示添加表单
         if (!IS_POST) {
             $id = intval(I('id'));
-            $category=iconv('gb2312','utf-8', I('category'));
+           
             $where['id']=$id;
-            $where['category']=$category;
+           
             $model = M('picture')->where($where)->find();
             //dump($model);
             $this->assign('model',$model);
@@ -152,9 +138,9 @@ class PictureController extends BaseController {
 
     public function details(){
             $id = intval(I('id'));
-            $category=iconv('gb2312','utf-8', I('category'));
+           
             $where['id']=$id;
-            $where['category']=$category;
+           
             $model = M('picture')->where($where)->find();
             //dump($model);
             $this->assign('model',$model);
@@ -169,9 +155,9 @@ class PictureController extends BaseController {
     public function delete()
     {
     	$id = intval(I('id'));
-        $category=iconv('gb2312','utf-8', I('category'));
+       
         $where['id']=$id;
-        $where['category']=$category;
+       
         //dump($where);
         $model = M('picture');
         //查询status字段值

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>修改<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
+        <title>修改网络视频-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -73,8 +73,8 @@
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
     <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
           <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'公司简介'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'团队介绍'));?>">团队介绍</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
+            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
@@ -99,18 +99,15 @@
             <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
           </ul>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
-      <ul>
-        <li><a href="<?php echo U('contact/index');?>">联系方式</a></li>
-      </ul>
+    <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li> <a href="<?php echo U('video/index',array('category'=>'案例视频'));?>"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+        <ul>
+            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
+            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
+        </ul>
     </li>
-          <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>图片管理</span></a>
-      <ul>
-        <li><a href="<?php echo U('picture/index',array('category'=>'轮播图片'));?>">轮播图片</a></li>
-        <li><a href="<?php echo U('picture/index',array('category'=>'二维码'));?>">二维码</a></li>
-      </ul>
+    <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
@@ -167,8 +164,8 @@
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('video/index',array('category'=>$model['category']));?>" class="tip-bottom"><?php echo ($model["category"]); ?>管理</a> <a href="#" class="current">修改<?php echo ($model["category"]); ?></a> </div>
-  <h1><?php echo ($model["category"]); ?></h1>
+  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('video/index');?>" class="tip-bottom">网络视频管理</a> <a href="#" class="current">修改网络视频</a> </div>
+  <h1>网络视频</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -176,12 +173,11 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改<?php echo ($model["category"]); ?></h5>
+          <h5>修改网络视频</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="<?php echo U('video/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
               <input type="hidden" name="id" value="<?php echo ($model["id"]); ?>">
-              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
             <div class="control-group">
               <label for="normal" class="control-label">视频标题</label>
               <div class="controls">
@@ -194,27 +190,18 @@
                   <textarea name="intro" class="textarea_editor span8" rows="6"><?php echo ($model["intro"]); ?></textarea>
                </div>
             </div>
-              <div class="control-group">
-              <div class="controls">
-                 <label for="text" class="control-label">提示：填写视频地址或上传视频只需填写一个</label>
-              </div>
-            </div>
+       
             <div class="control-group">
               <label for="text" class="control-label">视频链接地址</label>
               <div class="controls">
                  <textarea id="editor" name="videoURL" class="span8" rows="6"><?php echo ($model["videourl"]); ?></textarea>
               </div>
             </div>
-            <div class="control-group">
-              <label for="text" class="control-label">上传本地视频</label>
-              <div class="controls">
-                 <input type="file" id="localvideo" name="localvideo"/>
-                  <input type="hidden" name="exvideo" value="<?php echo ($model["localvideo"]); ?>">
-              </div>
-            </div>
+
             <div class="control-group">
               <label class="control-label">上传视频封面图片</label>
               <div class="controls">
+                  <div class="alert alert-warning">上传图片大小：宽830px、高550px</div>
                <input type="file" id="imageUpload" name="imageURL"/>
                 <input type="hidden" name="eximg" value="<?php echo ($model["imageurl"]); ?>">
                 <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>

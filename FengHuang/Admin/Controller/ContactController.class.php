@@ -55,7 +55,13 @@ class ContactController extends BaseController {
             if (!$model->create()) {
                 $this->error($model->getError());
             }else{
-                if ($model->save()) {
+                $data['address'] =I('address');
+                $data['fax'] =I('fax');
+                $data['telphone'] =I('telphone');
+                $data['email'] =I('email');
+                $data['qq'] =I('qq');
+                $where['id']='1';
+                if ($model->where($where)->save($data)) {
                     $this->success("更新成功", U('contact/index'));
                 } else {
                     $this->error("更新失败");

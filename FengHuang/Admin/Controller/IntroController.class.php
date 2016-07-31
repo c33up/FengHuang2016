@@ -4,36 +4,56 @@ use Think\Controller;
 class IntroController extends BaseController {
     public function index(){   
  
-        $category=iconv('gb2312','utf-8',I('category')); 
-        $where['category'] =  $category;
+        $cid=I('category'); 
+        $where['category'] =  $cid;
           
         $model = M('intro');  
- 
-        $count  = $model->where($where)->count();// 查询满足要求的总记录数
+        switch($cid){
+            case '1':
+             $category='烽凰简介'; 
+             break;
+            case '2':
+             $category='烽凰团队'; 
+             break;
+            default:
+             
+        }
+        $count  = $model->where($where)->count();
         $article = $model->where($where)->find();
         $content=htmlspecialchars_decode(html_entity_decode($article['content']));
-        $this->assign('count', $count);
+         $this->assign('count', $count);
         $this->assign('content', $content);
         $this->assign('article', $article);
+         $this->assign('cid',$cid);
         $this->assign('category',$category);
-        $this->display();     
+        $this->display();   
     }
     //保存上传配置
     public function add()
     {
-         $category=I('category');
+         $cid=I('category');
          $time=date("Y-m-d h:i:sa");
          //默认显示添加表单
         if (!IS_POST) {
-
-            //echo $category;
-            $this->assign('category', iconv('gb2312','utf-8', $category));
+             switch($cid){
+                case '1':
+                 $category='烽凰简介'; 
+                 break;
+                case '2':
+                 $category='烽凰团队'; 
+                 break;
+                default:
+            }
+           
+            $this->assign('cid',$cid);
+            $this->assign('category',$category);
             $this->assign('time', $time);
             $this->display();
         }
         if (IS_POST) {
            
             $model = M("intro");
+            //dump(I(''));
             if (!$model->create()) {
                 // 如果创建失败 表示验证没有通过 输出错误提示信息
                 $this->error($model->getError());
@@ -41,7 +61,7 @@ class IntroController extends BaseController {
             } else {
                 //dump($date);
                 if ($model->add()) {
-                    $this->success("添加成功", U('intro/index',array('category'=>$category)));
+                    $this->success("添加成功", U('intro/index',array('category'=>$cid)));
                 } else {
                     $this->error("添加失败");
                 }
@@ -62,11 +82,21 @@ class IntroController extends BaseController {
         if (!IS_POST) {
             $time=date("Y-m-d h:i:sa");
             $id = intval(I('id'));
-            $category=iconv('gb2312','utf-8', I('category'));
+            $cid=I('category');
             $where['id']=$id;
-            $where['category']=$category;
+            $where['category']=$cid;
             $model = M('intro')->where($where)->find();
+            switch($cid){
+                case '1':
+                 $category='烽凰简介'; 
+                 break;
+                case '2':
+                 $category='烽凰团队'; 
+                 break;
+                default:
+            }
             //dump($model);
+            $this->assign('category',$category);
             $this->assign('model',$model);
             $this->assign('time',$time);
             $this->display();

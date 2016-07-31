@@ -39,13 +39,13 @@
                 </div>
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
-                        <li class="active"><a href="<?php echo U('index/index');?>">首页</a></li> 
+                        <li><a href="<?php echo U('index/index');?>">首页</a></li> 
                         <li class="dropdown">
-                          <a href="<?php echo U('intro/index');?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
+                          <a href="<?php echo U('intro/index',array('cid'=>'1'));?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('intro/index');?>">烽凰简介</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
                                <li class="divider"></li>
-                            <li><a href="<?php echo U('intro/index');?>">烽凰团队</a></li>
+                            <li><a href="<?php echo U('intro/index',array('cid'=>'2'));?>">烽凰团队</a></li>
                           </ul>
                         </li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
@@ -91,7 +91,7 @@
 	<div class="container">
 		<div class="row">
                <div class="page-header">    
-                      <h3><?php echo ($model["title"]); ?><small><?php echo ($model["createdate"]); ?></small></h3>       
+                      <h3><?php echo ($model["title"]); ?> <small><?php echo ($model["createdate"]); ?></small></h3>       
                  </div>
            
                  <div class="col-md-12">
@@ -102,52 +102,16 @@
 		
 	</div>
 	</section>	<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">联系方式</h5>
-					<address>
-					<strong>地址：</strong><br>
-					上海平阳路1501号803室</address>
-					<p>
-						<i class="icon-phone"></i><strong>电话: </strong>(021) 34550321 <br>
-                        <i class="icon-phone"></i><strong>传真: </strong>021-34550321-802<br>
-						<i class="icon-envelope-alt"></i><strong>Email: </strong>fenghuang_sh@126.com
-					</p>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">快速链接</h5>
-					<ul class="link-list">
-						<li><a href="#">麦西西</a></li>
-						<li><a href="#">天猫</a></li>
-						<li><a href="#">百度</a></li>
-						<li><a href="#">京东</a></li>
-						<li><a href="#">其他</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-lg-3">
-				<div class="widget">
-					<h5 class="widgetheading">服务</h5>
-					<ul class="link-list">
-						<li><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a></li>
-						<li><a href="#">Pellentesque et pulvinar enim. Quisque at tempor ligula</a></li>
-						<li><a href="#">Natus error sit voluptatem accusantium doloremque</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
 	<div id="sub-footer">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="copyright">
 						<p>
-							Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="#"></a>
+							Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+						</p>
+                        <p>
+							上海烽凰文化传播有限公司 &copy; 版权所有
 						</p>
 					</div>
 				</div>

@@ -1,17 +1,16 @@
-<include file="Public/header" title="{$category}-上海烽凰后台管理主页" />
+<include file="Public/header" title="网络视频锦集管理-上海烽凰后台管理主页" />
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">{$category}管理</a> </div>
-    <h1>{$category}管理</h1>
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">网络视频锦集管理</a> </div>
+    <h1>网络视频锦集管理</h1>
   </div>
 <div class="container">
           <div class="row">
         <div class="span12">
-            <a href="{:U('video/add',array('category'=>$category))}" class="btn btn-primary">添加{$category}</a>
+            <a href="{:U('video/add')}" class="btn btn-primary">添加网络视频锦集</a>
                           
                 <form action="{:U('video/index')}" method="post"  class="navbar-form pull-right">
-                    <input type="hidden" name="category" value="{$category}"/>
                     <input type="text" name="key" placeholder="搜索..."/>
                     <button type="submit"><i class="icon-search icon-white"></i></button>
                 </form><hr/>
@@ -21,19 +20,19 @@
                <foreach name="video" item="v">
                      <li class="span3">
                          <div class="thumbnail">
-                             <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" class="img-responsive"/></a>
+                             <a href="{:U('video/details',array('id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" class="img-responsive"/></a>
                             <section>
-                                <a href="{:U('video/details',array('category'=>$v['category'],'id'=>$v['id']))}" class="link-1">{$v.intro}</a>
+                                <a href="{:U('video/details',array('id'=>$v['id']))}" class="link-1">{$v.intro}</a>
                                 <if condition="$v['ishome'] eq 'yes'">          
                                         <p>已放到首页</p>
                                 </if>
                             </section>
                          </div>
                      <div class="actions">
-                         <a href="{:U('video/update',array('category'=>$v['category'],'id'=>$v['id']))}">
+                         <a href="{:U('video/update',array('id'=>$v['id']))}">
                             <i class="icon-pencil icon-white"></i>
                         </a>
-                         <a href="{:U('video/delete',array('category'=>$v['category'],'id'=>$v['id']))}">
+                         <a href="{:U('video/delete',array('id'=>$v['id']))}">
                              <i class="icon-remove icon-white"></i>
                          </a>
                      </div>
@@ -45,5 +44,5 @@
     <div  class="pull-right">
      {$page}
     </div>
-  </div>
+  </div>  </div>
 <include file="Public/footer" />

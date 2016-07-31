@@ -1,0 +1,161 @@
+[ 2016-07-31T09:02:31+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T09:04:58+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T09:08:30+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:16:51+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:16:54+08:00 ] ::1 /admin.php/video/add.html
+ERR: 1406:Data too long for column 'videoURL' at row 1
+ [ SQL语句 ] : INSERT INTO `video` (`title`,`intro`,`videoURL`,`imageUrl`,`category`,`ishome`) VALUES ('1111111111111111','1112222222222222222222','&lt;embed src=&quot;http://player.youku.com/player.php/sid/XNjAzOTU2NjY4/v.swf&quot; allowFullScreen=&quot;true&quot; quality=&quot;high&quot; width=&quot;800&quot; height=&quot;700&quot; align=&quot;middle&quot; allowScriptAccess=&quot;always&quot; type=&quot;application/x-shockwave-flash&quot;&gt;&lt;/embed&gt;',NULL,'1','yes')
+
+[ 2016-07-31T10:18:51+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:20:37+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:21:06+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:21:57+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:34:57+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:38:45+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:39:15+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T10:39:55+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T11:15:27+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T11:16:03+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T11:23:23+08:00 ] ::1 /admin.php/images/big.cur
+ERR: 无法加载控制器:Images
+
+[ 2016-07-31T11:43:56+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,`
+
+[ 2016-07-31T11:45:55+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,`
+
+[ 2016-07-31T11:47:44+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1052:Column 'title' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE `title` LIKE '%111%' OR `intro` LIKE '%111%' OR `content` LIKE '%111%' ORDER BY id ASC 
+
+[ 2016-07-31T11:48:40+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.0' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `0`
+
+[ 2016-07-31T11:49:08+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1052:Column 'title' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE `title` LIKE '%11%' OR `intro` LIKE '%11%' OR `content` LIKE '%11%' 
+
+[ 2016-07-31T11:50:30+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1103:Incorrect table name ''
+ [ SQL语句 ] : SHOW COLUMNS FROM ``
+
+[ 2016-07-31T11:56:45+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhcase,service' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase,service`
+
+[ 2016-07-31T11:57:28+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhdb' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fhdb`.`article,fhdb`
+
+[ 2016-07-31T11:58:02+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.fhdb' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fhdb`
+
+[ 2016-07-31T12:28:19+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhcase,service' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase,service`
+
+[ 2016-07-31T12:31:06+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.think_article' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_article`
+
+[ 2016-07-31T12:31:27+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1052:Column 'title' in field list is ambiguous
+ [ SQL语句 ] : SELECT `title`,`intro`,`content` FROM article article,fhcase fhcase LIMIT 10  
+
+[ 2016-07-31T12:31:51+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhcase' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase`
+
+[ 2016-07-31T12:32:34+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhcase' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase`
+
+[ 2016-07-31T12:34:27+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.0' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `0`
+
+[ 2016-07-31T12:41:59+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1052:Column 'title' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE `title` LIKE '%11%' OR `intro` LIKE '%11%' OR `content` LIKE '%11%' 
+
+[ 2016-07-31T12:43:28+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1052:Column 'intro' in where clause is ambiguous
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE `intro` LIKE '%11%' OR `content` LIKE '%11%' 
+
+[ 2016-07-31T12:54:09+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%44% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %44% ) 
+
+[ 2016-07-31T12:55:57+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%44% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %44% ) 
+
+[ 2016-07-31T12:56:07+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%11% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %11% ) 
+
+[ 2016-07-31T12:56:57+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%11% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %11% ) 
+
+[ 2016-07-31T12:58:06+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%11% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %11% ) 
+
+[ 2016-07-31T12:58:12+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%11% )' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.content AND fhcase.content AND service.content LIKE %11% ) 
+
+[ 2016-07-31T13:00:58+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1054:Unknown column '是' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.title or fhcase.title or service.title LIKE 是 ) 
+
+[ 2016-07-31T13:01:23+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.title or fhcase.title or service.title LIKE # ) 
+
+[ 2016-07-31T13:18:32+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : SELECT * FROM `article` `article`,`fhcase` `fhcase`,`service` `service` WHERE ( article.title or fhcase.content or service.content LIKE  ) 
+
+[ 2016-07-31T13:26:58+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1054:Unknown column 'fhcase.title' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `article` `article` WHERE article.title LIKE '%4%' OR article.intro LIKE '%4%' OR article.content LIKE '%4%' OR fhcase.title LIKE '%4%' OR fhcase.intro LIKE '%4%' OR fhcase.content LIKE '%4%' OR service.title LIKE '%4%' OR service.intro LIKE '%4%' OR service.content LIKE '%4%' 
+
+[ 2016-07-31T13:28:34+08:00 ] ::1 /admin.php/index/search.html
+ERR: 1146:Table 'fhdb.article,fhcase,service' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `article,fhcase,service`
+

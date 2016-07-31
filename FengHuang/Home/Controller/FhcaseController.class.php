@@ -3,11 +3,11 @@ namespace Home\Controller;
 use Think\Controller;
 class FhcaseController extends BaseController {
      public function index(){   
-        $new=showCaseTwo('1');
-        $public=showCaseTwo('2');
-        $entertainment=showCaseTwo('3');
-        $event=showCaseTwo('4');
-        $crisis=showCaseTwo('5');
+        $new=showCaseTwo('4');
+        $public=showCaseTwo('1');
+        $entertainment=showCaseTwo('5');
+        $event=showCaseTwo('2');
+        $crisis=showCaseTwo('3');
 
         $this->assign('new', $new);
         $this->assign('public', $public);

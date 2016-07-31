@@ -5,6 +5,7 @@ return array(
     'TMPL_PARSE_STRING' => array(
         '__CSS_URL__' => __ROOT__.'/FengHuang/'.MODULE_NAME.'/View/' . '/Public/Styles',
         '__JS_URL__' => __ROOT__.'/FengHuang/'.MODULE_NAME.'/View/' . '/Public/Script',
-        '__PUBLIC_URL__' => __ROOT__.'/FengHuang/'.MODULE_NAME.'/View/' . '/Public/font-awesome',),
+        '__PUBLIC_URL__' => __ROOT__.'/FengHuang/'.MODULE_NAME.'/View/' . '/Public/font-awesome',
+        '_IMAGE_' => __ROOT__.'/FengHuang/'.MODULE_NAME.'/View/' . '/Public/images',),
 
 );
