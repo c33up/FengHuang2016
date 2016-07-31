@@ -104,11 +104,11 @@
 		                    <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
 		                    </div>
 		                    <div class="col-md-8">
-			                    <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h1> <?php echo ($a["title"]); ?></h1></a>
+			                    <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
                                                 <div>
                                 
                                         </div>
-                                    <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h4 class="intro"><?php echo ($a["intro"]); ?></h4></a>
+                                    <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
 			                    </div>
                                 </div>
 		                    </div><?php endforeach; endif; ?>

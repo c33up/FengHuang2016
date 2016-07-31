@@ -38,7 +38,7 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -201,6 +201,13 @@ close-top-serch-->
 
 <footer class="row-fluid">
 <!--Footer-part-->
-  <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
+  <div id="footer" class="span12">
+        <p>
+        Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+        </p>
+        <p>
+        上海烽凰文化传播有限公司 &copy; 版权所有
+        </p>
+  </div>
 <!--end-Footer-part-->
 </footer>

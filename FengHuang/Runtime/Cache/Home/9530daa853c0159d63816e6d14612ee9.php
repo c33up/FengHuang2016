@@ -21,7 +21,7 @@
     </head>
     <body>
 <div id="wrapper">    <!-- start header -->
-    <div class="container">
+ 
         <div class="container">
 	<header>
        
@@ -95,7 +95,7 @@
 		
             <div class="col-md-12 pading30">
             <div class="page-header">    
-                    <h3 class="marginleft20">视频集锦</h3>       
+                <h3 class="marginleft20">视频集锦</h3>       
             </div>
 
             <div class="row">

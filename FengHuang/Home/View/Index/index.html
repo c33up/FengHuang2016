@@ -26,11 +26,11 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
+                <div class="row service-v1 marginbot20">
                  <foreach name="article" item="a">
-                      <div class="col-md-6 md-margin-bottom-40">
+                      <div class="col-md-6">
 		                <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		              <h4 class="intro">{$a.intro}</h4></a>
+		              <p class="intro psize16">{$a.intro}</p></a>
 			   
                        </div>
              
@@ -48,11 +48,11 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 margin-bottom-40">
+                <div class="row service-v1 marginbot20">
                  <foreach name="video" item="a">
-                      <div class="col-md-6 md-margin-bottom-40">
+                      <div class="col-md-6">
 		                 <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		             <h4 class="intro">{$a.intro}</h4></a>
+		              <p class="intro psize16">{$a.intro}</p></a>
 			   
                        </div>
              
@@ -76,13 +76,11 @@
                   </ul>
             </div>
 	        </div>
-                  <div class="col-md-12">
-
-             
+            <div class="col-md-12">
                <foreach name="case" item="a">
-              <div class="col-md-3 md-margin-bottom-40">
+              <div class="col-md-3 marginbot40">
 		        <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
-		      <h4 class="intro">{$a.intro}</h4></a>
+		      <p class="intro psize16">{$a.intro}</p></a>
 			   
                </div>
              
