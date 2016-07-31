@@ -200,11 +200,11 @@ close-top-serch-->
               <tbody>
         <?php if(is_array($article)): foreach($article as $key=>$a): ?><tr class="gradeX">
                 <td><?php echo ($a["id"]); ?></td>
-                <td><?php echo ($a["title"]); ?></td>
-                <td><?php echo ($a["intro"]); ?></td>
+                <td width="20%"><?php echo ($a["title"]); ?></td>
+                <td width="40%"><?php echo ($a["intro"]); ?></td>
                 <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
-                <td><?php echo ($a["createdate"]); ?></td>
-                <td><?php echo ($a["ishome"]); ?></td>
+                <td width="10%"><?php echo ($a["createdate"]); ?></td>
+                <td ><?php echo ($a["ishome"]); ?></td>
                 <td class="center">
                     <a href="<?php echo U('service/update',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">修改</a> <a href="<?php echo U('service/details',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">详情</a> <a href="<?php echo U('service/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">直接删除</a>
                 </td>

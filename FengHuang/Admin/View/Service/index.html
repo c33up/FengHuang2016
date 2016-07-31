@@ -38,11 +38,11 @@
         <foreach name="article" item="a">
             <tr class="gradeX">
                 <td>{$a.id}</td>
-                <td>{$a.title}</td>
-                <td>{$a.intro}</td>
+                <td width="20%">{$a.title}</td>
+                <td width="40%">{$a.intro}</td>
                 <td><img src="{$a.imageurl}" alt="{$a.title}" width="100" height="100"/></td>
-                <td>{$a.createdate}</td>
-                <td>{$a.ishome}</td>
+                <td width="10%">{$a.createdate}</td>
+                <td >{$a.ishome}</td>
                 <td class="center">
                     <a href="{:U('service/update',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">修改</a> <a href="{:U('service/details',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">详情</a> <a href="{:U('service/delete',array('category'=>$a['category'],'id'=>$a['id']))}" class="btn btn-primary ">直接删除</a>
                 </td>

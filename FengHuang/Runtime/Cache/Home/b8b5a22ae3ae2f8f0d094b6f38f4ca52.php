@@ -104,8 +104,8 @@
 		            </div>
 		            <div class="col-md-8">
 			           
-                    <a href="<?php echo U('service/detail',array('cid'=>$cid,'id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
-                    <a href="<?php echo U('service/detail',array('cid'=>$cid,'id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
                         </div>
 		            </div><?php endforeach; endif; ?>
             <div class="col-md-12">
