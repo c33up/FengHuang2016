@@ -1,4 +1,4 @@
-<include file="Public/header" title="首页"/>   
+<include file="Public/header" title="案例赏析"/>   
 <section class="callaction">
 	<div class="container">
 		<div class="row">
@@ -12,11 +12,9 @@
 		            <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
 		            </div>
 		            <div class="col-md-8">
-			            <div><a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><h1> {$a.title}</h1></a>
-                                        <div>
-                                
-                             </div>
-                            <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4></a>
+			            <div>
+                            <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><h2> {$a.title}</h2></a>
+                            <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><p class="intro psize16">{$a.intro}</p></a>
 			            </div>
                         </div>
 		</div>

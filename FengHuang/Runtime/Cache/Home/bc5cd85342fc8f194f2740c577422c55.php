@@ -106,8 +106,8 @@
              <div class="col-md-6">
                  <div class="page-header">
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('article/index');?>"><h4>more</h4></a></li>
-                      <li><h3>烽凰方法论</h3></li>
+                      <li class="pull-right"><a href="<?php echo U('article/index');?>">more</a></li>
+                      <li>烽凰方法论</li>
                     </ul>
                  </div>
 		 
@@ -124,8 +124,8 @@
                 <div class="col-md-6" >
                  <div class="page-header" >
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('video/index');?>"><h4>more</h4></a></li>
-                      <li><h3>视频中心</h3></li>
+                      <li class="pull-right"><a href="<?php echo U('video/index');?>">more</a></li>
+                      <li>视频中心</li>
                     </ul>
             
                  </div>
@@ -151,8 +151,8 @@
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
-                  <li class="pull-right"><a href="<?php echo U('fhcase/index');?>"><h4>more</h4></a></li>
-                  <li><h3>案例赏析</h3></a></li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/index');?>">more</a></li>
+                      <li>案例赏析</li>
                   </ul>
             </div>
 	        </div>

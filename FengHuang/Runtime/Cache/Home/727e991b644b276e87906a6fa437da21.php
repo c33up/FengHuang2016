@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>我们的服务</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -88,20 +88,19 @@
             </div>
         </nav>   
 <section class="callaction">
-	<div class="container">
 		<div class="row">
-               <div class="page-header">    
-                      <h3><?php echo ($model["title"]); ?> </h3>       
-                 </div>
-           
-                 <div class="col-md-12">
-                     <?php echo ($content); ?>
-
-		        </div>
+            <div class="container">
+                <div class="col-md-12">
+                    
+                <div class="page-header">    
+                    <h3><?php echo ($model["title"]); ?></h3>       
+                </div>
+                    <?php echo ($content); ?>
+                </div>
+		    </div>
 		</div>
-		
-	</div>
-	</section>	<div class="container">
+
+</section>	<div class="container">
 <footer>
 	<div id="sub-footer">
 		<div class="container">

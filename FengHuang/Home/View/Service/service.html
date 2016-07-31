@@ -1,9 +1,10 @@
-<include file="Public/header" title="首页"/>   
+<include file="Public/header" title="我们的服务"/>   
 <section class="callaction">
-	<div class="container">
 		<div class="row">
-               <div class="page-header">    
-                      <h3>{$category}</h3>       
+            <div class="container">
+                <div class="col-md-12">
+                   <div class="page-header ">    
+                      <h3 class="marginleft20">{$category}</h3>       
                  </div>
 		 
             <foreach name="article" item="a">
@@ -12,12 +13,9 @@
 		            <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
 		            </div>
 		            <div class="col-md-8">
-			            <div><a href="{:U('service/detail',array('id'=>$a['id']))}"><h1> {$a.title}</h1></a>
-                                        <div>
-                                
-                             </div>
-                            <a href="{:U('service/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4></a>
-			            </div>
+			           
+                    <a href="{:U('service/detail',array('id'=>$a['id']))}"><h2> {$a.title}</h2></a>
+                    <a href="{:U('service/detail',array('id'=>$a['id']))}"><p class="intro psize16">{$a.intro}</p></a>
                         </div>
 		            </div>
             </foreach>
@@ -27,6 +25,6 @@
               </div>
                 </div>
 		</div>
-		
+		</div>
 	</div>
 	</section><include file="Public/footer"/>

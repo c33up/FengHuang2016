@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>视频集锦</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -93,11 +93,11 @@
         <div class="container">
             <div class="col-md-12">
                 <div class="page-header">    
-                    <h3><?php echo ($model["title"]); ?></h3>       
+                    <h3 class="marginleft20"><?php echo ($model["title"]); ?></h3>       
                 </div>
-                <?php if($model['category'] == '1' ): echo ($videourl); ?> 
+                <?php if($model['category'] == '1' ): ?><div class="marginleft40"><?php echo ($videourl); ?></div> 
                 <?php else: ?>
-                    <video width="640" height="480" controls>
+                    <video width="640" height="480" controls class="marginleft40">
                         <source src="<?php echo ($model["localvideo"]); ?>" type="video/mp4"/>
                         <source src="<?php echo ($model["localvideo"]); ?>" type="video/wmv"/>
                         <source src="<?php echo ($model["localvideo"]); ?>" type="video/avi"/>

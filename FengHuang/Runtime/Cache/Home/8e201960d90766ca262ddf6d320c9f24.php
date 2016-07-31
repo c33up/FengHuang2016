@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>我们的服务</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -88,16 +88,18 @@
             </div>
         </nav>   
 <section class="callaction">
-	<div class="container">
+	
 		<div class="row">
+            <div class="container">
+                <div class="col-md-12">
                <div class="page-header">    
                       <h3>我们的服务</h3>       
                  </div>
 		  <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'1'));?>"><h4>more>></h4></a></li>
-                      <li><h4>媒体发布</h4> </li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'1'));?>">more</a></li>
+                      <li>媒体发布</li>
                     </ul>            
                  </div>
             <?php if(is_array($media)): foreach($media as $key=>$n): ?><div class="col-md-12 marginbot20">
@@ -105,11 +107,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -118,8 +118,8 @@
              <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'2'));?>"><h4>more>></h4></a></li>
-                      <li><h4>公关活动</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'2'));?>">more</a></li>
+                      <li>公关活动</li>
                     </ul>   
                              
                  </div>
@@ -128,11 +128,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                    <div>
-                            
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -142,8 +140,8 @@
              <div class="col-md-12">
               <div class="page-header">  
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'3'));?>"><h4>more>></h4></a></li>
-                      <li><h4>危机公关处理</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'3'));?>">more</a></li>
+                      <li>危机公关处理</li>
                     </ul>       
                  </div>
             <?php if(is_array($crisis)): foreach($crisis as $key=>$n): ?><div class="col-md-12 marginbot20">
@@ -151,11 +149,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -164,8 +160,8 @@
             <div class="col-md-12">
               <div class="page-header">  
                      <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'4'));?>"><h4>more>></h4></a></li>
-                      <li><h4>广告代理发布</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'4'));?>">more</a></li>
+                      <li>广告代理发布</li>
                     </ul>  
                          
                  </div>
@@ -174,11 +170,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                            
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -187,8 +181,8 @@
              <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'5'));?>"><h4>more>></h4></a></li>
-                      <li><h4>网络推广</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'5'));?>">more</a></li>
+                      <li>网络推广</li>
                     </ul>   
                            
                  </div>
@@ -197,11 +191,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -220,11 +212,11 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
+			        <div> <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
                                     <div>
                             
                          </div>
-                       <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+                       <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -233,8 +225,8 @@
              <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'7'));?>"><h4>more>></h4></a></li>
-                      <li><h4>全案策划服务</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'7'));?>">more</a></li>
+                      <li>全案策划服务</li>
                     </ul>   
                            
                  </div>
@@ -243,18 +235,16 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1> <?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3> <?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
              </div>
 
 		</div>
-		
+		</div>
 	</div>
 	</section>	<div class="container">
 <footer>

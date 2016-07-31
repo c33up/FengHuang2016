@@ -1,16 +1,16 @@
-<include file="Public/header" title="首页"/>   
+<include file="Public/header" title="视频集锦"/>   
 <section class="callaction">
 	
 	<div class="row">
         <div class="container">
             <div class="col-md-12">
                 <div class="page-header">    
-                    <h3>{$model.title}</h3>       
+                    <h3 class="marginleft20">{$model.title}</h3>       
                 </div>
                 <if condition="$model['category'] eq '1' ">
-                    {$videourl} 
+                    <div class="marginleft40">{$videourl}</div> 
                 <else />
-                    <video width="640" height="480" controls>
+                    <video width="640" height="480" controls class="marginleft40">
                         <source src="{$model.localvideo}" type="video/mp4"/>
                         <source src="{$model.localvideo}" type="video/wmv"/>
                         <source src="{$model.localvideo}" type="video/avi"/>

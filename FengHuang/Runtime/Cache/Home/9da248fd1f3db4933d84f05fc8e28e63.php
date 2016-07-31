@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>联系我们</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -87,23 +87,20 @@
                 </div>
             </div>
         </nav>   
-<section class="callaction">
-	<div class="container">
+<section class="callaction">	
 		<div class="row">
-               <div class="page-header">    
-                      <h3>联系我们</h3>       
-                 </div>
-           
+            <div class="container">
                  <div class="col-md-12">
-                    <address>
-					<strong>地址：</strong><?php echo ($contact["address"]); ?></address>
-					<p>
-						<i class="icon-phone"></i><strong>电话: </strong><?php echo ($contact["telphone"]); ?> <br>
-                        <i class="icon-phone"></i><strong>传真: </strong><?php echo ($contact["fax"]); ?> <br>
-						<i class="icon-envelope-alt"></i><strong>Email: </strong><?php echo ($contact["email"]); ?> 
-					</p>
-
-		        </div>
+                   <div class="page-header">    
+                          <h3>联系我们</h3>       
+                     </div>
+                      <p class="psize">
+						    <i class="icon-phone"></i><strong>电话: </strong><?php echo ($contact["telphone"]); ?> <br>
+                            <i class="icon-phone"></i><strong>传真: </strong><?php echo ($contact["fax"]); ?> <br>
+						    <i class="icon-envelope-alt"></i><strong>Email: </strong><?php echo ($contact["email"]); ?><br> 
+                           <i class="icon-envelope-alt"></i><strong>地址： </strong><?php echo ($contact["address"]); ?> 
+					  </p>
+		            </div>
 		</div>
 		
 	</div>

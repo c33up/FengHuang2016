@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>案例赏析</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -88,16 +88,18 @@
             </div>
         </nav>   
 <section class="callaction">
-	<div class="container">
+	
 		<div class="row">
+            <div class="container">
+            <div class="col-md-12">
                <div class="page-header">    
                       <h3>案例赏析</h3>       
                  </div>
 		  <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'4'));?>"><h4>more>></h4></a></li>
-                      <li><h4>新闻营销</h4> </li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'4'));?>">more</a></li>
+                      <li>新闻营销</li>
                     </ul>            
                  </div>
             <?php if(is_array($new)): foreach($new as $key=>$n): ?><div class="col-md-12 marginbot20">
@@ -105,11 +107,10 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                          
-                         </div>
-                       <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                    <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+
+                    <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -118,8 +119,8 @@
              <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'1'));?>"><h4>more>></h4></a></li>
-                      <li><h4>公益营销</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'1'));?>">more</a></li>
+                      <li>公益营销</li>
                     </ul>   
                              
                  </div>
@@ -128,11 +129,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -142,8 +141,8 @@
              <div class="col-md-12">
               <div class="page-header">  
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'5'));?>"><h4>more>></h4></a></li>
-                      <li><h4>娱乐文化营销</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'5'));?>">more</a></li>
+                      <li>娱乐文化营销</li>
                     </ul>       
                  </div>
             <?php if(is_array($entertainment)): foreach($entertainment as $key=>$n): ?><div class="col-md-12 marginbot20">
@@ -151,11 +150,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                            
-                         </div>
-                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -164,8 +161,8 @@
             <div class="col-md-12">
               <div class="page-header">  
                      <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'2'));?>"><h4>more>></h4></a></li>
-                      <li><h4>事件营销</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'2'));?>">more</a></li>
+                      <li>事件营销</li>
                     </ul>  
                          
                  </div>
@@ -174,11 +171,9 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div><a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1> <?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                           
-                         </div>
-                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div>
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3> <?php echo ($n["title"]); ?></h3></a>
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
@@ -187,8 +182,8 @@
              <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'3'));?>"><h4>more>></h4></a></li>
-                      <li><h4>危机公关</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('fhcase/fhcase',array('cid'=>'3'));?>">more</a></li>
+                      <li>危机公关</li>
                     </ul>   
                            
                  </div>
@@ -197,18 +192,16 @@
 		        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
 		        </div>
 		        <div class="col-md-8">
-			        <div> <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h1><?php echo ($n["title"]); ?></h1></a>
-                                    <div>
-                           
-                         </div>
-                       <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <h4 class="intro"><?php echo ($n["intro"]); ?></h4></a>
+			        <div> 
+                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h3><?php echo ($n["title"]); ?></h3></a>
+                       <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <p class="intro psize16"><?php echo ($n["intro"]); ?></p></a>
 			        </div>
                     </div>  
                       </div><?php endforeach; endif; ?>
              </div>
 
 		</div>
-		
+		</div>
 	</div>
 	</section>	<div class="container">
 <footer>

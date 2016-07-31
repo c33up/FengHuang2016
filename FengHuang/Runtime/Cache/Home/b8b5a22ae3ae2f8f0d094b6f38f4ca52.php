@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>首页</title>
+        <title>我们的服务</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -88,10 +88,11 @@
             </div>
         </nav>   
 <section class="callaction">
-	<div class="container">
 		<div class="row">
-               <div class="page-header">    
-                      <h3><?php echo ($category); ?></h3>       
+            <div class="container">
+                <div class="col-md-12">
+                   <div class="page-header ">    
+                      <h3 class="marginleft20"><?php echo ($category); ?></h3>       
                  </div>
 		 
             <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
@@ -99,12 +100,9 @@
 		            <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
 		            </div>
 		            <div class="col-md-8">
-			            <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h1> <?php echo ($a["title"]); ?></h1></a>
-                                        <div>
-                                
-                             </div>
-                            <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h4 class="intro"><?php echo ($a["intro"]); ?></h4></a>
-			            </div>
+			           
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
                         </div>
 		            </div><?php endforeach; endif; ?>
             <div class="col-md-12">
@@ -113,7 +111,7 @@
               </div>
                 </div>
 		</div>
-		
+		</div>
 	</div>
 	</section>	<div class="container">
 <footer>
