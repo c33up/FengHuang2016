@@ -75,7 +75,7 @@ class ServiceController extends BaseController {
 
      public function detail(){
             $id = intval(I('id'));
-            $cid =I('cid');
+            $cid =intval(I('cid'));
             $where['id']=$id;
             $where['category']=$cid;
             $model = M('service')->where($where)->find();
@@ -83,8 +83,8 @@ class ServiceController extends BaseController {
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));
 
              M('service')->where($where)->setInc('num',1);  
-
-            $this->assign('model',$model);
+             //dump($model);
+             $this->assign('model',$model);
             $this->assign('content',$content);
             $this->display();
     }

@@ -21,14 +21,15 @@
     </head>
     <body>
 <div id="wrapper">    <!-- start header -->
-    
-	<header>
+ 
         <div class="container">
+	<header>
+       
             <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        </div>
+        
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
+          
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -85,15 +86,17 @@
                          
                     </ul>
                 </div>
-            </div>
-        </nav>   
+          
+        </nav>
+</div>   
+  <div class="container">
 <section class="callaction">
-	
+  
 		<div class="row">
-            <div class="container">
-                 <div class="col-md-12">
+          
+                 <div class="col-md-12 pading30">
                    <div class="page-header">    
-                          <h3>烽凰方法论</h3>       
+                          <h3 class="marginleft20">烽凰方法论</h3>       
                      </div>
 		 
                     <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
@@ -115,14 +118,14 @@
                         </div>
                     </div>
             </div>
-		</div>
+	
 	</div>
-	</section>	<div class="container">
-<footer>
+	</section>      </div><div class="container">
+    <footer>
 	<div id="sub-footer">
-		<div class="container">
+	
 			<div class="row">
-				<div class="col-lg-6">
+			
 					<div class="copyright">
 						<p>
 							Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
@@ -132,10 +135,8 @@
 						</p>
 					</div>
 				</div>
-			
-			</div>
 		</div>
-	</div>
+	
 	</footer>    </div></div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
   <!-- javascript

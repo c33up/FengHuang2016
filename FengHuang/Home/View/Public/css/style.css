@@ -6,7 +6,7 @@ body {
 	font-size:14px;
 	font-weight:300;
 	line-height:1.6em;
-	background-color: #fff;
+	background-color: #F5F5F5;
 }
 
 
@@ -33,6 +33,14 @@ h1,h2, h3, h4, h5, h6 {
 	color:#333;
 }
  
+
+.container {
+	padding:10px 20px 0 20px;
+	position:relative;
+    
+    background-color: #fff;
+}
+
 
 
 #wrapper{
@@ -1577,8 +1585,7 @@ ul.social-network li {
 #sub-footer{
 	text-shadow:none;
 	color:#A9A9A9;
-	padding:0;
-	padding-top:30px;
+	padding:0px;
 	margin:20px 0 0 0;
 	background: #222222;
 }
@@ -1593,7 +1600,9 @@ ul.social-network li {
 }
 
 .copyright {
-	text-align:left;
+    padding:10px;
+    color:#A9A9A9;
+	text-align:center;
 	font-size:12px;
 }
 
@@ -1694,6 +1703,20 @@ article img.pull-right, article .align-right{
 .clear-marginbot{
 	margin-bottom:0;
 }
+
+.pading10{
+	padding:10px;
+}
+.pading20{
+	padding:20px;
+}
+.pading30{
+	padding:30px;
+}
+.pading40{
+	padding:40px;
+}
+
 
 .marginleft10{
 	margin-left:10px;

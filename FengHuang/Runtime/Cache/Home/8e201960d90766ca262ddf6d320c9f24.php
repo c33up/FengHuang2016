@@ -21,14 +21,15 @@
     </head>
     <body>
 <div id="wrapper">    <!-- start header -->
-    
-	<header>
+ 
         <div class="container">
+	<header>
+       
             <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        </div>
+        
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
-            <div class="container">
+          
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                         <span class="icon-bar"></span>
@@ -85,15 +86,17 @@
                          
                     </ul>
                 </div>
-            </div>
-        </nav>   
+          
+        </nav>
+</div> 
+<div class="container">  
 <section class="callaction">
 	
 		<div class="row">
-            <div class="container">
-                <div class="col-md-12">
+            
+                <div class="col-md-12 pading30">
                <div class="page-header">    
-                      <h3>我们的服务</h3>       
+                      <h3 class="marginleft20">我们的服务</h3>       
                  </div>
 		  <div class="col-md-12">
               <div class="page-header">  
@@ -202,8 +205,8 @@
             <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'6'));?>"><h4>more>></h4></a></li>
-                      <li><h4>VI设计</h4></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'6'));?>">more</a></li>
+                      <li>VI设计</li>
                     </ul>   
                            
                  </div>
@@ -245,13 +248,13 @@
 
 		</div>
 		</div>
-	</div>
-	</section>	<div class="container">
-<footer>
+
+	</section>	</div><div class="container">
+    <footer>
 	<div id="sub-footer">
-		<div class="container">
+	
 			<div class="row">
-				<div class="col-lg-6">
+			
 					<div class="copyright">
 						<p>
 							Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
@@ -261,10 +264,8 @@
 						</p>
 					</div>
 				</div>
-			
-			</div>
 		</div>
-	</div>
+	
 	</footer>    </div></div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
   <!-- javascript

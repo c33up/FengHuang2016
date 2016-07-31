@@ -1,8 +1,9 @@
-<include file="Public/header" title="我们的服务"/>   
+<include file="Public/header" title="我们的服务"/>  
+ <div class="container"> 
 <section class="callaction">
 		<div class="row">
-            <div class="container">
-                <div class="col-md-12">
+           
+                <div class="col-md-12 pading30">
                    <div class="page-header ">    
                       <h3 class="marginleft20">{$category}</h3>       
                  </div>
@@ -14,8 +15,8 @@
 		            </div>
 		            <div class="col-md-8">
 			           
-                    <a href="{:U('service/detail',array('id'=>$a['id']))}"><h2> {$a.title}</h2></a>
-                    <a href="{:U('service/detail',array('id'=>$a['id']))}"><p class="intro psize16">{$a.intro}</p></a>
+                    <a href="{:U('service/detail',array('cid'=>$cid,'id'=>$a['id']))}"><h2> {$a.title}</h2></a>
+                    <a href="{:U('service/detail',array('cid'=>$cid,'id'=>$a['id']))}"><p class="intro psize16">{$a.intro}</p></a>
                         </div>
 		            </div>
             </foreach>
@@ -26,5 +27,5 @@
                 </div>
 		</div>
 		</div>
-	</div>
-	</section><include file="Public/footer"/>
+	
+	</section></div><include file="Public/footer"/>
