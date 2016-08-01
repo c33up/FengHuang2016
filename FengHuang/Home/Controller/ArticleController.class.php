@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 class ArticleController extends BaseController {
      public function index($key=""){   
-          $where['category'] = '烽凰方法论';
+          $where['category'] = '0';
         if($key === ""){
             
         }else{
@@ -29,7 +29,6 @@ class ArticleController extends BaseController {
      public function detail(){
             $id = intval(I('id'));
             $where['id']=$id;
-            $where['category']='烽凰方法论';
             $model = M('article')->where($where)->find();
             //dump($model);
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));

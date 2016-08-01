@@ -40,7 +40,7 @@
                 <td>{$a.id}</td>
                 <td width="20%">{$a.title}</td>
                 <td width="40%">{$a.intro}</td>
-                <td><img src="{$a.imageurl}" alt="{$a.title}" width="100" height="100"/></td>
+                <td><img src="{$a.imageurl}" alt="{$a.title}" width="100px" height="100px"/></td>
                 <td width="10%">{$a.createdate}</td>
                  <td>{$a.ishome}</td>
                 <td class="center">
@@ -55,7 +55,7 @@
         </div>
           <div>
               <div class="pull-left">
-                   <a href="{:U('article/add',array('category'=>$category))}" class="btn btn-large btn-primary ">添加{$category}</a>
+                   <a href="{:U('article/add',array('category'=>$cid))}" class="btn btn-large btn-primary ">添加{$category}</a>
                </div>
               <div class="pull-right">
                    {$page}

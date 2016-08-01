@@ -77,26 +77,26 @@ close-top-serch-->
             <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
-    <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
+    <li> <a href="<?php echo U('article/index',array('category'=>'0'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例赏析</span></a>
           <ul>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'1'));?>">公益营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'2'));?>">事件营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'3'));?>">危机公关</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'4'));?>">新闻营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'5'));?>">娱乐文化营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'11'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'12'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'13'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'14'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'15'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>我们的服务</span></a>
           <ul>
-            <li><a href="<?php echo U('service/index',array('category'=>'1'));?>">媒体发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'2'));?>">公关活动</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'3'));?>">危机公关处理</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'4'));?>">广告代理发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'5'));?>">网络推广</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'6'));?>">VI设计</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'21'));?>">媒体发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'22'));?>">公关活动</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'23'));?>">危机公关处理</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'24'));?>">广告代理发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'25'));?>">网络推广</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'26'));?>">VI设计</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'27'));?>">全案策划服务</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
@@ -200,10 +200,10 @@ close-top-serch-->
               <tbody>
         <?php if(is_array($article)): foreach($article as $key=>$a): ?><tr class="gradeX">
                 <td><?php echo ($a["id"]); ?></td>
-                <td><?php echo ($a["title"]); ?></td>
-                <td><?php echo ($a["intro"]); ?></td>
+                <td width="20%"><?php echo ($a["title"]); ?></td>
+                <td width="40%"><?php echo ($a["intro"]); ?></td>
                 <td><img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>" width="100" height="100"/></td>
-                <td><?php echo ($a["createdate"]); ?></td>
+                <td width="10%"><?php echo ($a["createdate"]); ?></td>
                 <td><?php echo ($a["ishome"]); ?></td>
                 <td class="center">
                     <a href="<?php echo U('fhcase/update',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">修改</a> <a href="<?php echo U('fhcase/details',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">详情</a> <a href="<?php echo U('fhcase/delete',array('category'=>$a['category'],'id'=>$a['id']));?>" class="btn btn-primary ">直接删除</a>

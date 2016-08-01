@@ -1,32 +1,36 @@
-<include file="Public/header" title="添加{$model.category}-上海烽凰后台管理主页" />
+<include file="Public/header" title="添加{$category}-上海烽凰后台管理主页" />
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('article/index',array('category'=>$model['category']))}" class="tip-bottom">{$model.category}</a> <a href="#" class="current">{$model.category}详情</a> </div>
-  <h1>添加{$model.category}</h1>
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('article/index',array('category'=>$model['category']))}" class="tip-bottom">{$category}</a> <a href="#" class="current">{$category}详情</a> </div>
+  <h1>{$category}详情</h1>
 </div>
 <div class="container-fluid">
   <hr>
   <div class="row-fluid">
-    <div class="span12">
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+    <div class="span10">
+    
+        <div class="widget-title">
            <a href="{:U('article/index',array('category'=>$model['category']))}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
               <a href="{:U('article/update',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
               <a href="{:U('article/delete',array('category'=>$model['category'],'id'=>$model['id']))}" class="btn btn-primary">删除</a>
         </div>
-        <div class="span12 widget-content">
+        
             <div class="span10">
+                <div class="span12">
                   <h2>{$model.title}</h2>
                   <p>发表时间：{$model.createdate}</p>
                  
                 <if condition="$model['ishome'] eq 'yes'">          
                         <p>已放到首页</p>
                 </if>
-                        
-                <hr></hr>
+                     </div> 
+                      <div class="span12">
+                          <hr/>
+                           </div> 
+               
             </div>
             <div class="span10">
-                <div class="span4">
+                <div class="span2">
                     <img src="{$model.imageurl}" alt="{$model.title}" width="240" height="240"/>
                     </div>
                 <div class="span8">
@@ -36,9 +40,7 @@
             <div class="span10 widget-box">
                 {$content}                  
             </div>
-        </div>
-      </div>   
-    </div>
+        </div>    
   </div>
 </div>
 </div>

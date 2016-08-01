@@ -3,11 +3,11 @@ namespace Home\Controller;
 use Think\Controller;
 class FhcaseController extends BaseController {
      public function index(){   
-        $new=showCaseTwo('4');
-        $public=showCaseTwo('1');
-        $entertainment=showCaseTwo('5');
-        $event=showCaseTwo('2');
-        $crisis=showCaseTwo('3');
+        $new=showCaseTwo('14');
+        $public=showCaseTwo('11');
+        $entertainment=showCaseTwo('15');
+        $event=showCaseTwo('12');
+        $crisis=showCaseTwo('13');
 
         $this->assign('new', $new);
         $this->assign('public', $public);
@@ -20,19 +20,19 @@ class FhcaseController extends BaseController {
     public function fhcase($key=""){ 
             $cid =I('cid');
             switch($cid){
-           case '1':
+           case '11':
                $category='公益营销';
                break;
-           case '2':
+           case '12':
                $category='事件营销';
                break;
-           case '3':
+           case '13':
                $category='危机公关';
                break;
-           case '4':
+           case '14':
                $category='新闻营销';
                break;
-           case '5':
+           case '15':
                 $category='娱乐文化营销';
                 break;
            default:
@@ -49,12 +49,12 @@ class FhcaseController extends BaseController {
             $condition['_logic'] = 'or';
             $where['_complex']=$condition;
         } 
-        $model = M('fhcase')->where($where); 
+        $model = M('article')->where($where); 
         $count  = $model->where($where)->count();// 查询满足要求的总记录数
         $Page = new \Think\Page($count,8);// 实例化分页类 传入总记录数和每页显示的记录数(10)
         $Page->parameter = $where;
         $show = $Page->show();// 分页显示输出
-        $article = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id ASC')->select();
+        $article = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
         //dump($article);
         $this->assign('article', $article);
         $this->assign('page',$show);
@@ -68,7 +68,7 @@ class FhcaseController extends BaseController {
             $cid =I('cid');
             $where['id']=$id;
             $where['category']=$cid;
-            $model = M('fhcase')->where($where)->find();
+            $model = M('article')->where($where)->find();
             //dump($model);
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));
 

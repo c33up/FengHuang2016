@@ -53,33 +53,33 @@
                         <li class="dropdown">
                           <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle">案例赏析<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'1'));?>">公益营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'11'));?>">公益营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'2'));?>">事件营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'12'));?>">事件营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'3'));?>">危机公关</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'13'));?>">危机公关</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'4'));?>">新闻营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'14'));?>">新闻营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'5'));?>">娱乐文化营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'15'));?>">娱乐文化营销</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
                           <a href="<?php echo U('service/index');?>" class="dropdown-toggle">我们的服务<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('service/service',array('cid'=>'1'));?>">媒体发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'21'));?>">媒体发布</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'2'));?>">公关活动</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'22'));?>">公关活动</a></li>
                              
-                            <li><a href="<?php echo U('service/service',array('cid'=>'3'));?>">危机公关处理</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'23'));?>">危机公关处理</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'4'));?>">广告代理发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'24'));?>">广告代理发布</a></li>
                               
-                            <li><a href="<?php echo U('service/service',array('cid'=>'5'));?>">网络推广</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'25'));?>">网络推广</a></li>
                              
-                            <li><a href="<?php echo U('service/service',array('cid'=>'6'));?>">VI设计</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'26'));?>">VI设计</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'7'));?>">全案策划服务</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'27'));?>">全案策划服务</a></li>
                           </ul>
                         </li>
                         <li><a href="<?php echo U('contact/index');?>">联系我们</a></li>
@@ -101,7 +101,7 @@
 		  <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'1'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'21'));?>">more</a></li>
                       <li>媒体发布</li>
                     </ul>            
                  </div>
@@ -121,7 +121,7 @@
              <div class="col-md-12">
               <div class="page-header">  
                   <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'2'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'22'));?>">more</a></li>
                       <li>公关活动</li>
                     </ul>   
                              
@@ -143,7 +143,7 @@
              <div class="col-md-12">
               <div class="page-header">  
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'3'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'23'));?>">more</a></li>
                       <li>危机公关处理</li>
                     </ul>       
                  </div>
@@ -163,7 +163,7 @@
             <div class="col-md-12">
               <div class="page-header">  
                      <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'4'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'24'));?>">more</a></li>
                       <li>广告代理发布</li>
                     </ul>  
                          
@@ -184,7 +184,7 @@
              <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'5'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'25'));?>">more</a></li>
                       <li>网络推广</li>
                     </ul>   
                            
@@ -205,7 +205,7 @@
             <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'6'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'26'));?>">more</a></li>
                       <li>VI设计</li>
                     </ul>   
                            
@@ -228,7 +228,7 @@
              <div class="col-md-12">
               <div class="page-header">   
                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'7'));?>">more</a></li>
+                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'27'));?>">more</a></li>
                       <li>全案策划服务</li>
                     </ul>   
                            

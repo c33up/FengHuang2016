@@ -21,7 +21,6 @@
                   <th>简介</th>
                   <th>封面图片</th>
                   <th>创建时间</th>
-                  <th>类别</th>
                   <th>操作</th>
                 </tr>
               </thead>
@@ -29,11 +28,10 @@
         <foreach name="article" item="a">
             <tr class="gradeX">
                 <td>{$a.id}</td>
-                <td>{$a.title}</td>
-                <td>{$a.intro}</td>
-                <td><img src="{$a.imageurl}" alt="{$a.title}" width="100" height="100"/></td>
-                <td>{$a.createdate}</td>
-                <td>{$a.category}</td>
+                <td width="20%">{$a.title}</td>
+                <td width="40%">{$a.intro}</td>
+                <td><img src="{$a.imageurl}" alt="{$a.title}" width="100px" height="100px"/></td>
+                <td width="10%">{$a.createdate}</td>
                 <td>
                     <a href="{:U('article/update',array('category'=>$a['category'],'id'=>$a['id']))}">修改</a> |<a href="{:U('article/details',array('category'=>$a['category'],'id'=>$a['id']))}">详情</a> |<a href="{:U('article/delete',array('category'=>$a['category'],'id'=>$a['id']))}" style="color:red;" onclick="javascript:return del('您真的确定要删除吗？\n\n删除后将不能恢复!');">直接删除</a>
                 </td>
@@ -43,6 +41,11 @@
             </table>
           </div>
         </div>
+          <div>
+              <div class="pull-right">
+                   {$page}
+              </div>
+          </div>
           <div>
           </div>
       </div>

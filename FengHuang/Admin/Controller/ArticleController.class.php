@@ -2,25 +2,63 @@
 namespace Admin\Controller;
 use Think\Controller;
 class ArticleController extends BaseController {
-    public function index($key=""){   
+    public function index($key=""){  
+          $cid=I('category'); 
+          $where['category'] = $cid;
+          switch($cid){
+            case '0':
+            $category='烽凰方法论';
+            break;
+           case '11':
+               $category='公益营销';
+               break;
+           case '12':
+               $category='事件营销';
+               break;
+           case '13':
+               $category='危机公关';
+               break;
+           case '14':
+               $category='新闻营销';
+               break;
+           case '15':
+                $category='娱乐文化营销';
+                break;
+           case '21':
+               $category='媒体发布';
+               break;
+           case '22':
+               $category='公关活动';
+               break;
+           case '23':
+               $category='危机公关处理';
+               break;
+           case '24':
+               $category='广告代理发布';
+               break;
+           case '25':
+                $category='网络推广';
+                break;
+           case '26':
+               $category='VI设计';
+               break;
+           case '27':
+                $category='全案策划服务';
+                break;
+           default:
+                 //$this->error("跳转失败");
+       }
         if($key === ""){
-            if (IS_POST) {
-                $category=I('category'); 
-                $where['category'] =  $category;
-            } else{
-                $category=iconv('gb2312','utf-8',I('category')); 
-                $where['category'] =  $category;
-            }
+         
             $model = M('article');  
             
         }else{
-            $category=I('category');
+         
             $condition['title'] = array('like',"%$key%");
             $condition['intro'] = array('like',"%$key%");
             $condition['content'] = array('like',"%$key%");
             $condition['_logic'] = 'or';
             $where['_complex']=$condition;
-            $where['category'] =$category;
             $model = M('article')->where($where); 
         } 
         
@@ -32,6 +70,7 @@ class ArticleController extends BaseController {
         //dump($article);
         $this->assign('article', $article);
         $this->assign('page',$show);
+        $this->assign('cid',$cid);
         $this->assign('category',$category);
         //dump($show);
         $this->display();     
@@ -39,13 +78,56 @@ class ArticleController extends BaseController {
     //保存上传配置
     public function add()
     {
-         $category=I('category');
+         $cid=I('category');
          $time=date("Y-m-d h:i:sa");
          //默认显示添加表单
         if (!IS_POST) {
-
+            switch($cid){
+            case '0':
+            $category='烽凰方法论';
+            break;
+           case '11':
+               $category='公益营销';
+               break;
+           case '12':
+               $category='事件营销';
+               break;
+           case '13':
+               $category='危机公关';
+               break;
+           case '14':
+               $category='新闻营销';
+               break;
+           case '15':
+                $category='娱乐文化营销';
+                break;
+           case '21':
+               $category='媒体发布';
+               break;
+           case '22':
+               $category='公关活动';
+               break;
+           case '23':
+               $category='危机公关处理';
+               break;
+           case '24':
+               $category='广告代理发布';
+               break;
+           case '25':
+                $category='网络推广';
+                break;
+           case '26':
+               $category='VI设计';
+               break;
+           case '27':
+                $category='全案策划服务';
+                break;
+           default:
+                 //$this->error("跳转失败");
+       }
             //echo $category;
-            $this->assign('category', iconv('gb2312','utf-8', $category));
+            $this->assign('category',$category);
+            $this->assign('cid',$cid);
             $this->assign('time', $time);
             $this->display();
         }
@@ -87,11 +169,11 @@ class ArticleController extends BaseController {
                 $date['intro']=I('intro');
                 $date['content']=I('content');
                 $date['imageURL']=$imageurl;
-                $date['category']=$category;
+                $date['category']=$cid;
                 $date['ishome']=$ishome;
                 //dump($date);
                 if ($model->add($date)) {
-                    $this->success("添加成功", U('article/index',array('category'=>$category)));
+                    $this->success("添加成功", U('article/index',array('category'=>$cid)));
                 } else {
                     $this->error("添加失败");
                 }
@@ -107,17 +189,61 @@ class ArticleController extends BaseController {
      */
     public function update()
     {
-    	
+    	    $id = intval(I('id'));
+            $cid=I('category');
         //默认显示添加表单
         if (!IS_POST) {
             $time=date("Y-m-d h:i:sa");
-            $id = intval(I('id'));
-            $category=iconv('gb2312','utf-8', I('category'));
+
             $where['id']=$id;
-            $where['category']=$category;
+            $where['category']=$cid;
             $model = M('article')->where($where)->find();
             //dump($model);
+             switch($cid){
+            case '0':
+            $category='烽凰方法论';
+            break;
+           case '11':
+               $category='公益营销';
+               break;
+           case '12':
+               $category='事件营销';
+               break;
+           case '13':
+               $category='危机公关';
+               break;
+           case '14':
+               $category='新闻营销';
+               break;
+           case '15':
+                $category='娱乐文化营销';
+                break;
+           case '21':
+               $category='媒体发布';
+               break;
+           case '22':
+               $category='公关活动';
+               break;
+           case '23':
+               $category='危机公关处理';
+               break;
+           case '24':
+               $category='广告代理发布';
+               break;
+           case '25':
+                $category='网络推广';
+                break;
+           case '26':
+               $category='VI设计';
+               break;
+           case '27':
+                $category='全案策划服务';
+                break;
+           default:
+                 //$this->error("跳转失败");
+       }
             $this->assign('model',$model);
+            $this->assign('category',$category);
             $this->assign('time',$time);
             $this->display();
         }
@@ -162,9 +288,9 @@ class ArticleController extends BaseController {
                          $ishome='no';
                      }
                 }
-                $category=I('category');
-                $where['id']=intval(I('id'));
-                $where['category']=$category;
+               
+                $where['id']=$id;
+                $where['category']=$cid;
                 $date['title']=I('title');
                 $date['intro']=I('intro');
                 $date['content']=I('content');
@@ -172,7 +298,7 @@ class ArticleController extends BaseController {
                 $date['ishome']=$ishome;
                 //dump($date);
                 if ($model->where($where)->save($date)) {
-                    $this->success("更新成功", U('article/index',array('category'=>$category)));
+                    $this->success("更新成功", U('article/index',array('category'=>$cid)));
                 } else {
                     $this->error("更新失败");
                 }       
@@ -183,13 +309,57 @@ class ArticleController extends BaseController {
 
     public function details(){
             $id = intval(I('id'));
-            $category=iconv('gb2312','utf-8', I('category'));
+            $cid=I('category');
             $where['id']=$id;
-            $where['category']=$category;
+            $where['category']=$cid;
             $model = M('article')->where($where)->find();
             //dump($model);
+              switch($cid){
+            case '0':
+            $category='烽凰方法论';
+            break;
+           case '11':
+               $category='公益营销';
+               break;
+           case '12':
+               $category='事件营销';
+               break;
+           case '13':
+               $category='危机公关';
+               break;
+           case '14':
+               $category='新闻营销';
+               break;
+           case '15':
+                $category='娱乐文化营销';
+                break;
+           case '21':
+               $category='媒体发布';
+               break;
+           case '22':
+               $category='公关活动';
+               break;
+           case '23':
+               $category='危机公关处理';
+               break;
+           case '24':
+               $category='广告代理发布';
+               break;
+           case '25':
+                $category='网络推广';
+                break;
+           case '26':
+               $category='VI设计';
+               break;
+           case '27':
+                $category='全案策划服务';
+                break;
+           default:
+                 //$this->error("跳转失败");
+       }
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));
             $this->assign('model',$model);
+            $this->assign('category',$category);
             $this->assign('content',$content);
             $this->display();
     }
@@ -202,7 +372,7 @@ class ArticleController extends BaseController {
     public function delete()
     {
     	$id = intval(I('id'));
-        $category=iconv('gb2312','utf-8', I('category'));
+        $category=I('category');
         $where['id']=$id;
         $where['category']=$category;
         //dump($where);

@@ -1,8 +1,8 @@
-<include file="Public/header" title="添加{$model.category}-上海烽凰后台管理主页" />
+<include file="Public/header" title="添加{$category}-上海烽凰后台管理主页" />
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('article/index',array('category'=>$model['category']))}" class="tip-bottom">{$model.category}</a> <a href="#" class="current">修改{$model.category}</a> </div>
-  <h1>修改{$model.category}</h1>
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('article/index',array('category'=>$model['category']))}" class="tip-bottom">{$category}</a> <a href="#" class="current">修改{$category}</a> </div>
+  <h1>修改{$category}</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -10,7 +10,7 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改{$model.category}</h5>
+          <h5>修改{$category}</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="{:U('article/update')}" method="post" class="form-horizontal" enctype="multipart/form-data">

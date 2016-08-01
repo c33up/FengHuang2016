@@ -77,26 +77,26 @@ close-top-serch-->
             <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
-    <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
+    <li> <a href="<?php echo U('article/index',array('category'=>'0'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例赏析</span></a>
           <ul>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'1'));?>">公益营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'2'));?>">事件营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'3'));?>">危机公关</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'4'));?>">新闻营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'5'));?>">娱乐文化营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'11'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'12'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'13'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'14'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'15'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>我们的服务</span></a>
           <ul>
-            <li><a href="<?php echo U('service/index',array('category'=>'1'));?>">媒体发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'2'));?>">公关活动</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'3'));?>">危机公关处理</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'4'));?>">广告代理发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'5'));?>">网络推广</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'6'));?>">VI设计</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'21'));?>">媒体发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'22'));?>">公关活动</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'23'));?>">危机公关处理</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'24'));?>">广告代理发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'25'));?>">网络推广</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'26'));?>">VI设计</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'27'));?>">全案策划服务</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
@@ -164,7 +164,7 @@ close-top-serch-->
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$category));?>" class="tip-bottom"><?php echo ($category); ?></a> <a href="#" class="current">添加<?php echo ($category); ?></a> </div>
+  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$cid));?>" class="tip-bottom"><?php echo ($category); ?></a> <a href="#" class="current">添加<?php echo ($category); ?></a> </div>
   <h1>添加<?php echo ($category); ?></h1>
 </div>
 <div class="container-fluid">
@@ -177,7 +177,7 @@ close-top-serch-->
         </div>
         <div class="widget-content nopadding">
           <form action="<?php echo U('article/add');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
-              <input type="hidden" name="category" value="<?php echo ($category); ?>">
+              <input type="hidden" name="category" value="<?php echo ($cid); ?>">
             <div class="control-group">
               <label for="normal" class="control-label">标题</label>
               <div class="controls">
@@ -316,6 +316,13 @@ close-top-serch-->
 </script>
 <footer class="row-fluid">
 <!--Footer-part-->
-  <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
+  <div id="footer" class="span12">
+        <p>
+        Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+        </p>
+        <p>
+        上海烽凰文化传播有限公司 &copy; 版权所有
+        </p>
+  </div>
 <!--end-Footer-part-->
 </footer>

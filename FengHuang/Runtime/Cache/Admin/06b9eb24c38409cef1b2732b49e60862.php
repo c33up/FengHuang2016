@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>添加<?php echo ($model["category"]); ?>-上海烽凰后台管理主页</title>
+        <title>添加<?php echo ($category); ?>-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
@@ -38,7 +38,7 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <h2><a href="#">上海烽凰</a></h2>
+  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
 </div>
 <!--close-Header-part--> 
 
@@ -59,14 +59,14 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
-<!--start-top-serch-->
+<!--start-top-serch
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
   <input type="text" name="key" placeholder="搜索文章..."/>
   <button type="submit" class="tip-bottom"><i class="icon-search icon-white"></i></button>
         </form>
 </div>
-<!--close-top-serch-->
+close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
@@ -77,26 +77,26 @@
             <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
           </ul>
     </li>
-    <li> <a href="<?php echo U('article/index',array('category'=>'烽凰方法论'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
+    <li> <a href="<?php echo U('article/index',array('category'=>'0'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-th"></i> <span>案例赏析</span></a>
           <ul>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'1'));?>">公益营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'2'));?>">事件营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'3'));?>">危机公关</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'4'));?>">新闻营销</a></li>
-            <li><a href="<?php echo U('fhcase/index',array('category'=>'5'));?>">娱乐文化营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'11'));?>">公益营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'12'));?>">事件营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'13'));?>">危机公关</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'14'));?>">新闻营销</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'15'));?>">娱乐文化营销</a></li>
           </ul>
     </li>
     <li class="submenu"><a href="#"><i class="icon icon-fullscreen"></i> <span>我们的服务</span></a>
           <ul>
-            <li><a href="<?php echo U('service/index',array('category'=>'1'));?>">媒体发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'2'));?>">公关活动</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'3'));?>">危机公关处理</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'4'));?>">广告代理发布</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'5'));?>">网络推广</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'6'));?>">VI设计</a></li>
-            <li><a href="<?php echo U('service/index',array('category'=>'7'));?>">全案策划服务</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'21'));?>">媒体发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'22'));?>">公关活动</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'23'));?>">危机公关处理</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'24'));?>">广告代理发布</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'25'));?>">网络推广</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'26'));?>">VI设计</a></li>
+            <li><a href="<?php echo U('article/index',array('category'=>'27'));?>">全案策划服务</a></li>
           </ul>
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
@@ -164,30 +164,34 @@
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="tip-bottom"><?php echo ($model["category"]); ?></a> <a href="#" class="current"><?php echo ($model["category"]); ?>详情</a> </div>
-  <h1>添加<?php echo ($model["category"]); ?></h1>
+  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="tip-bottom"><?php echo ($category); ?></a> <a href="#" class="current"><?php echo ($category); ?>详情</a> </div>
+  <h1><?php echo ($category); ?>详情</h1>
 </div>
 <div class="container-fluid">
   <hr>
   <div class="row-fluid">
-    <div class="span12">
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+    <div class="span10">
+    
+        <div class="widget-title">
            <a href="<?php echo U('article/index',array('category'=>$model['category']));?>" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
               <a href="<?php echo U('article/update',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
               <a href="<?php echo U('article/delete',array('category'=>$model['category'],'id'=>$model['id']));?>" class="btn btn-primary">删除</a>
         </div>
-        <div class="span12 widget-content">
+        
             <div class="span10">
+                <div class="span12">
                   <h2><?php echo ($model["title"]); ?></h2>
                   <p>发表时间：<?php echo ($model["createdate"]); ?></p>
                  
                 <?php if($model['ishome'] == 'yes'): ?><p>已放到首页</p><?php endif; ?>
-                        
-                <hr></hr>
+                     </div> 
+                      <div class="span12">
+                          <hr/>
+                           </div> 
+               
             </div>
             <div class="span10">
-                <div class="span4">
+                <div class="span2">
                     <img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>" width="240" height="240"/>
                     </div>
                 <div class="span8">
@@ -197,14 +201,19 @@
             <div class="span10 widget-box">
                 <?php echo ($content); ?>                  
             </div>
-        </div>
-      </div>   
-    </div>
+        </div>    
   </div>
 </div>
 </div>
 <footer class="row-fluid">
 <!--Footer-part-->
-  <div id="footer" class="span12"> 2016 &copy; chen <a href="#">shanshan</a> </div>
+  <div id="footer" class="span12">
+        <p>
+        Copyright &copy; 2016.Company Fenghuang Culture All rights reserved.
+        </p>
+        <p>
+        上海烽凰文化传播有限公司 &copy; 版权所有
+        </p>
+  </div>
 <!--end-Footer-part-->
 </footer>
