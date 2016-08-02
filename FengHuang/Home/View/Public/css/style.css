@@ -134,6 +134,7 @@ nav .navbar-default{
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
 }
  */
+
 nav .nav li a:hover,
 nav .nav li a:focus,
 nav .nav li.active a,
@@ -240,9 +241,7 @@ nav .nav li .dropdown-menu li a:hover {
 
 /* --- menu ---
 
-nav{
-    margin-top:10px;
-}
+
 header .navigation {
 	float:right;
 }
@@ -1854,12 +1853,12 @@ padding: 0;
 max-width:100%;
 }
 	.dropdown-menu {
-	  position: absolute;
+	  position:relative;
 	  top: 0;
-	  left: 40px;
+	  left: 0px;
 	  z-index: 1000;
 	  display: none;
-	  float: left;
+	  float: none;
 	  min-width: 160px;
 	  padding: 5px 0;
 	  margin: 2px 0 0;

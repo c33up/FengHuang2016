@@ -111,7 +111,7 @@
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
-        <li><a href="#">返回公司首页</a></li>
+        <li><a href="http://www.sh-fenghuang.com">返回公司首页</a></li>
         <li><a href="<?php echo U('login/logout');?>">退出登录</a></li>
       </ul>
     </li>
@@ -190,7 +190,7 @@
         <li class="bg_lr"> <a href="<?php echo U('video/index');?>"> <i class="icon-info-sign"></i>网络视频</a> </li>
           <li class="bg_lr"> <a href="<?php echo U('localvideo/index');?>"> <i class="icon-info-sign"></i>本地视频</a> </li>
         <li class="bg_lb"> <a href="<?php echo U('picture/index');?>"> <i class="icon-pencil"></i>轮播图片</a> </li>
-        <li class="bg_lr"> <a href="#"> <i class="icon-info-sign"></i>回网站首页</a> </li>
+        <li class="bg_lr"> <a href="http://www.sh-fenghuang.com"> <i class="icon-info-sign"></i>回网站首页</a> </li>
         <li class="bg_lr"> <a href="<?php echo U('login/logout');?>"> <i class="icon-info-sign"></i>退出登录</a> </li>
       </ul>
     </div>

@@ -179,16 +179,19 @@
                     <button type="submit"><i class="icon-search icon-white"></i></button>
                 </form>
            
-            <hr></hr>
+            
         </div>
-
+              <div class="span12">
+                  <hr/>
+                  </div>
         <div class="clear">
      
         </div>
+               <div class="span12">
         <ul class="thumbnails thumbnails-1 list-services">
-               <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li class="span2">
+               <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li class="span4">
                          <div class="thumbnail">
-                             <a href="<?php echo U('picture/details',array('id'=>$p['id']));?>" class="link-1"><img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>"/></a>
+                             <a href="<?php echo U('picture/details',array('id'=>$p['id']));?>" class="link-1"><img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" width="100%"/></a>
                             <p>
                                 <a href="<?php echo U('picture/details',array('id'=>$p['id']));?>" class="link-1"><?php echo ($p["intro"]); ?></a>
                             </p>
@@ -204,11 +207,15 @@
                      </li><?php endforeach; endif; ?>
             </ul>
       </div>
-    <hr/>
-    <div  class="pull-right">
-     <?php echo ($page); ?>
-    </div>
+   <div class="span12">
+                  <hr/>
+        <div class="pull-right">
+         <?php echo ($page); ?>
+        </div>
+     </div>
+   </div>
   </div>
+      </div>
 <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12">

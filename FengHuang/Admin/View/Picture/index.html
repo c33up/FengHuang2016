@@ -16,17 +16,20 @@
                     <button type="submit"><i class="icon-search icon-white"></i></button>
                 </form>
            
-            <hr></hr>
+            
         </div>
-
+              <div class="span12">
+                  <hr/>
+                  </div>
         <div class="clear">
      
         </div>
+               <div class="span12">
         <ul class="thumbnails thumbnails-1 list-services">
                <foreach name="picture" item="p">
-                     <li class="span2">
+                     <li class="span4">
                          <div class="thumbnail">
-                             <a href="{:U('picture/details',array('id'=>$p['id']))}" class="link-1"><img src="{$p.imageurl}" alt="{$p.intro}"/></a>
+                             <a href="{:U('picture/details',array('id'=>$p['id']))}" class="link-1"><img src="{$p.imageurl}" alt="{$p.intro}" width="100%"/></a>
                             <p>
                                 <a href="{:U('picture/details',array('id'=>$p['id']))}" class="link-1">{$p.intro}</a>
                             </p>
@@ -43,9 +46,13 @@
                </foreach>
             </ul>
       </div>
-    <hr/>
-    <div  class="pull-right">
-     {$page}
-    </div>
+   <div class="span12">
+                  <hr/>
+        <div class="pull-right">
+         {$page}
+        </div>
+     </div>
+   </div>
   </div>
+      </div>
 <include file="Public/footer" />

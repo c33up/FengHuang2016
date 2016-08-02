@@ -8,11 +8,9 @@
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-        <link href="/FengHuang/Home/View//Public/css/jcarousel.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/flexslider.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/js/owl-carousel/owl.carousel.css" rel="stylesheet"> 
         <link href="/FengHuang/Home/View//Public/css/style.css" rel="stylesheet" />
-
+        <link href="/FengHuang/Home/View//Public/css/custom-fonts.css" rel="stylesheet" />
       
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -281,7 +279,6 @@
         <script src="/FengHuang/Home/View//Public/js/jquery.flexslider.js"></script>
         <script src="/FengHuang/Home/View//Public/js/animate.js"></script>
         <script src="/FengHuang/Home/View//Public/js/custom.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/owl-carousel/owl.carousel.js"></script>
         <script src="/FengHuang/Home/View//Public/js/menu_jquery.js"></script>
     </body>
 </html>
