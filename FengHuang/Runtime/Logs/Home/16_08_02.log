@@ -1,0 +1,8 @@
+[ 2016-08-02T11:24:35+08:00 ] ::1 /index.php/fhcase/detail/cid/13/id/3.html
+ERR: 1146:Table 'fhdb.fhcase' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fhcase`
+
+[ 2016-08-02T11:24:47+08:00 ] ::1 /index.php/fhcase/detail/cid/13/id/3.html
+ERR: 1146:Table 'fhdb.fhcase' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fhcase`
+

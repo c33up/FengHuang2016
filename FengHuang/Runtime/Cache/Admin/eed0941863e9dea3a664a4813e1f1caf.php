@@ -101,7 +101,7 @@
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频集锦</span></a>
         <ul>
             <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
             <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>

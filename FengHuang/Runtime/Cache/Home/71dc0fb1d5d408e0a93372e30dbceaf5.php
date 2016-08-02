@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>案例赏析</title>
+        <title>案例赏析|上海烽凰文化传播有限公司</title>
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -53,33 +53,33 @@
                         <li class="dropdown">
                           <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle">案例赏析<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'1'));?>">公益营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'11'));?>">公益营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'2'));?>">事件营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'12'));?>">事件营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'3'));?>">危机公关</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'13'));?>">危机公关</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'4'));?>">新闻营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'14'));?>">新闻营销</a></li>
                               
-                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'5'));?>">娱乐文化营销</a></li>
+                            <li><a href="<?php echo U('fhcase/fhcase',array('cid'=>'15'));?>">娱乐文化营销</a></li>
                           </ul>
                         </li>
                         <li class="dropdown">
                           <a href="<?php echo U('service/index');?>" class="dropdown-toggle">我们的服务<span class="caret"></span></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('service/service',array('cid'=>'1'));?>">媒体发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'21'));?>">媒体发布</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'2'));?>">公关活动</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'22'));?>">公关活动</a></li>
                              
-                            <li><a href="<?php echo U('service/service',array('cid'=>'3'));?>">危机公关处理</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'23'));?>">危机公关处理</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'4'));?>">广告代理发布</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'24'));?>">广告代理发布</a></li>
                               
-                            <li><a href="<?php echo U('service/service',array('cid'=>'5'));?>">网络推广</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'25'));?>">网络推广</a></li>
                              
-                            <li><a href="<?php echo U('service/service',array('cid'=>'6'));?>">VI设计</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'26'));?>">VI设计</a></li>
                                
-                            <li><a href="<?php echo U('service/service',array('cid'=>'7'));?>">全案策划服务</a></li>
+                            <li><a href="<?php echo U('service/service',array('cid'=>'27'));?>">全案策划服务</a></li>
                           </ul>
                         </li>
                         <li><a href="<?php echo U('contact/index');?>">联系我们</a></li>

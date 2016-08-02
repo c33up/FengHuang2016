@@ -78,7 +78,7 @@ class ServiceController extends BaseController {
     
             $where['id']=$id;
 
-            $model = M('service')->where($where)->find();
+            $model = M('article')->where($where)->find();
             //dump($model);
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));
 

@@ -72,7 +72,7 @@ class FhcaseController extends BaseController {
             //dump($model);
             $content=htmlspecialchars_decode(html_entity_decode($model['content']));
 
-             M('fhcase')->where($where)->setInc('num',1);  
+             M('article')->where($where)->setInc('num',1);  
 
             $this->assign('model',$model);
             $this->assign('content',$content);
