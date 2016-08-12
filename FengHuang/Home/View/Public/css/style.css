@@ -42,10 +42,14 @@ background: linear-gradient(to right, transparent, #fff 55%);
 
 
 h1,h2, h3, h4, h5, h6 {
-	font-family:'Open Sans', Arial, sans-serif;
+	font-family:'黑体', Arial, sans-serif;
 	font-weight:700;
 	line-height:1.1em;
 	color:#333;
+}
+
+p {
+    font-family:'黑体';
 }
  
 
@@ -78,20 +82,29 @@ h1,h2, h3, h4, h5, h6 {
 	margin-bottom:0;
 }
 
+
 .list-unstyled li{
-    margin-left: 20px;
-    font-size: 24px;
+     font-family: '黑体';
+    font-weight: 700;
+    margin-left: 18px;
+    font-size: 16px;
     color: #000;
 
 }
 
 .list-unstyled li a{
     margin-right: 30px;
-    font-size: 18px;
+    font-size: 20px;
     color: #000;
 
 }
-
+header .imgdiv{
+    width: 300px;
+    height: 165px;
+}
+header .imgdiv img{
+    width: 100%;
+}
 img.img-polaroid {
 	margin:0 0 20px 0;
 }
@@ -171,8 +184,8 @@ nav .navbar {
 }
 
 nav .navbar-nav > li  {
-    padding-bottom: 12px;
-    padding-top: 12px;
+    padding-bottom: 3px;
+    padding-top: 3px;
    
 }
 
@@ -226,10 +239,11 @@ nav .nav li .dropdown-menu  {
 }
 
 nav .nav li .dropdown-menu li a {
+   font-family:'黑体', Arial, sans-serif;
    background: #3B3B3B;
-	color: #ffffff;
-   font-size: 18px;
-   line-height: 28px;
+   color: #ffffff;
+   font-size: 14px;
+   line-height: 15px;
    text-align: center;
    padding: 10px 0;
 }
@@ -325,8 +339,9 @@ header ul.nav li ul li ul {
 	border-right: 1px solid rgb(39, 37, 37);
 }
 .nav > li > a {
-	font-size: 18px;
-	padding: 20px 30px;
+    font-family:'黑体';
+	font-size: 16px;
+	padding: 10px 20px;
 	text-transform: uppercase;
 }
 
@@ -398,6 +413,14 @@ border-radius:0;
 .progress-bar { 
     background-color: #AFAFAF !important;
 	}
+
+/*  content title
+==================================== */
+.page-header .psize strong{
+    font-family: '黑体';
+    color: #000;
+}
+
 /*  Sliders
 ==================================== */
 /* --- flexslider --- */
@@ -1190,12 +1213,27 @@ h4.heading {
     line-height: 1.6em;	
 }
 
-.psize16 {
+.psize>strong{
+    font-family: '黑体';
     color: #000;
-	font-size: 16px;
-    line-height: 1.4em;	
+
+}
+.psize>span{
+    font-family: '黑体';
+    color: #000;
+
 }
 
+.psize16 {
+    color: #000;
+	font-size: 12px;
+    line-height: 1.4em;	
+}
+.psize20 {
+    color: #000;
+	font-size: 20px;
+    font-weight: 700;
+}
 .widgetheading {
 	width:100%;
 

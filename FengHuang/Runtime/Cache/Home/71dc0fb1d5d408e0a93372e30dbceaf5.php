@@ -22,9 +22,9 @@
  
         <div class="container">
 	<header>
-       
-            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        
+       <div class="imgdiv">
+            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+        </div>
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
           

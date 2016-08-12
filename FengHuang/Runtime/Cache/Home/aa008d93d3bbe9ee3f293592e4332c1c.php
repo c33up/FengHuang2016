@@ -22,9 +22,9 @@
  
         <div class="container">
 	<header>
-       
-            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        
+       <div class="imgdiv">
+            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+        </div>
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
           
@@ -93,8 +93,8 @@
 		<div class="row">
           
                  <div class="col-md-12 pading30">
-                   <div class="page-header">    
-                          <h3 class="marginleft20">烽凰方法论</h3>       
+                   <div class="page-header">   
+                        <p class="psize20 marginleft20"><strong>烽凰方法论</strong></p>             
                      </div>
 		 
                     <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
@@ -102,7 +102,7 @@
 		                    <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
 		                    </div>
 		                    <div class="col-md-8">
-			                    <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
+			                    <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h4> <?php echo ($a["title"]); ?></h4></a>
                                                 <div>
                                 
                                         </div>

@@ -22,9 +22,9 @@
  
         <div class="container">
 	<header>
-       
-            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        
+       <div class="imgdiv">
+            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+        </div>
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
           
@@ -92,14 +92,20 @@
 		<div class="row">
                  <div class="col-md-12 pading30">
                    <div class="page-header">    
-                          <h3 class="marginleft20">联系我们</h3>       
+                          <p class="psize20 marginleft20"><strong>联系我们</strong></p>       
                      </div>
                      <div class="pading30">
                       <p class="psize">
-						    <i class="icon-phone"></i><strong>电话: </strong><?php echo ($contact["telphone"]); ?> <br>
-                            <i class="icon-phone"></i><strong>传真: </strong><?php echo ($contact["fax"]); ?> <br>
-						    <i class="icon-envelope-alt"></i><strong>Email: </strong><?php echo ($contact["email"]); ?><br> 
-                           <i class="icon-envelope-alt"></i><strong>地址： </strong><?php echo ($contact["address"]); ?> 
+                            <?php if($contact['telphone'] != ''): ?><i class="icon-phone"></i><strong>电话: </strong><span><?php echo ($contact["telphone"]); ?> </span><br><?php endif; ?>
+
+						     <?php if($contact['fax'] != ''): ?><i class="icon-phone"></i><strong>传真: </strong><span><?php echo ($contact["fax"]); ?></span> <br><?php endif; ?>
+
+                           <?php if($contact['email'] != ''): ?><i class="icon-envelope-alt"></i><strong>Email: </strong><span><?php echo ($contact["email"]); ?></span><br><?php endif; ?>
+
+                           <?php if($contact['address'] != ''): ?><i class="icon-envelope-alt"></i><strong>地址： </strong><span><?php echo ($contact["address"]); ?></span><br><?php endif; ?>
+
+                           <?php if($contact['qq'] != ''): ?><i class="icon-envelope-alt"></i><strong>QQ： </strong><span><?php echo ($contact["qq"]); ?></span><?php endif; ?>
+                            
 					  </p>
                         </div>
 		            </div>

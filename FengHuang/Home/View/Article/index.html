@@ -5,8 +5,8 @@
 		<div class="row">
           
                  <div class="col-md-12 pading30">
-                   <div class="page-header">    
-                          <h3 class="marginleft20">烽凰方法论</h3>       
+                   <div class="page-header">   
+                        <p class="psize20 marginleft20"><strong>烽凰方法论</strong></p>             
                      </div>
 		 
                     <foreach name="article" item="a">
@@ -15,7 +15,7 @@
 		                    <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
 		                    </div>
 		                    <div class="col-md-8">
-			                    <div><a href="{:U('article/detail',array('id'=>$a['id']))}"><h2> {$a.title}</h2></a>
+			                    <div><a href="{:U('article/detail',array('id'=>$a['id']))}"><h4> {$a.title}</h4></a>
                                                 <div>
                                 
                                         </div>

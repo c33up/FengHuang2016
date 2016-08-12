@@ -22,9 +22,9 @@
  
         <div class="container">
 	<header>
-       
-            <a  href="#"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/></a>
-        
+       <div class="imgdiv">
+            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+        </div>
 	</header>
 	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
           
@@ -102,8 +102,8 @@
 		            </div>
 		            <div class="col-md-8">
 			           
-                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><h2> <?php echo ($a["title"]); ?></h2></a>
-                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><h4> <?php echo ($a["title"]); ?></h4></a>
+                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><p class="psize16"><?php echo ($a["intro"]); ?></p></a>
                         </div>
 		            </div><?php endforeach; endif; ?>
             <div class="col-md-12">

@@ -4,14 +4,30 @@
 		<div class="row">
                  <div class="col-md-12 pading30">
                    <div class="page-header">    
-                          <h3 class="marginleft20">联系我们</h3>       
+                          <p class="psize20 marginleft20"><strong>联系我们</strong></p>       
                      </div>
                      <div class="pading30">
                       <p class="psize">
-						    <i class="icon-phone"></i><strong>电话: </strong>{$contact.telphone} <br>
-                            <i class="icon-phone"></i><strong>传真: </strong>{$contact.fax} <br>
-						    <i class="icon-envelope-alt"></i><strong>Email: </strong>{$contact.email}<br> 
-                           <i class="icon-envelope-alt"></i><strong>地址： </strong>{$contact.address} 
+                            <if condition="$contact['telphone'] neq ''">
+                                <i class="icon-phone"></i><strong>电话: </strong><span>{$contact.telphone} </span><br>
+                            </if>
+
+						     <if condition="$contact['fax'] neq ''">
+                                <i class="icon-phone"></i><strong>传真: </strong><span>{$contact.fax}</span> <br>
+                            </if>
+
+                           <if condition="$contact['email'] neq ''">
+                              <i class="icon-envelope-alt"></i><strong>Email: </strong><span>{$contact.email}</span><br> 
+                            </if>
+
+                           <if condition="$contact['address'] neq ''">
+                              <i class="icon-envelope-alt"></i><strong>地址： </strong><span>{$contact.address}</span><br>  
+                            </if>
+
+                           <if condition="$contact['qq'] neq ''">
+                               <i class="icon-envelope-alt"></i><strong>QQ： </strong><span>{$contact.qq}</span> 
+                            </if>
+                            
 					  </p>
                         </div>
 		            </div>
