@@ -1,4 +1,7 @@
-<include file="Public/header" title="视频集锦|上海烽凰文化传播有限公司"/>   
+<extend name="Public/layout" />
+<block name="title">视频集锦|上海烽凰文化传播有限公司</block>
+<block name="content">
+     
 <div class="container">
 <section id="callaction">
 	
@@ -11,7 +14,7 @@
             <div class="row">
                 <foreach name="article" item="a">
                     <div class="col-md-4 marginbot30">
-                         <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.intro}"/>  </a>  
+                         <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>  </a>  
                         
                         <a href="{:U('video/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4> </a>       
                     </div>
@@ -26,4 +29,4 @@
             </div>
 </div>
 	</section>
-	</div><include file="Public/footer"/>
+	</div></block>

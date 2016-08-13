@@ -3,7 +3,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>走进烽凰|上海烽凰文化传播有限公司</title>
+        <title>烽凰简介|上海烽凰文化传播有限公司</title>
+        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -11,22 +15,23 @@
         <link href="/FengHuang/Home/View//Public/css/flexslider.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/style.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/custom-fonts.css" rel="stylesheet" />
-      
+        
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     </head>
     <body>
-<div id="wrapper">    <!-- start header -->
+<div id="wrapper">    
+    
  
-        <div class="container">
+<div class="container">
 	<header>
        <div class="imgdiv">
             <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
         </div>
 	</header>
-	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top">
           
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,14 +44,7 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
                         <li><a href="<?php echo U('index/index');?>">首页</a></li> 
-                        <li class="dropdown">
-                          <a href="<?php echo U('intro/index',array('cid'=>'1'));?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
-                             
-                            <li><a href="<?php echo U('intro/index',array('cid'=>'2'));?>">烽凰团队</a></li>
-                          </ul>
-                        </li>
+                        <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
                         <li class="dropdown">
                           <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle">案例赏析<span class="caret"></span></a>
@@ -86,7 +84,9 @@
                 </div>
           
         </nav>
-</div>  
+</div> 
+    
+
  <div class="container"> 
 <section class="callaction">
 	
@@ -97,16 +97,17 @@
                    <p class="psize20 marginleft20"><?php echo ($category); ?></p>        
                  </div>
            
-                 <div class="pading30">
+                 <div class="pading30" id="content">
                      <?php echo ($content); ?>
                  </div>
                      
 
 		        </div>
 		</div>
-		
-	</div>
-	</section><div class="container">
+
+	</section>     		
+	</div>
+    <div class="container">
     <footer>
 	<div id="sub-footer">
 	
@@ -123,7 +124,7 @@
 				</div>
 		</div>
 	
-	</footer>    </div></div>
+	</footer>    </div> </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
   <!-- javascript
             ================================================== -->
@@ -139,5 +140,6 @@
         <script src="/FengHuang/Home/View//Public/js/animate.js"></script>
         <script src="/FengHuang/Home/View//Public/js/custom.js"></script>
         <script src="/FengHuang/Home/View//Public/js/menu_jquery.js"></script>
+        
     </body>
 </html>

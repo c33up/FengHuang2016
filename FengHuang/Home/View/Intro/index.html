@@ -1,4 +1,7 @@
-<include file="Public/header" title="走进烽凰|上海烽凰文化传播有限公司"/>  
+<extend name="Public/layout" />
+<block name="title">烽凰简介|上海烽凰文化传播有限公司</block>
+<block name="content">
+
  <div class="container"> 
 <section class="callaction">
 	
@@ -9,13 +12,13 @@
                    <p class="psize20 marginleft20">{$category}</p>        
                  </div>
            
-                 <div class="pading30">
+                 <div class="pading30" id="content">
                      {$content}
                  </div>
                      
 
 		        </div>
 		</div>
-		
-	</div>
-	</section><include file="Public/footer"/>
+
+	</section>     		
+	</div></block>

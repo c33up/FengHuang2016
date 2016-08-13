@@ -47,21 +47,30 @@ hr{ border-top-color:#dadada;}
 
 /* Header */
 #header {
-	height: 77px;
+   
+	height: 80px;
 	position: relative;
 	width: 100%;
 	z-index: -9;
 }
-#header img {
-	
+
+#header .logodiv {
+	 background-color: #fff;
 	height: 80px;
-	left: 10px;
 	line-height: 100px;
 	overflow: hidden;
 	position: relative;
-	top: 10px;
-	width: 190px;
+	width: 210px;
 }
+
+#header .logodiv img {
+	height: 80px;
+    position: relative;
+    left: 30px;
+    bottom: 10px;
+	width: auto;
+}
+
 #header h1 a {
 	display: block;
 }

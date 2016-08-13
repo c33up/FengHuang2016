@@ -1,32 +1,12 @@
-<!DOCTYPE html>
-
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>[title]</title>
-        <!-- css -->
-        <link href="_CSS_URL_/bootstrap.css" rel="stylesheet" />
-        <link href="_CSS_URL_/bootstrap.min.css" rel="stylesheet" />
-        <link href="_CSS_URL_/fancybox/jquery.fancybox.css" rel="stylesheet">
-        <link href="_CSS_URL_/flexslider.css" rel="stylesheet" />
-        <link href="_CSS_URL_/style.css" rel="stylesheet" />
-        <link href="_CSS_URL_/custom-fonts.css" rel="stylesheet" />
-      
-<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    </head>
-    <body>
-<div id="wrapper">    <!-- start header -->
+
  
-        <div class="container">
+<div class="container">
 	<header>
        <div class="imgdiv">
             <a  href="{:U('index/index')}"><img src="_IMAGES_/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
         </div>
 	</header>
-	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top">
           
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,14 +19,7 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
                         <li><a href="{:U('index/index')}">首页</a></li> 
-                        <li class="dropdown">
-                          <a href="{:U('intro/index',array('cid'=>'1'))}" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="{:U('intro/index',array('cid'=>'1'))}">烽凰简介</a></li>
-                             
-                            <li><a href="{:U('intro/index',array('cid'=>'2'))}">烽凰团队</a></li>
-                          </ul>
-                        </li>
+                        <li><a href="{:U('intro/index',array('cid'=>'1'))}">烽凰简介</a></li>
 						<li><a href="{:U('article/index')}">烽凰方法论</a></li>
                         <li class="dropdown">
                           <a href="{:U('fhcase/index')}" class="dropdown-toggle">案例赏析<span class="caret"></span></a>

@@ -1,128 +1,130 @@
-<include file="Public/header" title="案例赏析|上海烽凰文化传播有限公司"/>  
- <div class="container"> 
-<section class="callaction">
+<extend name="Public/layout" />
+<block name="title">案例赏析|上海烽凰文化传播有限公司</block>
+<block name="content"> 
+<div class="container"> 
+    <section class="callaction">
 	
-		<div class="row">
+		    <div class="row">
            
-            <div class="col-md-12 pading30">
-               <div class="page-header">
-                    <p class="psize20 marginleft20"><strong>案例赏析</strong></p>          
-                 </div>
-		  <div class="col-md-12">
-              <div class="page-header">  
-                  <ul class="list-unstyled">
-                      <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'14'))}">more</a></li>
-                      <li>新闻营销</li>
-                    </ul>            
-                 </div>
-            <foreach name="new" item="n"> 
-                 <div class="col-md-12 marginbot20">
-		        <div class="col-md-4">
-		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
-		        </div>
-		        <div class="col-md-8">
-			        <div> 
-                    <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
-
-                    <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"> <p class="psize16">{$n.intro}</p></a>
-			        </div>
-                    </div>  
-                      </div> 
-             </foreach>
-             </div>
-
-             <div class="col-md-12">
-              <div class="page-header">  
-                  <ul class="list-unstyled">
-                      <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'11'))}">more</a></li>
-                      <li>公益营销</li>
-                    </ul>   
-                             
-                 </div>
-            <foreach name="public" item="n"> 
-                 <div class="col-md-12 marginbot20">
-		        <div class="col-md-4">
-		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
-		        </div>
-		        <div class="col-md-8">
-			        <div> 
+                <div class="col-md-12 pading30">
+                   <div class="page-header">
+                        <p class="psize20 marginleft20"><strong>案例赏析</strong></p>          
+                     </div>
+		      <div class="col-md-12">
+                  <div class="page-header">  
+                      <ul class="list-unstyled">
+                          <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'14'))}">more</a></li>
+                          <li>新闻营销</li>
+                        </ul>            
+                     </div>
+                <foreach name="new" item="n"> 
+                     <div class="col-md-12 marginbot20">
+		            <div class="col-md-4">
+		            <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div> 
                         <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
-			        </div>
-                    </div>  
-                      </div> 
-             </foreach>
-             </div>
+
+                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"> <p class="psize16">{$n.intro}</p></a>
+			            </div>
+                        </div>  
+                          </div> 
+                 </foreach>
+                 </div>
+
+                 <div class="col-md-12">
+                  <div class="page-header">  
+                      <ul class="list-unstyled">
+                          <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'11'))}">more</a></li>
+                          <li>公益营销</li>
+                        </ul>   
+                             
+                     </div>
+                <foreach name="public" item="n"> 
+                     <div class="col-md-12 marginbot20">
+		            <div class="col-md-4">
+		            <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div> 
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
+			            </div>
+                        </div>  
+                          </div> 
+                 </foreach>
+                 </div>
 
             
-             <div class="col-md-12">
-              <div class="page-header">  
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'15'))}">more</a></li>
-                      <li>娱乐文化营销</li>
-                    </ul>       
+                 <div class="col-md-12">
+                  <div class="page-header">  
+                        <ul class="list-unstyled">
+                          <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'15'))}">more</a></li>
+                          <li>娱乐文化营销</li>
+                        </ul>       
+                     </div>
+                <foreach name="entertainment" item="n"> 
+                     <div class="col-md-12 marginbot20">
+		            <div class="col-md-4">
+		            <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div> 
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
+			            </div>
+                        </div>  
+                          </div> 
+                 </foreach>
                  </div>
-            <foreach name="entertainment" item="n"> 
-                 <div class="col-md-12 marginbot20">
-		        <div class="col-md-4">
-		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
-		        </div>
-		        <div class="col-md-8">
-			        <div> 
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
-			        </div>
-                    </div>  
-                      </div> 
-             </foreach>
-             </div>
 
-            <div class="col-md-12">
-              <div class="page-header">  
-                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'12'))}">more</a></li>
-                      <li>事件营销</li>
-                    </ul>  
+                <div class="col-md-12">
+                  <div class="page-header">  
+                         <ul class="list-unstyled">
+                          <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'12'))}">more</a></li>
+                          <li>事件营销</li>
+                        </ul>  
                          
+                     </div>
+                <foreach name="event" item="n"> 
+                     <div class="col-md-12 marginbot20">
+		            <div class="col-md-4">
+		            <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div>
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4> {$n.title}</h4></a>
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
+			            </div>
+                        </div>  
+                          </div> 
+                 </foreach>
                  </div>
-            <foreach name="event" item="n"> 
-                 <div class="col-md-12 marginbot20">
-		        <div class="col-md-4">
-		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
-		        </div>
-		        <div class="col-md-8">
-			        <div>
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4> {$n.title}</h4></a>
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><p class="psize16">{$n.intro}</p></a>
-			        </div>
-                    </div>  
-                      </div> 
-             </foreach>
-             </div>
 
-             <div class="col-md-12">
-              <div class="page-header">   
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'13'))}">more</a></li>
-                      <li>危机公关</li>
-                    </ul>   
+                 <div class="col-md-12">
+                  <div class="page-header">   
+                        <ul class="list-unstyled">
+                          <li class="pull-right"><a href="{:U('fhcase/fhcase',array('cid'=>'13'))}">more</a></li>
+                          <li>危机公关</li>
+                        </ul>   
                            
+                     </div>
+                <foreach name="crisis" item="n"> 
+                     <div class="col-md-12 marginbot20">
+		            <div class="col-md-4">
+		            <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
+		            </div>
+		            <div class="col-md-8">
+			            <div> 
+                            <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
+                           <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"> <p class="psize16">{$n.intro}</p></a>
+			            </div>
+                        </div>  
+                          </div> 
+                 </foreach>
                  </div>
-            <foreach name="crisis" item="n"> 
-                 <div class="col-md-12 marginbot20">
-		        <div class="col-md-4">
-		        <img src="{$n.imageurl}" alt="{$n.intro}" width="100%"/>
-		        </div>
-		        <div class="col-md-8">
-			        <div> 
-                        <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"><h4>{$n.title}</h4></a>
-                       <a href="{:U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']))}"> <p class="psize16">{$n.intro}</p></a>
-			        </div>
-                    </div>  
-                      </div> 
-             </foreach>
-             </div>
 
-		</div>
-	</div>
-	</section>     </div><include file="Public/footer"/>
+		    </div>
+	    </div>
+	</section></div></block>

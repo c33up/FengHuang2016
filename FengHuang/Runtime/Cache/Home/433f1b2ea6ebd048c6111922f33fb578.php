@@ -4,6 +4,10 @@
     <head>
         <meta charset="utf-8" />
         <title>案例赏析|上海烽凰文化传播有限公司</title>
+        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
         <!-- css -->
         <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
         <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
@@ -39,14 +43,7 @@
                 <div class="navbar-collapse collapse ">
                     <ul class="nav navbar-nav  navbar-left">
                         <li><a href="<?php echo U('index/index');?>">首页</a></li> 
-                        <li class="dropdown">
-                          <a href="<?php echo U('intro/index',array('cid'=>'1'));?>" class="dropdown-toggle">走进烽凰<span class="caret"></span></a>
-                          <ul class="dropdown-menu" role="menu">
-                            <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
-                             
-                            <li><a href="<?php echo U('intro/index',array('cid'=>'2'));?>">烽凰团队</a></li>
-                          </ul>
-                        </li>
+                        <li><a href="<?php echo U('intro/index',array('cid'=>'1'));?>">烽凰简介</a></li>
 						<li><a href="<?php echo U('article/index');?>">烽凰方法论</a></li>
                         <li class="dropdown">
                           <a href="<?php echo U('fhcase/index');?>" class="dropdown-toggle">案例赏析<span class="caret"></span></a>

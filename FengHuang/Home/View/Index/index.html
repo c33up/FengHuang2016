@@ -1,4 +1,5 @@
-<include file="Public/header" title="首页|上海烽凰文化传播有限公司"/>   <div class="container"><section id="featured">
+<extend name="Public/layout" />
+<block name="content"> <div class="container"><section id="featured">
 <!-- Slider -->
         <div id="main-slider" class="flexslider">
             <ul class="slides">
@@ -29,7 +30,8 @@
                 <div class="row service-v1 marginbot20">
                  <foreach name="article" item="a">
                       <div class="col-md-6">
-		                <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		                <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
+                            <h5>{$a.title}</h5>
 		              <p class="intro psize16">{$a.intro}</p></a>
 			   
                        </div>
@@ -51,7 +53,8 @@
                 <div class="row service-v1 marginbot20">
                  <foreach name="video" item="a">
                       <div class="col-md-6">
-		                 <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		                 <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
+                             <h5>{$a.title}</h5>
 		              <p class="intro psize16">{$a.intro}</p></a>
 			   
                        </div>
@@ -79,7 +82,8 @@
             <div class="col-md-12">
                <foreach name="case" item="a">
               <div class="col-md-3 marginbot40">
-		        <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt=""/>
+		        <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
+                    <h5>{$a.title}</h5>
 		      <p class="intro psize16">{$a.intro}</p></a>
 			   
                </div>
@@ -89,4 +93,4 @@
             </div> 
 	           </section> 
     </div>
-<include file="Public/footer"/>
+</block>

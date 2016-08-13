@@ -48,10 +48,9 @@ h1,h2, h3, h4, h5, h6 {
 	color:#333;
 }
 
-p {
+ p{
     font-family:'黑体';
 }
- 
 
 .container {
 	padding:10px 20px 0 20px;
@@ -94,8 +93,9 @@ p {
 
 .list-unstyled li a{
     margin-right: 30px;
-    font-size: 20px;
-    color: #000;
+    font-size: 16px;
+    color: #A9A9A9;
+    font-weight: 300;
 
 }
 header .imgdiv{
@@ -416,6 +416,12 @@ border-radius:0;
 
 /*  content title
 ==================================== */
+.page-header {
+  padding-bottom: 1.5px;
+  margin: 42px 0 21px;
+  border-bottom: 1px dashed #A9A9A9;
+}
+
 .page-header .psize strong{
     font-family: '黑体';
     color: #000;
@@ -1229,6 +1235,12 @@ h4.heading {
 	font-size: 12px;
     line-height: 1.4em;	
 }
+
+.psize10 {
+    color: #000;
+	font-size: 10px;
+    line-height: 1.4em;	
+}
 .psize20 {
     color: #000;
 	font-size: 20px;
@@ -1868,6 +1880,7 @@ max-width:100%;
 	}
 	.navbar-header {
 		margin-top: 0;
+        background-color: #000;
 		border-bottom: none;
 	}
 	
