@@ -85,20 +85,20 @@ class PictureController extends BaseController {
     	
         //默认显示添加表单
         if (!IS_POST) {
-            $id = intval(I('id'));
-           
+            $id = intval(I('id'));          
             $where['id']=$id;
-           
             $model = M('picture')->where($where)->find();
             //dump($model);
             $this->assign('model',$model);
             $this->display();
-        }
-        if (IS_POST) {
-            
+        }else{
+            $data=I('');
+    
             if(empty($_FILES["imageURL"][tmp_name])){
-                $imageurl=I('eximageURL');
+                $data['imageURL']=$data['eximageURL'];
+                unset($data['eximageURL']);
             }else{
+                   
                 $upload = new \Think\Upload();// 实例化上传类
                 //$upload->maxSize = 3145728 ;// 设置附件上传大小
                 $upload->saveName ='time';
@@ -111,28 +111,29 @@ class PictureController extends BaseController {
                 $this->error($upload->getError());
                 }else{// 上传成功 获取上传文件信息
                     foreach($info as $file){
-                    $imageurl='/Uploads/Image/'.$file['savepath'].$file['savename'];
+                   $data['imageURL']='/Uploads/Image/'.$file['savepath'].$file['savename'];
                     }
                 }
+                if(file_exists('./'.$data['eximageURL'])){
+                    unlink('./'.$data['eximageURL']);
+                }
+                 unset($data['eximageURL']);
             }
             $model = D("Picture");
             if (!$model->create()) {
                 $this->error($model->getError());
             }else{
-                $category=I('category');
                 $where['id']=intval(I('id'));
-                $where['category']=$category;
-                $date['intro']=I('intro');
-                $date['imageURL']=$imageurl;
+  
                 //dump($where);
-                //dump($date);
-                if ($model->where($where)->save($date)) {
-                    $this->success("更新成功", U('picture/index',array('category'=>$category)));
+               // dump($data);
+                if ($model->where($where)->save($data)) {
+                    $this->success("更新成功", U('picture/index'));
                 } else {
                     $this->error("更新失败");
                 }       
             }
-        
+         
         }
     }
 
@@ -160,10 +161,15 @@ class PictureController extends BaseController {
        
         //dump($where);
         $model = M('picture');
+        $list=$model->where($where)->find();
+        //dump($list);
+        if(file_exists('./'.$list['imageurl'])){
+            unlink('./'.$list['imageurl']);
+        }
         //查询status字段值
         $result = $model->where($where)->delete();
         if($result){
-            $this->success("删除成功", U('picture/index',array('category'=>$category)));
+            $this->success("删除成功", U('picture/index'));
         }else{
             $this->error("删除失败");
         }

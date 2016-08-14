@@ -38,7 +38,10 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    <div class="logodiv">
+        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    </div>
+  
 </div>
 <!--close-Header-part--> 
 
@@ -101,7 +104,7 @@
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频锦集</span></a>
+    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频集锦</span></a>
         <ul>
             <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
             <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
@@ -111,7 +114,7 @@
     </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>其他操作</span></a>
       <ul>
-        <li><a href="#">返回公司首页</a></li>
+        <li><a href="http://www.sh-fenghuang.com">返回公司首页</a></li>
         <li><a href="<?php echo U('login/logout');?>">退出登录</a></li>
       </ul>
     </li>

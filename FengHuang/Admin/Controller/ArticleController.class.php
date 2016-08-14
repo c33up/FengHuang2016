@@ -248,9 +248,9 @@ class ArticleController extends BaseController {
             $this->display();
         }
         if (IS_POST) {
-            
+                $eximgurl=I('eximageURL');
             if(empty($_FILES["imageURL"][tmp_name])){
-                $imageurl=I('eximageURL');
+                $imageurl=$eximgurl;
             }else{
                 $upload = new \Think\Upload();// 实例化上传类
                 //$upload->maxSize = 3145728 ;// 设置附件上传大小
@@ -266,6 +266,9 @@ class ArticleController extends BaseController {
                     foreach($info as $file){
                     $imageurl='/Uploads/Image/'.$file['savepath'].$file['savename'];
                     }
+                }
+                if(file_exists('./'.$eximgurl)){
+                    unlink('./'.$eximgurl);
                 }
             }
             $model = D("Article");
@@ -377,6 +380,11 @@ class ArticleController extends BaseController {
         $where['category']=$category;
         //dump($where);
         $model = M('article');
+        $list=$model->where($where)->find();
+        //dump($list);
+        if(file_exists('./'.$list['imageurl'])){
+            unlink('./'.$list['imageurl']);
+        }
         //查询status字段值
         $result = $model->where($where)->delete();
         if($result){

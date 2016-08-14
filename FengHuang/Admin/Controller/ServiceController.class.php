@@ -195,9 +195,9 @@ class ServiceController extends BaseController {
             $this->display();
         }
         if (IS_POST) {
-            
+            $eximgurl=I('eximageURL');
             if(empty($_FILES["imageURL"][tmp_name])){
-                $imageurl=I('eximageURL');
+                $imageurl=$eximgurl;
             }else{
                 $upload = new \Think\Upload();// 实例化上传类
                 //$upload->maxSize = 3145728 ;// 设置附件上传大小
@@ -213,6 +213,9 @@ class ServiceController extends BaseController {
                     foreach($info as $file){
                     $imageurl='/Uploads/Image/'.$file['savepath'].$file['savename'];
                     }
+                }
+                 if(file_exists('./'.$eximgurl)){
+                    unlink('./'.$eximgurl);
                 }
             }
             $model = D("Service");

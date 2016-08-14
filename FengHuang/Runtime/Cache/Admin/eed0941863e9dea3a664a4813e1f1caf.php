@@ -38,7 +38,10 @@
     <body>
         <!--Header-part-->
 <div id="header">
-  <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    <div class="logodiv">
+        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    </div>
+  
 </div>
 <!--close-Header-part--> 
 

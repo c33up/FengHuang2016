@@ -9,4 +9,4 @@ class PictureModel extends Model{
         array('createDate','time',1,'function'), //新增时
     );
 }
-?>
+
