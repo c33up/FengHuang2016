@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" href="/FengHuang/Home/View//Public/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/FengHuang/Home/View//Public/images/fenghuang.ico" type="image/x-icon">
         <title>首页|上海烽凰文化传播有限公司</title>
         <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,7 +24,7 @@
     <![endif]-->
     </head>
     <body>
-<div id="wrapper">    
+<div id="wrapper">
     
  
 <div class="container">
@@ -85,19 +87,21 @@
           
         </nav>
 </div> 
-     <div class="container"><section id="featured">
-<!-- Slider -->
-        <div id="main-slider" class="flexslider">
-            <ul class="slides">
-                <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li>
-                <img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" />
-              </li><?php endforeach; endif; ?>
-            </ul>
+
+        <div class="container">        <section id="featured">
+        <!-- Slider -->
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides">
+                        <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li>
+                        <img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" />
+                      </li><?php endforeach; endif; ?>
+                    </ul>
+                </div>
+	        <!-- end slider -->
+            </section>
         </div>
-	<!-- end slider -->
-    </section>
 
-
+     <div class="container">
 	<section class="callaction">
 	
 		<div class="row">

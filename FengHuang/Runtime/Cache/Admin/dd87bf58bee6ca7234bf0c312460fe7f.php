@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-icon">
         <title>轮播图片-上海烽凰后台管理主页</title>
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
         <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />

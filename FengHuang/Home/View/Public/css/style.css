@@ -53,7 +53,7 @@ h1,h2, h3, h4, h5, h6 {
 }
 
 .container {
-	padding:10px 20px 0 20px;
+	padding:0px 20px 0 20px;
 	position:relative;
     
     background-color: #fff;
@@ -684,7 +684,7 @@ background:#2FADDE
 }
 section.callaction {
 	background:#fff;
-	padding:50px 0 0 0;
+	padding:0;
 }
 
 .panel-title>a {
@@ -1775,7 +1775,7 @@ article img.pull-right, article .align-right{
 	padding:20px;
 }
 .pading30{
-	padding:30px;
+	padding:0px 30px 30px 30px;
 }
 .pading40{
 	padding:40px;

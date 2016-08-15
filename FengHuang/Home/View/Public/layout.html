@@ -3,6 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" href="_IMAGES_/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="_IMAGES_/fenghuang.ico" type="image/x-icon">
         <title><block name="title">首页|上海烽凰文化传播有限公司</block></title>
         <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
         <meta name="apple-mobile-web-app-capable" content="yes">
@@ -22,8 +24,24 @@
     <![endif]-->
     </head>
     <body>
-<div id="wrapper">    
+<div id="wrapper">
     <block name="header"><include file="Public/header"/> </block>
+
+        <div class="container">        <section id="featured">
+        <!-- Slider -->
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides">
+                        <foreach name="picture" item="p">
+                      <li>
+                        <img src="{$p.imageurl}" alt="{$p.intro}" />
+                      </li>
+                      </foreach>
+                    </ul>
+                </div>
+	        <!-- end slider -->
+            </section>
+        </div>
+
     <block name="content"></block>
     <block name="footer"><include file="Public/footer"/> </block></div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>

@@ -5,7 +5,7 @@ class IndexController extends BaseController {
     public function index(){
 
         //轮播
-        $picture=showPicture();
+        //$picture=showPicture();
         //dump($picture);
         
         //方法论
@@ -17,7 +17,7 @@ class IndexController extends BaseController {
         //案例
         $case=showCase();
 
-        $this->assign('picture',$picture);
+        //$this->assign('picture',$picture);
         $this->assign('article',$article);
         $this->assign('video',$video);
         $this->assign('case',$case);
