@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="_IMAGE_/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="_IMAGE_/fenghuang.ico" type="image/x-icon">
+        <title><block name="title">主页-上海烽凰后台管理</block></title>
+        <link rel="stylesheet" href="__CSS_URL__/bootstrap.min.css" />
+        <link rel="stylesheet" href="__CSS_URL__/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="__CSS_URL__/matrix-style.css" />
+        <link rel="stylesheet" href="__CSS_URL__/matrix-media.css" />
+        <link href="__PUBLIC_URL__/css/font-awesome.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
+        <block name="css"></block>
+
+
+    </head>
+    <body>
+        <block name="menu"><include file="Public/header"/></block>
+        <block name="content"></block>
+        <block name="footer"><include file="Public/footer"/></block>
+
+
+        <script src="__JS_URL__/excanvas.min.js"></script> 
+        <script src="__JS_URL__/jquery.min.js"></script> 
+        <script src="__JS_URL__/jquery.ui.custom.js"></script> 
+        <script src="__JS_URL__/bootstrap.min.js"></script> 
+        <script src="__JS_URL__/bootstrap-modal.js"></script>
+        <script src="__JS_URL__/jquery.js"></script> 
+        <script src="__JS_URL__/jquery.flot.min.js"></script> 
+        <script src="__JS_URL__/jquery.flot.resize.min.js"></script> 
+        <script src="__JS_URL__/jquery.peity.min.js"></script> 
+        <script src="__JS_URL__/fullcalendar.min.js"></script> 
+        <script src="__JS_URL__/matrix.js"></script> 
+        <script src="__JS_URL__/matrix.dashboard.js"></script> 
+        <script src="__JS_URL__/jquery.gritter.min.js"></script> 
+        <script src="__JS_URL__/matrix.interface.js"></script> 
+        <script src="__JS_URL__/matrix.chat.js"></script> 
+        <script src="__JS_URL__/jquery.validate.js"></script> 
+        <script src="__JS_URL__/matrix.form_validation.js"></script> 
+        <script src="__JS_URL__/jquery.wizard.js"></script> 
+        <script src="__JS_URL__/jquery.uniform.js"></script> 
+        <script src="__JS_URL__/select2.min.js"></script> 
+        <script src="__JS_URL__/matrix.popover.js"></script> 
+        <script src="__JS_URL__/jquery.dataTables.min.js"></script> 
+        <script src="__JS_URL__/matrix.tables.js"></script> 
+        <block name="js"></block>
+        <script type="text/javascript">
+            function showtime(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth()+1;
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+            var clock=document.getElementById('clock');
+            clock.innerHTML=time;
+            }
+            function letstart(){
+            taskId=setInterval(showtime,500);
+            }
+
+            window.onload=function(){
+	            /*var div1=document.getElementById('div1');
+	            div1.onclick=letstart;*/
+	            letstart();
+            }
+        </script>
+        <script type="text/javascript">
+            function goPage (newURL) {
+                if (newURL != "") {
+                    if (newURL == "-" ) {
+                        resetMenu();            
+                    } 
+                    else {  
+                    document.location.href = newURL;
+                    }
+                }
+            }
+            function resetMenu() {
+                 document.gomenu.selector.selectedIndex = 2;
+            }
+        </script>
+    </body>
+</html>

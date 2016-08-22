@@ -2,46 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title><?php echo ($category); ?>-上海烽凰后台管理主页</title>
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-media.css" />
-        <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-icon">
+        <title><?php echo ($category); ?>-上海烽凰后台管理</title>
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-style.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-media.css" />
+        <link href="/Public/static/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-  
-        <script type="text/javascript">
-        function showtime(){
-        var now=new Date();
-        var year=now.getFullYear();
-        var month=now.getMonth()+1;
-        var day=now.getDate();
-        var hours=now.getHours();
-        var minutes=now.getMinutes();
-        var seconds=now.getSeconds();
-        time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
-        var clock=document.getElementById('clock');
-        clock.innerHTML=time;
-        }
-        function letstart(){
-        taskId=setInterval(showtime,500);
-        }
+        
 
-        window.onload=function(){
-	        /*var div1=document.getElementById('div1');
-	        div1.onclick=letstart;*/
-	        letstart();
-        }
-        </script>
 
     </head>
     <body>
-        <!--Header-part-->
+        
+<!--Header-part-->
 <div id="header">
     <div class="logodiv">
-        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
-    </div>
-  
+        <img src="/Public/static/admin/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    </div> 
 </div>
 <!--close-Header-part--> 
 
@@ -62,6 +42,7 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
+
 <!--start-top-serch close-top-serch-->
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
@@ -74,11 +55,8 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
-    <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
-          <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
-          </ul>
+    <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>"><i class="icon icon-home"></i> <span>烽凰简介</span></a>
+
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'0'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
     </li>
@@ -123,47 +101,7 @@
 </div>
 <!--sidebar-menu-->
 
-        <script src="/FengHuang/Admin/View//Public/Script/excanvas.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.ui.custom.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap-modal.js"></script>
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.resize.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.peity.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/fullcalendar.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.dashboard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.gritter.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.interface.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.chat.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.validate.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.form_validation.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.wizard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.uniform.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/select2.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.popover.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.dataTables.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.tables.js"></script> 
-
-        <script type="text/javascript">
-            function goPage (newURL) {
-                if (newURL != "") {
-                    if (newURL == "-" ) {
-                        resetMenu();            
-                    } 
-                    else {  
-                    document.location.href = newURL;
-                    }
-                }
-            }
-            function resetMenu() {
-                 document.gomenu.selector.selectedIndex = 2;
-            }
-        </script>
-    </body>
-</html>
+        
 
 <div id="content">
     <div id="content-header">
@@ -210,7 +148,8 @@
     </div>
   </div>
 </div>
-<footer class="row-fluid">
+
+        <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12">
         <p>
@@ -222,3 +161,71 @@
   </div>
 <!--end-Footer-part-->
 </footer>
+
+
+
+
+        <script src="/Public/static/admin/Script/excanvas.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.ui.custom.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap.min.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap-modal.js"></script>
+        <script src="/Public/static/admin/Script/jquery.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.resize.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.peity.min.js"></script> 
+        <script src="/Public/static/admin/Script/fullcalendar.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.dashboard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.gritter.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.interface.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.chat.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.validate.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.form_validation.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.wizard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.uniform.js"></script> 
+        <script src="/Public/static/admin/Script/select2.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.popover.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.dataTables.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.tables.js"></script> 
+        
+        <script type="text/javascript">
+            function showtime(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth()+1;
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+            var clock=document.getElementById('clock');
+            clock.innerHTML=time;
+            }
+            function letstart(){
+            taskId=setInterval(showtime,500);
+            }
+
+            window.onload=function(){
+	            /*var div1=document.getElementById('div1');
+	            div1.onclick=letstart;*/
+	            letstart();
+            }
+        </script>
+        <script type="text/javascript">
+            function goPage (newURL) {
+                if (newURL != "") {
+                    if (newURL == "-" ) {
+                        resetMenu();            
+                    } 
+                    else {  
+                    document.location.href = newURL;
+                    }
+                }
+            }
+            function resetMenu() {
+                 document.gomenu.selector.selectedIndex = 2;
+            }
+        </script>
+    </body>
+</html>

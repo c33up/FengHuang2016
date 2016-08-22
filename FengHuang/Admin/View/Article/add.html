@@ -1,4 +1,7 @@
-<include file="Public/header" title="添加{$category}-上海烽凰后台管理主页" />
+<extend name="Public/layout" />
+<block name="title">添加{$category}-上海烽凰后台管理</block>
+<block name="content">
+
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('article/index',array('category'=>$cid))}" class="tip-bottom">{$category}</a> <a href="#" class="current">添加{$category}</a> </div>
@@ -141,14 +144,16 @@
   </div>
 </div>
 </div>
-<!-- 配置文件 -->
-<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
-<!-- 编辑器源码文件 -->
-<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
-<!-- 实例化编辑器 -->
-<script type="text/javascript">
-    var ue = UE.getEditor('editor',{
-        initialFrameHeight:400
-    });
-</script>
-<include file="Public/footer" />
+</block>
+    <block name="js">
+        <!-- 配置文件 -->
+        <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+        <!-- 编辑器源码文件 -->
+        <script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+        <!-- 实例化编辑器 -->
+        <script type="text/javascript">
+            var ue = UE.getEditor('editor',{
+                initialFrameHeight:400
+            });
+        </script>
+    </block>

@@ -1,4 +1,6 @@
-<include file="Public/header" title="主页-上海烽凰后台管理" />
+<extend name="Public/layout" />
+<block name="content">
+
 <div id="content">
  <div id="content-header">
     <div id="breadcrumb"> <a href="#" title="主页" class="tip-bottom"><i class="icon-home"></i>主页</a></div>
@@ -9,7 +11,6 @@
       <ul class="quick-actions">
         <li class="bg_lb"> <a href="{:U('user/index')}"> <i class="icon-dashboard"></i>用户管理</a> </li>
         <li class="bg_lb"> <a href="{:U('intro/index',array('category'=>'1'))}"> <i class="icon-dashboard"></i>烽凰简介</a> </li>
-        <li class="bg_ly"> <a href="{:U('intro/index',array('category'=>'2'))}"> <i class="icon-inbox"></i>烽凰团队</a> </li>
         <li class="bg_lo"> <a href="{:U('article/index',array('category'=>'0'))}"> <i class="icon-th-list"></i> 烽凰方法论</a> </li>
         <li class="bg_ls"> <a href="{:U('article/index',array('category'=>'11'))}"> <i class="icon-tint"></i>公益营销</a> </li>
         <li class="bg_lb"> <a href="{:U('article/index',array('category'=>'12'))}"> <i class="icon-pencil"></i>事件营销</a> </li>
@@ -36,4 +37,4 @@
 	</div>
 </div>
 
-<include file="Public/footer" />
+</block>

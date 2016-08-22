@@ -1,4 +1,7 @@
-<include file="Public/header" title="添加轮播图片-上海烽凰后台管理主页" />
+<extend name="Public/layout" />
+<block name="title">修改轮播图片-上海烽凰后台管理</block>
+<block name="content">
+
 <div id="content">
 <div id="content-header">
   <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('picture/index')}" class="tip-bottom">轮播图片管理</a> <a href="#" class="current">修改轮播图片</a> </div>
@@ -125,5 +128,4 @@
   </div>
 </div>
 </div>
-
-<include file="Public/footer" />
+</block>
