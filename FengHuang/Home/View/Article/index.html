@@ -12,20 +12,21 @@
                      </div>
 		 
                     <foreach name="article" item="a">
-                         <div class="col-md-12 marginbot40">
+                    <div class="col-md-12 marginbot40">
+                        <div class="thumbnail-1">
+                             <a href="{:U('article/detail',array('id'=>$a['id']))}">
 		                    <div class="col-md-4">
-		                    <img src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>
+		                    <img src="{$a.imageurl}" alt="{$a.intro}"/>
 		                    </div>
 		                    <div class="col-md-8">
-			                    <div><a href="{:U('article/detail',array('id'=>$a['id']))}"><h4> {$a.title}</h4></a>
-                                                <div>
-                                
-                                        </div>
-                                    <a href="{:U('article/detail',array('id'=>$a['id']))}"><p class="intro psize16">{$a.intro}</p></a>
+			                    <div class="caption">
+                                   <h4> {$a.title}</h4>
+                                    <p>{$a.intro}</p>
 			                    </div>
-                                </div>
-		                    </div>
- 
+                            </div>
+                            </a>
+		                </div>
+                    </div>
                     </foreach>
                     <div class="col-md-12">
                          <div class="pull-right">

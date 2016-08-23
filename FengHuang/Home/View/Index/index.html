@@ -1,7 +1,6 @@
 <extend name="Public/layout" />
 <block name="content"> <div class="container">
-	<section class="callaction">
-	
+    	<section class="callaction">
 		<div class="row">
          <div class="col-md-12">
              <div class="col-md-6">
@@ -13,13 +12,16 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 marginbot20">
+                <div class="row service-v1">
                  <foreach name="article" item="a">
-                      <div class="col-md-6">
-		                <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
-                            <h5>{$a.title}</h5>
-		              <p class="intro psize16">{$a.intro}</p></a>
-			   
+                      <div class="col-md-6">                           <div class="thumbnail">
+		                    <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
+                                <div class="caption">
+                                    <h5>{$a.title}</h5>
+		                            <p>{$a.intro}</p>
+                                </div>
+                            </a>
+			                </div>
                        </div>
              
                        </foreach>
@@ -36,27 +38,26 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 marginbot20">
+                <div class="row">
                  <foreach name="video" item="a">
-                      <div class="col-md-6">
-		                 <a href="{:U('video/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
-                             <h5>{$a.title}</h5>
-		              <p class="intro psize16">{$a.intro}</p></a>
-			   
-                       </div>
-             
+                      <div class="col-md-6">                            <div class="thumbnail">
+		                        <a href="{:U('video/detail',array('id'=>$a['id']))}" title="{$a.title}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.title}"/>
+                                    <div class="caption">
+                                    <h5>{$a.title}</h5>
+		                        <p>{$a.intro}</p>
+			                    </div>
+                                </a>
+                            </div>
+                        </div>
                        </foreach>
 		        </div>
                 </div>
             </div>
              </div>
-                </div>
-	      
-	        </section>
+        
 
-	<section class="callaction">
-     
-	        <div class="row">
+
+
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
@@ -67,13 +68,16 @@
 	        </div>
             <div class="col-md-12">
                <foreach name="case" item="a">
-              <div class="col-md-3 marginbot40 bggray">
-		        <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
-                    <h5>{$a.title}</h5>
-		      <p class="intro psize16">{$a.intro}</p></a>
-			   
+              <div class="col-md-3 marginbot40">                   <div class="thumbnail">
+		            <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}" title="{$a.title}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.title}"/>
+                         <div class="caption">
+                            <h5>{$a.title}</h5>
+		                    <p>{$a.intro}</p>
+			            </div>
+                    </a>
                </div>
-             
+             </div>
+                   
                </foreach>
               </div>
             </div> 

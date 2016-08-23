@@ -102,8 +102,7 @@
         </div>
 
      <div class="container">
-	<section class="callaction">
-	
+    	<section class="callaction">
 		<div class="row">
          <div class="col-md-12">
              <div class="col-md-6">
@@ -115,12 +114,15 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 marginbot20">
-                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6">
-		                <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="" width="100%"/>
-                            <h5><?php echo ($a["title"]); ?></h5>
-		              <p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
-			   
+                <div class="row service-v1">
+                 <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6">                           <div class="thumbnail">
+		                    <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="" width="100%"/>
+                                <div class="caption">
+                                    <h5><?php echo ($a["title"]); ?></h5>
+		                            <p><?php echo ($a["intro"]); ?></p>
+                                </div>
+                            </a>
+			                </div>
                        </div><?php endforeach; endif; ?>
 		        </div>
                 </div>
@@ -135,24 +137,24 @@
                  </div>
 		 
                 <div class="col-md-12">	
-                <div class="row service-v1 marginbot20">
-                 <?php if(is_array($video)): foreach($video as $key=>$a): ?><div class="col-md-6">
-		                 <a href="<?php echo U('video/detail',array('id'=>$a['id']));?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="" width="100%"/>
-                             <h5><?php echo ($a["title"]); ?></h5>
-		              <p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
-			   
-                       </div><?php endforeach; endif; ?>
+                <div class="row">
+                 <?php if(is_array($video)): foreach($video as $key=>$a): ?><div class="col-md-6">                            <div class="thumbnail">
+		                        <a href="<?php echo U('video/detail',array('id'=>$a['id']));?>" title="<?php echo ($a["title"]); ?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>"/>
+                                    <div class="caption">
+                                    <h5><?php echo ($a["title"]); ?></h5>
+		                        <p><?php echo ($a["intro"]); ?></p>
+			                    </div>
+                                </a>
+                            </div>
+                        </div><?php endforeach; endif; ?>
 		        </div>
                 </div>
             </div>
              </div>
-                </div>
-	      
-	        </section>
+        
 
-	<section class="callaction">
-     
-	        <div class="row">
+
+
             <div class="col-md-12">
               <div class="page-header">
                   <ul class="list-unstyled">
@@ -162,12 +164,15 @@
             </div>
 	        </div>
             <div class="col-md-12">
-               <?php if(is_array($case)): foreach($case as $key=>$a): ?><div class="col-md-3 marginbot40 bggray">
-		        <a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="" width="100%"/>
-                    <h5><?php echo ($a["title"]); ?></h5>
-		      <p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
-			   
-               </div><?php endforeach; endif; ?>
+               <?php if(is_array($case)): foreach($case as $key=>$a): ?><div class="col-md-3 marginbot40">                   <div class="thumbnail">
+		            <a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>" title="<?php echo ($a["title"]); ?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>"/>
+                         <div class="caption">
+                            <h5><?php echo ($a["title"]); ?></h5>
+		                    <p><?php echo ($a["intro"]); ?></p>
+			            </div>
+                    </a>
+               </div>
+             </div><?php endforeach; endif; ?>
               </div>
             </div> 
 	           </section> 
@@ -206,6 +211,8 @@
         <script src="/Public/static/js/animate.js"></script>
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

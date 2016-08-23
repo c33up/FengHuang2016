@@ -113,18 +113,20 @@
                      </div>
 		 
                     <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
+                        <div class="thumbnail-1">
+                             <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>">
 		                    <div class="col-md-4">
-		                    <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
+		                    <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>"/>
 		                    </div>
 		                    <div class="col-md-8">
-			                    <div><a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><h4> <?php echo ($a["title"]); ?></h4></a>
-                                                <div>
-                                
-                                        </div>
-                                    <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><p class="intro psize16"><?php echo ($a["intro"]); ?></p></a>
+			                    <div class="caption">
+                                   <h4> <?php echo ($a["title"]); ?></h4>
+                                    <p><?php echo ($a["intro"]); ?></p>
 			                    </div>
-                                </div>
-		                    </div><?php endforeach; endif; ?>
+                            </div>
+                            </a>
+		                </div>
+                    </div><?php endforeach; endif; ?>
                     <div class="col-md-12">
                          <div class="pull-right">
                            <?php echo ($page); ?>
@@ -167,6 +169,8 @@
         <script src="/Public/static/js/animate.js"></script>
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

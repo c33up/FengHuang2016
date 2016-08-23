@@ -3,18 +3,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <link rel="icon" href="/Public/static/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/images/fenghuang.ico" type="image/x-ico">
         <title>我们的服务|上海烽凰文化传播有限公司</title>
         <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="format-detection" content="telephone=no">
         <!-- css -->
-        <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-        <link href="/FengHuang/Home/View//Public/css/flexslider.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/style.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/custom-fonts.css" rel="stylesheet" />
+        <link href="/Public/static/css/bootstrap.css" rel="stylesheet" />
+        <link href="/Public/static/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/Public/static/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="/Public/static/css/flexslider.css" rel="stylesheet" />
+        <link href="/Public/static/css/style.css" rel="stylesheet" />
+        <link href="/Public/static/css/custom-fonts.css" rel="stylesheet" />
         
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -22,15 +24,16 @@
     <![endif]-->
     </head>
     <body>
-<div id="wrapper">    <!-- start header -->
+<div id="wrapper">
+    
  
-        <div class="container">
+<div class="container">
 	<header>
        <div class="imgdiv">
-            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+            <a  href="<?php echo U('index/index');?>"><img src="/Public/static/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
         </div>
 	</header>
-	<!-- end header -->  <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-default navbar-static-top">
           
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -83,8 +86,21 @@
                 </div>
           
         </nav>
-</div>
-    
+</div> 
+
+        <div class="container">        <section id="featured">
+        <!-- Slider -->
+                <div id="main-slider" class="flexslider">
+                    <ul class="slides">
+                        <?php if(is_array($picture)): foreach($picture as $key=>$p): ?><li>
+                        <img src="<?php echo ($p["imageurl"]); ?>" alt="<?php echo ($p["intro"]); ?>" />
+                      </li><?php endforeach; endif; ?>
+                    </ul>
+                </div>
+	        <!-- end slider -->
+            </section>
+        </div>
+
     
 
  <div class="container">
@@ -106,8 +122,7 @@
 		
 
 </section></div>
-
-<div class="container">
+    <div class="container">
     <footer>
 	<div id="sub-footer">
 	
@@ -124,22 +139,24 @@
 				</div>
 		</div>
 	
-	</footer>    </div></div>
+	</footer>    </div> </div>
 <a href="#" class="scrollup"><i class="fa fa-angle-up active"></i></a>
   <!-- javascript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="/FengHuang/Home/View//Public/js/jquery.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.easing.1.3.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/bootstrap.min.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.fancybox.pack.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.fancybox-media.js"></script> 
-        <script src="/FengHuang/Home/View//Public/js/portfolio/jquery.quicksand.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/portfolio/setting.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.flexslider.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/animate.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/custom.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/jquery.js"></script>
+        <script src="/Public/static/js/jquery.easing.1.3.js"></script>
+        <script src="/Public/static/js/bootstrap.min.js"></script>
+        <script src="/Public/static/js/jquery.fancybox.pack.js"></script>
+        <script src="/Public/static/js/jquery.fancybox-media.js"></script> 
+        <script src="/Public/static/js/portfolio/jquery.quicksand.js"></script>
+        <script src="/Public/static/js/portfolio/setting.js"></script>
+        <script src="/Public/static/js/jquery.flexslider.js"></script>
+        <script src="/Public/static/js/animate.js"></script>
+        <script src="/Public/static/js/custom.js"></script>
+        <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

@@ -119,16 +119,19 @@
                         </ul>            
                      </div>
                 <?php if(is_array($new)): foreach($new as $key=>$n): ?><div class="col-md-12 marginbot20">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div> 
-                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4><?php echo ($n["title"]); ?></h4></a>
-
-                        <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <p class="psize16"><?php echo ($n["intro"]); ?></p></a>
-			            </div>
-                        </div>  
+                          <div class="thumbnail-1">
+                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div>
                           </div><?php endforeach; endif; ?>
                  </div>
 
@@ -141,15 +144,19 @@
                              
                      </div>
                 <?php if(is_array($public)): foreach($public as $key=>$n): ?><div class="col-md-12 marginbot20">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div> 
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4><?php echo ($n["title"]); ?></h4></a>
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="psize16"><?php echo ($n["intro"]); ?></p></a>
-			            </div>
-                        </div>  
+		             <div class="thumbnail-1">
+                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div>
                           </div><?php endforeach; endif; ?>
                  </div>
 
@@ -162,15 +169,19 @@
                         </ul>       
                      </div>
                 <?php if(is_array($entertainment)): foreach($entertainment as $key=>$n): ?><div class="col-md-12 marginbot20">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div> 
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4><?php echo ($n["title"]); ?></h4></a>
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="psize16"><?php echo ($n["intro"]); ?></p></a>
-			            </div>
-                        </div>  
+		             <div class="thumbnail-1">
+                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div>
                           </div><?php endforeach; endif; ?>
                  </div>
 
@@ -183,15 +194,19 @@
                          
                      </div>
                 <?php if(is_array($event)): foreach($event as $key=>$n): ?><div class="col-md-12 marginbot20">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div>
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4> <?php echo ($n["title"]); ?></h4></a>
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><p class="psize16"><?php echo ($n["intro"]); ?></p></a>
-			            </div>
-                        </div>  
+		             <div class="thumbnail-1">
+                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div>
                           </div><?php endforeach; endif; ?>
                  </div>
 
@@ -204,15 +219,19 @@
                            
                      </div>
                 <?php if(is_array($crisis)): foreach($crisis as $key=>$n): ?><div class="col-md-12 marginbot20">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			            <div> 
-                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"><h4><?php echo ($n["title"]); ?></h4></a>
-                           <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>"> <p class="psize16"><?php echo ($n["intro"]); ?></p></a>
-			            </div>
-                        </div>  
+		             <div class="thumbnail-1">
+                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div> 
                           </div><?php endforeach; endif; ?>
                  </div>
 
@@ -252,6 +271,8 @@
         <script src="/Public/static/js/animate.js"></script>
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

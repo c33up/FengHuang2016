@@ -156,6 +156,7 @@
         <script src="/Public/static/js/animate.js"></script>
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
         
     </body>
 </html>

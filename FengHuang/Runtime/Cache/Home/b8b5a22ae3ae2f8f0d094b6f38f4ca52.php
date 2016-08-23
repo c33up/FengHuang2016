@@ -3,20 +3,20 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel='icon' href='pic.ico ' type='image/x-ico' /> 
-        <link rel="shortcut icon" href="ico地址" type="image/x-icon">
+        <link rel="icon" href="/Public/static/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/images/fenghuang.ico" type="image/x-ico">
         <title>我们的服务|上海烽凰文化传播有限公司</title>
         <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <meta name="format-detection" content="telephone=no">
         <!-- css -->
-        <link href="/FengHuang/Home/View//Public/css/bootstrap.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-        <link href="/FengHuang/Home/View//Public/css/flexslider.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/style.css" rel="stylesheet" />
-        <link href="/FengHuang/Home/View//Public/css/custom-fonts.css" rel="stylesheet" />
+        <link href="/Public/static/css/bootstrap.css" rel="stylesheet" />
+        <link href="/Public/static/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="/Public/static/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+        <link href="/Public/static/css/flexslider.css" rel="stylesheet" />
+        <link href="/Public/static/css/style.css" rel="stylesheet" />
+        <link href="/Public/static/css/custom-fonts.css" rel="stylesheet" />
         
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
@@ -30,7 +30,7 @@
 <div class="container">
 	<header>
        <div class="imgdiv">
-            <a  href="<?php echo U('index/index');?>"><img src="/FengHuang/Home/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
+            <a  href="<?php echo U('index/index');?>"><img src="/Public/static/images/logo.png" alt="上海烽凰文化传播有限公司" title="上海烽凰文化传播有限公司"/></a>
         </div>
 	</header>
     <nav class="navbar navbar-default navbar-static-top">
@@ -111,15 +111,20 @@
                       <p class="psize20 marginleft20"><?php echo ($category); ?></p>              
                  </div>
 		 
-            <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
-		            <div class="col-md-4">
-		            <img src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["intro"]); ?>" width="100%"/>
-		            </div>
-		            <div class="col-md-8">
-			           
-                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><h4> <?php echo ($a["title"]); ?></h4></a>
-                    <a href="<?php echo U('service/detail',array('id'=>$a['id']));?>"><p class="psize16"><?php echo ($a["intro"]); ?></p></a>
-                        </div>
+            <?php if(is_array($article)): foreach($article as $key=>$n): ?><div class="col-md-12 marginbot40">
+		             <div class="thumbnail-1">
+                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                    <div class="caption"> 
+                                    <h4><?php echo ($n["title"]); ?></h4>
+                                    <p><?php echo ($n["intro"]); ?></p>
+                                    </div>
+                                    </div>  
+                                </a>
+                            </div>   
 		            </div><?php endforeach; endif; ?>
             <div class="col-md-12">
             <div class="pull-right">
@@ -152,17 +157,19 @@
   <!-- javascript
             ================================================== -->
         <!-- Placed at the end of the document so the pages load faster -->
-        <script src="/FengHuang/Home/View//Public/js/jquery.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.easing.1.3.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/bootstrap.min.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.fancybox.pack.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.fancybox-media.js"></script> 
-        <script src="/FengHuang/Home/View//Public/js/portfolio/jquery.quicksand.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/portfolio/setting.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/jquery.flexslider.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/animate.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/custom.js"></script>
-        <script src="/FengHuang/Home/View//Public/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/jquery.js"></script>
+        <script src="/Public/static/js/jquery.easing.1.3.js"></script>
+        <script src="/Public/static/js/bootstrap.min.js"></script>
+        <script src="/Public/static/js/jquery.fancybox.pack.js"></script>
+        <script src="/Public/static/js/jquery.fancybox-media.js"></script> 
+        <script src="/Public/static/js/portfolio/jquery.quicksand.js"></script>
+        <script src="/Public/static/js/portfolio/setting.js"></script>
+        <script src="/Public/static/js/jquery.flexslider.js"></script>
+        <script src="/Public/static/js/animate.js"></script>
+        <script src="/Public/static/js/custom.js"></script>
+        <script src="/Public/static/js/menu_jquery.js"></script>
+        <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>
