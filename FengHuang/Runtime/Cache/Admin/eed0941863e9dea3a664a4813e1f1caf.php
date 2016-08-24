@@ -82,11 +82,7 @@
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频集锦</span></a>
-        <ul>
-            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
-            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
-        </ul>
+    <li> <a href="<?php echo U('video/index',array('category'=>'31'));?>"><i class="icon icon-file"></i> <span>视频集锦</span></a>
     </li>
     <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
@@ -127,8 +123,7 @@
         <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'26'));?>"> <i class="icon-pencil"></i>VI设计</a> </li>
         <li class="bg_lb"> <a href="<?php echo U('article/index',array('category'=>'27'));?>"> <i class="icon-pencil"></i>全案策划服务</a> </li>
         <li class="bg_lg"> <a href="<?php echo U('contact/index');?>"> <i class="icon-calendar"></i> 联系我们</a> </li>
-        <li class="bg_lr"> <a href="<?php echo U('video/index');?>"> <i class="icon-info-sign"></i>网络视频</a> </li>
-          <li class="bg_lr"> <a href="<?php echo U('localvideo/index');?>"> <i class="icon-info-sign"></i>本地视频</a> </li>
+        <li class="bg_lr"> <a href="<?php echo U('video/index',array('category'=>'31'));?>"> <i class="icon-info-sign"></i>视频锦集</a> </li>
         <li class="bg_lb"> <a href="<?php echo U('picture/index');?>"> <i class="icon-pencil"></i>轮播图片</a> </li>
         <li class="bg_lr"> <a href="http://www.sh-fenghuang.com"> <i class="icon-info-sign"></i>回网站首页</a> </li>
         <li class="bg_lr"> <a href="<?php echo U('login/logout');?>"> <i class="icon-info-sign"></i>退出登录</a> </li>

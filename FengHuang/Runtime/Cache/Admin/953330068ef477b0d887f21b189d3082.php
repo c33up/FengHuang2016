@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-ico" /> 
-        <link rel="shortcut icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-icon">
+        <link rel="icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-icon">
         <title>修改<?php echo ($category); ?>-上海烽凰后台管理</title>
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-media.css" />
-        <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-style.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-media.css" />
+        <link href="/Public/static/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
         
 
@@ -20,7 +20,7 @@
 <!--Header-part-->
 <div id="header">
     <div class="logodiv">
-        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+        <img src="/Public/static/admin/images/logo.png" alt="上海烽凰文化传播有限公司"/>
     </div> 
 </div>
 <!--close-Header-part--> 
@@ -271,29 +271,29 @@
 
 
 
-        <script src="/FengHuang/Admin/View//Public/Script/excanvas.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.ui.custom.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap-modal.js"></script>
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.resize.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.peity.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/fullcalendar.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.dashboard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.gritter.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.interface.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.chat.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.validate.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.form_validation.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.wizard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.uniform.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/select2.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.popover.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.dataTables.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.tables.js"></script> 
+        <script src="/Public/static/admin/Script/excanvas.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.ui.custom.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap.min.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap-modal.js"></script>
+        <script src="/Public/static/admin/Script/jquery.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.resize.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.peity.min.js"></script> 
+        <script src="/Public/static/admin/Script/fullcalendar.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.dashboard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.gritter.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.interface.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.chat.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.validate.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.form_validation.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.wizard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.uniform.js"></script> 
+        <script src="/Public/static/admin/Script/select2.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.popover.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.dataTables.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.tables.js"></script> 
         
         <!-- 配置文件 -->
         <script type="text/javascript" src="/Public/ueditor/ueditor.config.js"></script>

@@ -104,17 +104,14 @@
      <div class="container">
     	<section class="callaction">
 		<div class="row">
-         <div class="col-md-12">
-             <div class="col-md-6">
-                 <div class="page-header">
+         <div class="col-md-12 pad0">
+             <div class="col-md-6 pad0">
+                 <div class="page-header marginlr20">
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="<?php echo U('article/index');?>">more</a></li>
                       <li>烽凰方法论</li>
                     </ul>
-                 </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1">
+                 </div>           
                  <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-6">                           <div class="thumbnail">
 		                    <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="" width="100%"/>
                                 <div class="caption">
@@ -123,21 +120,17 @@
                                 </div>
                             </a>
 			                </div>
-                       </div><?php endforeach; endif; ?>
-		        </div>
+                       </div><?php endforeach; endif; ?>   
                 </div>
-        </div>
-                <div class="col-md-6" >
-                 <div class="page-header" >
+                <div class="col-md-6 pad0" >
+                 <div class="page-header marginlr20" >
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="<?php echo U('video/index');?>">more</a></li>
                       <li>视频中心</li>
                     </ul>
             
                  </div>
-		 
-                <div class="col-md-12">	
-                <div class="row">
+
                  <?php if(is_array($video)): foreach($video as $key=>$a): ?><div class="col-md-6">                            <div class="thumbnail">
 		                        <a href="<?php echo U('video/detail',array('id'=>$a['id']));?>" title="<?php echo ($a["title"]); ?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>"/>
                                     <div class="caption">
@@ -147,23 +140,22 @@
                                 </a>
                             </div>
                         </div><?php endforeach; endif; ?>
-		        </div>
+		       
                 </div>
-            </div>
              </div>
         
 
 
 
-            <div class="col-md-12">
-              <div class="page-header">
+            <div class="col-md-12 pad0">
+              <div class="page-header marginlr20">
                   <ul class="list-unstyled">
                       <li class="pull-right"><a href="<?php echo U('fhcase/index');?>">more</a></li>
                       <li>案例赏析</li>
                   </ul>
             </div>
-	        </div>
-            <div class="col-md-12">
+	       
+            
                <?php if(is_array($case)): foreach($case as $key=>$a): ?><div class="col-md-3 marginbot40">                   <div class="thumbnail">
 		            <a href="<?php echo U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']));?>" title="<?php echo ($a["title"]); ?>"><img class="img-responsive" src="<?php echo ($a["imageurl"]); ?>" alt="<?php echo ($a["title"]); ?>"/>
                          <div class="caption">
@@ -173,9 +165,9 @@
                     </a>
                </div>
              </div><?php endforeach; endif; ?>
-              </div>
+           
             </div> 
-	           </section> 
+	    </div>        </section> 
     </div>
 
     <div class="container">

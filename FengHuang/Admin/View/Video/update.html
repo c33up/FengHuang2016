@@ -1,11 +1,11 @@
 <extend name="Public/layout" />
-<block name="title">修改网络视频-上海烽凰后台管理</block>
+<block name="title">修改视频锦集-上海烽凰后台管理</block>
 <block name="content">
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="{:U('index/index')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('video/index')}" class="tip-bottom">网络视频管理</a> <a href="#" class="current">修改网络视频</a> </div>
-  <h1>网络视频</h1>
+  <div id="breadcrumb"> <a href="{:U('index/index')}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="{:U('video/index')}" class="tip-bottom">视频锦集管理</a> <a href="#" class="current">修改视频锦集</a> </div>
+  <h1>修改视频锦集</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -13,11 +13,13 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改网络视频</h5>
+          <h5>修改视频锦集</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="{:U('video/update')}" method="post" class="form-horizontal" enctype="multipart/form-data">
               <input type="hidden" name="id" value="{$model.id}">
+              <input type="hidden" name="flag" value="{$model.flag}">
+              <input type="hidden" name="category" value="{$model.category}">
             <div class="control-group">
               <label for="normal" class="control-label">视频标题</label>
               <div class="controls">
@@ -30,21 +32,29 @@
                   <textarea name="intro" class="textarea_editor span8" rows="6">{$model.intro}</textarea>
                </div>
             </div>
-       
+       <if condition="$model['flag'] eq 0">
             <div class="control-group">
               <label for="text" class="control-label">视频链接地址</label>
               <div class="controls">
                  <textarea id="editor" name="videoURL" class="span8" rows="6">{$model.videourl}</textarea>
               </div>
             </div>
-
+           <else />
+              <div class="control-group">
+              <label for="text" class="control-label">上传本地视频</label>
+              <div class="controls">
+                 <input type="file" id="videourl" name="videourl"/>
+                  <input type="hidden" name="exvideo" value="{$model.videourl}">
+              </div>
+            </div>
+        </if>
             <div class="control-group">
               <label class="control-label">上传视频封面图片</label>
               <div class="controls">
                   <div class="alert alert-warning">上传图片大小：宽830px、高550px</div>
                <input type="file" id="imageUpload" name="imageURL"/>
                 <input type="hidden" name="eximg" value="{$model.imageurl}">
-                <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="{$model.imageurl}" alt="{$model.intro}"/></div>
+                <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="{$model.imageurl}" alt="{$model.title}"/></div>
 				<div id="preview" class="preview"></div>
               </div>
                 <style>
@@ -128,14 +138,15 @@
             <div class="control-group">
               <label for="normal" class="control-label">发表时间：</label>
               <div class="controls">
-                <span class="span8">{$time}</span> </div>
+                <input type="datetime-local" name="createDate" value="{$model.createdate}"/>
+              </div>
             </div>
             <div class="control-group">
                 <input type="hidden" name="exishome" value="{$model.ishome}">
             <div class="controls">
                 <div class="checkbox">
                     <label>
-                        <if condition="$model['ishome'] eq 'yes'">
+                        <if condition="$model['ishome'] eq '是'">
                                 <input type="checkbox" name="ishome">取消放到首页 
                             <else />
                                 <input type="checkbox" name="ishome">放到首页
@@ -146,8 +157,8 @@
         </div>
             <div class="control-group">
               <div class="controls">
-                  <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
-                  <button type="reset" name="submit" class="btn btn-primary">清空</button> </div>
+                  <button type="submit" class="btn btn-primary">提交</button>
+                  <button type="reset" class="btn btn-primary">重置</button> </div>
             </div>
           </form>
         </div>

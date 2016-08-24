@@ -30,14 +30,11 @@ class VideoController extends BaseController {
             $where['id']=$id;
             $model = M('video')->where($where)->find();
             //dump($model);
-            if($model['category']=='1'){
-                $videourl=htmlspecialchars_decode(html_entity_decode($model['videourl']));
-                $this->assign('videourl',$videourl);
+            M('video')->where($where)->setInc('num',1);  
+            if($model['flag']=='0'){
+                $model['videourl']=htmlspecialchars_decode(html_entity_decode($model['videourl']));
+                //$this->assign('videourl',$videourl);
             }
-            
-
-             M('video')->where($where)->setInc('num',1);  
-
             $this->assign('model',$model);
           
             $this->display();

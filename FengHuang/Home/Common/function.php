@@ -39,7 +39,7 @@
 
 
     function showVideo(){ 
-        $where['ishome']='yes';
+        $where['ishome']='是';
         $video=M('video')->limit(2)->where($where)->order('id DESC')->select();
         return $video;
     }

@@ -104,192 +104,179 @@
     
 
 <div class="container">  
-<section class="callaction">
-	
-		<div class="row">
-            
-                <div class="col-md-12 pading30">
-               <div class="page-header"> 
-                    <p class="psize20 marginleft20"><strong>我们的服务</strong></p>   
-     
-                 </div>
-		  <div class="col-md-12">
-              <div class="page-header">  
-                  <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'21'));?>">more</a></li>
-                      <li>媒体发布</li>
-                    </ul>            
-                 </div>
-            <?php if(is_array($media)): foreach($media as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+    <section class="callaction">	
+		<div class="row">           
+            <div class="col-md-12 pad0">
+		        <div class="col-md-12">
+                    <div class="page-header">  
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'21'));?>">more</a></li>
+                            <li>媒体发布</li>
+                        </ul>            
+                     </div>
+                    <?php if(is_array($media)): foreach($media as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
                                     </div>
                                     <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
                                     </div>  
                                 </a>
                             </div>  
-                      </div><?php endforeach; endif; ?>
-             </div>
-
-             <div class="col-md-12">
-              <div class="page-header">  
-                  <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'22'));?>">more</a></li>
-                      <li>公关活动</li>
-                    </ul>               
+                        </div><?php endforeach; endif; ?>
                  </div>
-            <?php if(is_array($public)): foreach($public as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
-                                    <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
-                                    </div>
-                                    <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
-                                    </div>  
-                                </a>
-                            </div>    
-                      </div><?php endforeach; endif; ?>
-             </div>
 
+                 <div class="col-md-12">
+                        <div class="page-header">  
+                            <ul class="list-unstyled">
+                                  <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'22'));?>">more</a></li>
+                                  <li>公关活动</li>
+                            </ul>               
+                        </div>
+                        <?php if(is_array($public)): foreach($public as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                        <div class="thumbnail-1">
+                                    <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                        <div class="col-md-4">
+                                            <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="caption"> 
+                                                <h4><?php echo ($n["title"]); ?></h4>
+                                                <p><?php echo ($n["intro"]); ?></p>
+                                            </div>
+                                        </div>  
+                                    </a>
+                                </div>    
+                            </div><?php endforeach; endif; ?>
+                 </div>
             
-             <div class="col-md-12">
-              <div class="page-header">  
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'23'));?>">more</a></li>
-                      <li>危机公关处理</li>
-                    </ul>       
-                 </div>
-            <?php if(is_array($crisis)): foreach($crisis as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                 <div class="col-md-12">
+                    <div class="page-header">  
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'23'));?>">more</a></li>
+                            <li>危机公关处理</li>
+                        </ul>       
+                    </div>
+                    <?php if(is_array($crisis)): foreach($crisis as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
                                     </div>
                                     <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
                                     </div>  
                                 </a>
                             </div>  
-                      </div><?php endforeach; endif; ?>
-             </div>
-
-            <div class="col-md-12">
-              <div class="page-header">  
-                     <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'24'));?>">more</a></li>
-                      <li>广告代理发布</li>
-                    </ul>  
-                         
+                        </div><?php endforeach; endif; ?>
                  </div>
-            <?php if(is_array($advertisement)): foreach($advertisement as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+
+                <div class="col-md-12">
+                    <div class="page-header">  
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'24'));?>">more</a></li>
+                            <li>广告代理发布</li>
+                        </ul>                          
+                    </div>
+                    <?php if(is_array($advertisement)): foreach($advertisement as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
                                     </div>
                                     <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
                                     </div>  
                                 </a>
                             </div>   
-                      </div><?php endforeach; endif; ?>
-             </div>
+                        </div><?php endforeach; endif; ?>
+                </div>
 
-             <div class="col-md-12">
-              <div class="page-header">   
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'25'));?>">more</a></li>
-                      <li>网络推广</li>
-                    </ul>   
-                           
-                 </div>
-            <?php if(is_array($web)): foreach($web as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                <div class="col-md-12">
+                    <div class="page-header">   
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'25'));?>">more</a></li>
+                            <li>网络推广</li>
+                        </ul>                            
+                    </div>
+                    <?php if(is_array($web)): foreach($web as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
                                     </div>
                                     <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
                                     </div>  
                                 </a>
                             </div>    
-                      </div><?php endforeach; endif; ?>
-             </div>
+                        </div><?php endforeach; endif; ?>
+                </div>
 
-            <div class="col-md-12">
-              <div class="page-header">   
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'26'));?>">more</a></li>
-                      <li>VI设计</li>
-                    </ul>   
-                           
-                 </div>
-            <?php if(is_array($vi)): foreach($vi as $key=>$n): ?><div class="col-md-12 marginbot20">
-		        <div class="thumbnail-1">
-                              <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                <div class="col-md-12">
+                    <div class="page-header">   
+                        <ul class="list-unstyled">
+                              <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'26'));?>">more</a></li>
+                              <li>VI设计</li>
+                        </ul>                             
+                    </div>
+                    <?php if(is_array($vi)): foreach($vi as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">
-                                    <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
                                     </div>
                                     <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
-                                    </div>
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
                                     </div>  
                                 </a>
                             </div>   
-                      </div><?php endforeach; endif; ?>
-             </div>
-
-             <div class="col-md-12">
-              <div class="page-header">   
-                    <ul class="list-unstyled">
-                      <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'27'));?>">more</a></li>
-                      <li>全案策划服务</li>
-                    </ul>   
-                           
+                        </div><?php endforeach; endif; ?>
                  </div>
-            <?php if(is_array($plan)): foreach($plan as $key=>$n): ?><div class="col-md-12 marginbot20">
-		              <div class="thumbnail-1">
-                            <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
-                                <div class="col-md-4">
-                                <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
-                                </div>
-                                <div class="col-md-8">
-                                <div class="caption"> 
-                                <h4><?php echo ($n["title"]); ?></h4>
-                                <p><?php echo ($n["intro"]); ?></p>
-                                </div>
-                                </div>  
-                            </a>
-                        </div>   
-                      </div><?php endforeach; endif; ?>
-             </div>
 
+                 <div class="col-md-12">
+                    <div class="page-header">   
+                        <ul class="list-unstyled">
+                            <li class="pull-right"><a href="<?php echo U('service/service',array('cid'=>'27'));?>">more</a></li>
+                            <li>全案策划服务</li>
+                        </ul>                             
+                    </div>
+                    <?php if(is_array($plan)): foreach($plan as $key=>$n): ?><div class="col-md-12 pad0 marginbot20">
+		                    <div class="thumbnail-1">
+                                <a href="<?php echo U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                    <div class="col-md-4">
+                                        <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="caption"> 
+                                            <h4><?php echo ($n["title"]); ?></h4>
+                                            <p><?php echo ($n["intro"]); ?></p>
+                                        </div>
+                                    </div>  
+                                </a>
+                            </div>   
+                        </div><?php endforeach; endif; ?>
+                 </div>
+		    </div>
 		</div>
-		</div>
-
-	</section>	</div>
+    </section></div>
     <div class="container">
     <footer>
 	<div id="sub-footer">

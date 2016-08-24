@@ -102,30 +102,29 @@
         </div>
 
      
- <div class="container"> 
+<div class="container"> 
     <section class="callaction">	
 		<div class="row">
-                 <div class="col-md-12 pading30">
-                   <div class="page-header">    
-                          <p class="psize20 marginleft20"><strong>联系我们</strong></p>       
-                     </div>
-                     <div class="pading30">
-                      <p class="psize">
-                            <?php if($contact['telphone'] != ''): ?><i class="icon-phone"></i><strong>电话: </strong><span><?php echo ($contact["telphone"]); ?> </span><br><?php endif; ?>
+            <div class="col-md-12">
+                <div class="page-header">    
+                    <p>联系我们</p>       
+                </div>
+                <div class="pading30">
+                    <p class="psize">
+                        <?php if($contact['telphone'] != ''): ?><i class="icon-phone"></i><strong>电话: </strong><span><?php echo ($contact["telphone"]); ?> </span><br><?php endif; ?>
 
-						     <?php if($contact['fax'] != ''): ?><i class="icon-phone"></i><strong>传真: </strong><span><?php echo ($contact["fax"]); ?></span> <br><?php endif; ?>
+						    <?php if($contact['fax'] != ''): ?><i class="icon-phone"></i><strong>传真: </strong><span><?php echo ($contact["fax"]); ?></span> <br><?php endif; ?>
 
-                           <?php if($contact['email'] != ''): ?><i class="icon-envelope-alt"></i><strong>Email: </strong><span><?php echo ($contact["email"]); ?></span><br><?php endif; ?>
+                        <?php if($contact['email'] != ''): ?><i class="icon-envelope-alt"></i><strong>Email: </strong><span><?php echo ($contact["email"]); ?></span><br><?php endif; ?>
 
-                           <?php if($contact['address'] != ''): ?><i class="icon-envelope-alt"></i><strong>地址： </strong><span><?php echo ($contact["address"]); ?></span><br><?php endif; ?>
+                        <?php if($contact['address'] != ''): ?><i class="icon-envelope-alt"></i><strong>地址： </strong><span><?php echo ($contact["address"]); ?></span><br><?php endif; ?>
 
-                           <?php if($contact['qq'] != ''): ?><i class="icon-envelope-alt"></i><strong>QQ： </strong><span><?php echo ($contact["qq"]); ?></span><?php endif; ?>
-                            
+                        <?php if($contact['qq'] != ''): ?><i class="icon-envelope-alt"></i><strong>QQ： </strong><span><?php echo ($contact["qq"]); ?></span><?php endif; ?>                            
 					  </p>
-                        </div>
-		            </div>
+                </div>
+		    </div>
 		</div>
-    </section>     </div>
+    </section></div>
     <div class="container">
     <footer>
 	<div id="sub-footer">
@@ -160,6 +159,7 @@
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
         <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

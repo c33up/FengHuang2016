@@ -103,26 +103,21 @@
 
     
 
- <div class="container"> 
-<section class="callaction">
-	
-		<div class="row">
+<div class="container"> 
+    <section class="callaction">	
+		<div class="row">          
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <p><?php echo ($category); ?></p>        
+                    </div>
            
-                <div class="col-md-12 pading30">
-               <div class="page-header">
-                   <p class="psize20 marginleft20"><?php echo ($category); ?></p>        
-                 </div>
-           
-                 <div class="pading30" id="content">
-                     <?php echo ($content); ?>
-                 </div>
-                     
-
+                    <div class="pading30" id="content">
+                        <?php echo ($content); ?>
+                    </div>                    
 		        </div>
 		</div>
-
-	</section>     		
-	</div>
+	</section>     		
+</div>
     <div class="container">
     <footer>
 	<div id="sub-footer">
@@ -157,6 +152,7 @@
         <script src="/Public/static/js/custom.js"></script>
         <script src="/Public/static/js/menu_jquery.js"></script>
         <script src="/Public/static/js/clamp.js"></script>
+        <script src="/Public/static/js/clamp.min.js"></script>
         
     </body>
 </html>

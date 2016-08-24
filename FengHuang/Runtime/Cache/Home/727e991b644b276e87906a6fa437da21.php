@@ -103,25 +103,19 @@
 
     
 
- <div class="container">
-<section class="callaction">
-		<div class="row">
-           
-                <div class="col-md-12 pading30">
-               <div class="page-header">    
-                      <h3 class="marginleft20"><?php echo ($model["title"]); ?></h3>       
-                 </div>
-           
-                 <div class="pading30" id="content">
+<div class="container">
+    <section class="callaction">
+	    <div class="row">          
+            <div class="col-md-12">
+                <div class="page-header">    
+                    <h3><?php echo ($model["title"]); ?></h3>       
+                </div>          
+                <div class="padlr30 marginlr20" id="content">
                      <?php echo ($content); ?>
-                 </div>
-                     
-
-		        </div>
+                </div>
 		    </div>
-		
-
-</section></div>
+		</div>
+    </section></div>
     <div class="container">
     <footer>
 	<div id="sub-footer">

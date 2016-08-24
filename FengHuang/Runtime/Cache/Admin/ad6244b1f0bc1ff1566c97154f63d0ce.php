@@ -2,14 +2,14 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-ico" /> 
-        <link rel="shortcut icon" href="/FengHuang/Admin/View//Public/images/fenghuang.ico" type="image/x-icon">
-        <title>网络视频锦集管理-上海烽凰后台管理</title>
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-media.css" />
-        <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-icon">
+        <title>视频锦集管理-上海烽凰后台管理</title>
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-style.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-media.css" />
+        <link href="/Public/static/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
         
 
@@ -20,7 +20,7 @@
 <!--Header-part-->
 <div id="header">
     <div class="logodiv">
-        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+        <img src="/Public/static/admin/images/logo.png" alt="上海烽凰文化传播有限公司"/>
     </div> 
 </div>
 <!--close-Header-part--> 
@@ -82,11 +82,7 @@
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频集锦</span></a>
-        <ul>
-            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
-            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
-        </ul>
+    <li> <a href="<?php echo U('video/index',array('category'=>'31'));?>"><i class="icon icon-file"></i> <span>视频集锦</span></a>
     </li>
     <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
@@ -105,43 +101,45 @@
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">网络视频集锦管理</a> </div>
-    <h1>网络视频锦集管理</h1>
+    <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">视频集锦管理</a> </div>
+    <h1>视频锦集管理</h1>
   </div>
 <div class="container">
     <div class="row">
         <div class="span12">
-            <a href="<?php echo U('video/add');?>" class="btn btn-primary">添加网络视频集锦</a> 
+            <a href="<?php echo U('video/add');?>" class="btn btn-primary">添加视频集锦</a> 
                 <form action="<?php echo U('video/index');?>" method="post"  class="navbar-form pull-right">
 			             <input type="text" name="key" placeholder="搜索..."/>
                          <button type="submit"><i class="icon-search"></i></button>
                 </form>            	
         </div>
-              <div class="span12">
-              <hr/>
-              </div>
+        <div class="span12">
+        <hr/>
+        </div>
         <div class="clear"></div>
                <div class="span12">
-        <ul class="thumbnails">
-               <?php if(is_array($video)): foreach($video as $key=>$v): ?><li class="span3">
-                         <div class="thumbnail">
-                             <a href="<?php echo U('video/details',array('id'=>$v['id']));?>" class="link-1"><img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" class="img-responsive"/></a>
-                            <section>
-                                <a href="<?php echo U('video/details',array('id'=>$v['id']));?>" class="link-1"><?php echo ($v["intro"]); ?></a>
-                                <?php if($v['ishome'] == 'yes'): ?><p>已放到首页</p><?php endif; ?>
-                            </section>
-                         </div>
-                     <div class="actions">
-                         <a href="<?php echo U('video/update',array('id'=>$v['id']));?>">
-                            <i class="icon-pencil icon-white"></i>
-                        </a>
-                         <a href="<?php echo U('video/delete',array('id'=>$v['id']));?>">
-                             <i class="icon-remove icon-white"></i>
-                         </a>
-                     </div>
-                     </li><?php endforeach; endif; ?>
-            </ul>
-      </div>
+                    <ul class="thumbnails">
+                        <?php if(is_array($video)): foreach($video as $key=>$v): ?><li class="span3">
+                             <div class="thumbnail">
+                                <a href="<?php echo U('video/details',array('id'=>$v['id'],'category'=>$v['category']));?>" class="link-1">
+                                     <img src="<?php echo ($v["imageurl"]); ?>" alt="<?php echo ($v["intro"]); ?>" class="img-responsive"/>
+                                    <section>
+                                        <?php echo ($v["title"]); ?>
+                                        <?php if($v['ishome'] == '是'): ?><p><b>已放到首页</b></p><?php endif; ?>
+                                    </section>
+                                </a>
+                             </div>
+                             <div class="actions">
+                                 <a href="<?php echo U('video/update',array('id'=>$v['id'],'category'=>$v['category']));?>">
+                                    <i class="icon-pencil icon-white"></i>
+                                </a>
+                                 <a href="<?php echo U('video/delete',array('id'=>$v['id'],'category'=>$v['category']));?>">
+                                     <i class="icon-remove icon-white"></i>
+                                 </a>
+                             </div>
+                             </li><?php endforeach; endif; ?>
+                    </ul>
+                </div>
        <div class="span12">
             <hr/>
             <div  class="pull-right">
@@ -168,29 +166,29 @@
 
 
 
-        <script src="/FengHuang/Admin/View//Public/Script/excanvas.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.ui.custom.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap-modal.js"></script>
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.resize.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.peity.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/fullcalendar.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.dashboard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.gritter.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.interface.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.chat.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.validate.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.form_validation.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.wizard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.uniform.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/select2.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.popover.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.dataTables.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.tables.js"></script> 
+        <script src="/Public/static/admin/Script/excanvas.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.ui.custom.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap.min.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap-modal.js"></script>
+        <script src="/Public/static/admin/Script/jquery.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.resize.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.peity.min.js"></script> 
+        <script src="/Public/static/admin/Script/fullcalendar.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.dashboard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.gritter.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.interface.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.chat.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.validate.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.form_validation.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.wizard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.uniform.js"></script> 
+        <script src="/Public/static/admin/Script/select2.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.popover.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.dataTables.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.tables.js"></script> 
         
         <script type="text/javascript">
             function showtime(){

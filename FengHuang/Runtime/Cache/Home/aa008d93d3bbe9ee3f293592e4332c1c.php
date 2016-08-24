@@ -107,12 +107,12 @@
   
 		<div class="row">
           
-                 <div class="col-md-12 pading30">
+                 <div class="col-md-12">
                    <div class="page-header">   
-                        <p class="psize20 marginleft20"><strong>烽凰方法论</strong></p>             
+                        <p>烽凰方法论</p>             
                      </div>
 		 
-                    <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 marginbot40">
+                    <?php if(is_array($article)): foreach($article as $key=>$a): ?><div class="col-md-12 pad0 marginbot30">
                         <div class="thumbnail-1">
                              <a href="<?php echo U('article/detail',array('id'=>$a['id']));?>">
 		                    <div class="col-md-4">
@@ -128,7 +128,7 @@
 		                </div>
                     </div><?php endforeach; endif; ?>
                     <div class="col-md-12">
-                         <div class="pull-right">
+                         <div class="pull-right marginlr20">
                            <?php echo ($page); ?>
                         </div>
                     </div>

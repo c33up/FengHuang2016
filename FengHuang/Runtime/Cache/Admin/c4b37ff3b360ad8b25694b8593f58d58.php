@@ -3,10 +3,10 @@
     <head>
         <meta charset="utf-8" />
         <title>上海烽凰后台管理系统</title>
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
-		<link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-login.css" />
-        <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap.min.css" />
+		<link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-login.css" />
+        <link href="/Public/static/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
 
     </head>
@@ -49,7 +49,7 @@
 </footer>
 
 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.min.js"></script>  
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.login.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.min.js"></script>  
+        <script src="/Public/static/admin/Script/matrix.login.js"></script> 
     </body>
 </html>

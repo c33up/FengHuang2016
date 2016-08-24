@@ -7,20 +7,24 @@
 	
 	<div class="row">
         
-            <div class="col-md-12 pading30">
+            <div class="col-md-12">
                 <div class="page-header">    
-                    <h3 class="marginleft20">{$model.title}</h3>       
+                    <h3>{$model.title}</h3>       
                 </div>
-                <if condition="$model['category'] eq '1' ">
-                    <div class="marginleft40">{$videourl}</div> 
+                <div class="vidcen">
+                <if condition="$model['flag'] eq '0' ">
+                    {$model.videourl}
                 <else />
-                    <video width="640" height="480" controls class="marginleft40">
-                        <source src="{$model.localvideo}" type="video/mp4"/>
-                        <source src="{$model.localvideo}" type="video/wmv"/>
-                        <source src="{$model.localvideo}" type="video/avi"/>
+                    <video width="640" height="480" controls>
+                        <source src="{$model.videourl}" type="video/mp4"/>
+                        <source src="{$model.videourl}" type="video/wmv"/>
+                        <source src="{$model.videourl}" type="video/avi"/>
                     </video>
                 </if>
-
+                    <div class="caption">
+                        <p>{$model.intro}</p>
+                    </div>
+                </div>
 		    </div>
 	    </div>		
 </section> </div></block>

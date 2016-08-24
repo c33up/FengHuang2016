@@ -1,50 +1,52 @@
 <extend name="Public/layout" />
-<block name="title">网络视频锦集管理-上海烽凰后台管理</block>
+<block name="title">视频锦集管理-上海烽凰后台管理</block>
 <block name="content">
 
  <div id="content">
      <div id="content-header">
-    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">网络视频集锦管理</a> </div>
-    <h1>网络视频锦集管理</h1>
+    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i>首页</a> <a href="#" class="current">视频集锦管理</a> </div>
+    <h1>视频锦集管理</h1>
   </div>
 <div class="container">
     <div class="row">
         <div class="span12">
-            <a href="{:U('video/add')}" class="btn btn-primary">添加网络视频集锦</a> 
+            <a href="{:U('video/add')}" class="btn btn-primary">添加视频集锦</a> 
                 <form action="{:U('video/index')}" method="post"  class="navbar-form pull-right">
 			             <input type="text" name="key" placeholder="搜索..."/>
                          <button type="submit"><i class="icon-search"></i></button>
                 </form>            	
         </div>
-              <div class="span12">
-              <hr/>
-              </div>
+        <div class="span12">
+        <hr/>
+        </div>
         <div class="clear"></div>
                <div class="span12">
-        <ul class="thumbnails">
-               <foreach name="video" item="v">
-                     <li class="span3">
-                         <div class="thumbnail">
-                             <a href="{:U('video/details',array('id'=>$v['id']))}" class="link-1"><img src="{$v.imageurl}" alt="{$v.intro}" class="img-responsive"/></a>
-                            <section>
-                                <a href="{:U('video/details',array('id'=>$v['id']))}" class="link-1">{$v.intro}</a>
-                                <if condition="$v['ishome'] eq 'yes'">          
-                                        <p>已放到首页</p>
-                                </if>
-                            </section>
-                         </div>
-                     <div class="actions">
-                         <a href="{:U('video/update',array('id'=>$v['id']))}">
-                            <i class="icon-pencil icon-white"></i>
-                        </a>
-                         <a href="{:U('video/delete',array('id'=>$v['id']))}">
-                             <i class="icon-remove icon-white"></i>
-                         </a>
-                     </div>
-                     </li>
-               </foreach>
-            </ul>
-      </div>
+                    <ul class="thumbnails">
+                        <foreach name="video" item="v">
+                            <li class="span3">
+                             <div class="thumbnail">
+                                <a href="{:U('video/details',array('id'=>$v['id'],'category'=>$v['category']))}" class="link-1">
+                                     <img src="{$v.imageurl}" alt="{$v.intro}" class="img-responsive"/>
+                                    <section>
+                                        {$v.title}
+                                        <if condition="$v['ishome'] eq '是'">          
+                                                <p><b>已放到首页</b></p>
+                                        </if>
+                                    </section>
+                                </a>
+                             </div>
+                             <div class="actions">
+                                 <a href="{:U('video/update',array('id'=>$v['id'],'category'=>$v['category']))}">
+                                    <i class="icon-pencil icon-white"></i>
+                                </a>
+                                 <a href="{:U('video/delete',array('id'=>$v['id'],'category'=>$v['category']))}">
+                                     <i class="icon-remove icon-white"></i>
+                                 </a>
+                             </div>
+                             </li>
+                        </foreach>
+                    </ul>
+                </div>
        <div class="span12">
             <hr/>
             <div  class="pull-right">

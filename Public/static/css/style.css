@@ -47,7 +47,10 @@ background: -moz-linear-gradient(right, transparent, #fff 55%);
 background: linear-gradient(to right, transparent, #fff 55%);
 }
 */
-
+h1,h2,h3,h4,h5{
+    font-family:'微软雅黑';
+    line-height: 1.2em;
+}
  p{
     color: #3B3B3B;
     font-family:'微软雅黑';
@@ -71,11 +74,11 @@ background: linear-gradient(to right, transparent, #fff 55%);
 
 
 .row,.row-fluid {
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 .row .row,.row-fluid .row-fluid{
-	margin-bottom:30px;
+	margin-bottom:20px;
 }
 
 .row.nomargin,.row-fluid.nomargin {
@@ -87,22 +90,21 @@ background: linear-gradient(to right, transparent, #fff 55%);
 .list-unstyled li{
      font-family: '微软雅黑';
     font-weight: 700;
-    margin-left: 18px;
     font-size: 16px;
     color: #000;
 
 }
 
 .list-unstyled li a{
-    margin-right: 30px;
-    font-size: 16px;
+    margin-right: 10px;
+    font-size: 14px;
     color: #A9A9A9;
     font-weight: 300;
     
 }
 
 .list-unstyled li a:hover{
-    margin-right: 30px;
+    margin-right: 20px;
     font-size: 18px;
     color: #A9A9A9;
     font-weight: 300;
@@ -443,7 +445,7 @@ border-radius:0;
     overflow: hidden; /*自动隐藏文字*/
     text-overflow: ellipsis;/*文字隐藏后添加省略号*/
     white-space: nowrap;/*强制不换行*/
-    width: 16em;/*不允许出现半汉字截断*/   
+    max-width: 12em;/*不允许出现半汉字截断*/   
 }
 
 .thumbnail .caption p{
@@ -482,7 +484,7 @@ border-radius:0;
 }
 
 .thumbnail-1 .caption h3,.thumbnail-1 .caption h4,.thumbnail-1 .caption h5{
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2em;
     overflow: hidden; /*自动隐藏文字*/
     text-overflow: ellipsis;/*文字隐藏后添加省略号*/
@@ -491,8 +493,8 @@ border-radius:0;
 }
 
 .thumbnail-1 .caption p{
-    font-size: 12px;
-    line-height: 1.4em;
+    font-size: 14px;
+    line-height: 1.6em;
     overflow: hidden; /*自动隐藏文字*/
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -503,6 +505,25 @@ border-radius:0;
     height: 8.2em;
 }
 
+/**videocenter
+---------------------*/
+.vidcen {
+    padding: 0px 0 ;
+    text-align: center;
+}
+
+
+.vidcen .caption {
+    margin: 5px 30px;
+    padding: 10px 50px;
+}
+
+
+.vidcen .caption p{
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.4em;
+}
 
 
 .fancybox-title-inside-wrap {
@@ -522,8 +543,10 @@ border-radius:0;
   border-bottom: 1px dashed #A9A9A9;
 }
 
-.page-header .psize strong{
+.page-header p{
     font-family: '微软雅黑';
+    font-size: 19px;
+    font-weight: 600;
     color: #000;
 }
 
@@ -802,7 +825,7 @@ color:#428bca
 #content {
 	position:relative;
 	background: #FFFFFF;
-	padding:50px 0 0px 0;
+	padding:20px 0 0px 0;
 }
 
 #content img {
@@ -1908,6 +1931,24 @@ article img.pull-right, article .align-right{
 }
 .marginbot40{
 	margin-bottom:40px;
+}
+
+.marginlr10{
+	margin-left:10px;
+    margin-right:10px;
+}
+
+.marginlr20{
+	margin-left:20px;
+    margin-right:20px;
+}
+
+.padlr30{
+	padding:0 30px;
+}
+
+.pad0{
+    padding: 0;
 }
 
 .clear-margintop{

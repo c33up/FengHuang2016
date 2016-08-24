@@ -1,38 +1,35 @@
 <extend name="Public/layout" />
 <block name="title">我们的服务|上海烽凰文化传播有限公司</block>
 <block name="content"> 
- <div class="container"> 
-<section class="callaction">
-		<div class="row">
-           
-                <div class="col-md-12 pading30">
-                   <div class="page-header ">    
-                      <p class="psize20 marginleft20">{$category}</p>              
-                 </div>
-		 
-            <foreach name="article" item="n">
-                 <div class="col-md-12 marginbot40">
-		             <div class="thumbnail-1">
-                              <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}" title="{$n.title}">
-                                    <div class="col-md-4">
-                                    <img src="{$n.imageurl}" alt="{$n.intro}"/>
-                                    </div>
-                                    <div class="col-md-8">
-                                    <div class="caption"> 
-                                    <h4>{$n.title}</h4>
-                                    <p>{$n.intro}</p>
-                                    </div>
-                                    </div>  
-                                </a>
-                            </div>   
-		            </div>
-            </foreach>
+<div class="container"> 
+    <section class="callaction">
+		<div class="row">           
             <div class="col-md-12">
-            <div class="pull-right">
-                   {$page}
-              </div>
+                <div class="page-header ">    
+                    <p>{$category}</p>              
+                </div>		 
+                <foreach name="article" item="n">
+                    <div class="col-md-12 pad0 marginbot40">
+		                <div class="thumbnail-1">
+                            <a href="{:U('service/detail',array('cid'=>$n['category'],'id'=>$n['id']))}" title="{$n.title}">
+                                <div class="col-md-4">
+                                    <img src="{$n.imageurl}" alt="{$n.intro}"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="caption"> 
+                                        <h4>{$n.title}</h4>
+                                        <p>{$n.intro}</p>
+                                    </div>
+                                </div>  
+                            </a>
+                        </div>   
+		            </div>
+                </foreach>
+                <div class="col-md-12">
+                    <div class="pull-right marginlr20">
+                       {$page}
+                    </div>
                 </div>
-		</div>
-		</div>
-	
+		    </div>
+		</div>	
 	</section></div></block>

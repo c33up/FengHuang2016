@@ -106,12 +106,12 @@
     <section class="callaction">
 	
 		<div class="row ">
-            <div class="col-md-12 pading30">
+            <div class="col-md-12">
                <div class="page-header"> 
-                    <p class="psize20 marginleft20"><?php echo ($category); ?></p>               
+                    <p><?php echo ($category); ?></p>               
                  </div>
 		 
-                <?php if(is_array($article)): foreach($article as $key=>$n): ?><div class="col-md-12 marginbot40">
+                <?php if(is_array($article)): foreach($article as $key=>$n): ?><div class="col-md-12 pad0 marginbot30">
                          <div class="thumbnail-1">
                               <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
                                     <div class="col-md-4">

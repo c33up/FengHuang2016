@@ -2,46 +2,26 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>修改网络视频-上海烽凰后台管理主页</title>
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/bootstrap-responsive.min.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-style.css" />
-        <link rel="stylesheet" href="/FengHuang/Admin/View//Public/Styles/matrix-media.css" />
-        <link href="/FengHuang/Admin/View//Public/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        <link rel="icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-ico" /> 
+        <link rel="shortcut icon" href="/Public/static/admin/images/fenghuang.ico" type="image/x-icon">
+        <title>修改视频锦集-上海烽凰后台管理</title>
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/bootstrap-responsive.min.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-style.css" />
+        <link rel="stylesheet" href="/Public/static/admin/Styles/matrix-media.css" />
+        <link href="/Public/static/admin/font-awesome/css/font-awesome.css" rel="stylesheet" />
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
-  
-        <script type="text/javascript">
-        function showtime(){
-        var now=new Date();
-        var year=now.getFullYear();
-        var month=now.getMonth()+1;
-        var day=now.getDate();
-        var hours=now.getHours();
-        var minutes=now.getMinutes();
-        var seconds=now.getSeconds();
-        time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
-        var clock=document.getElementById('clock');
-        clock.innerHTML=time;
-        }
-        function letstart(){
-        taskId=setInterval(showtime,500);
-        }
+        
 
-        window.onload=function(){
-	        /*var div1=document.getElementById('div1');
-	        div1.onclick=letstart;*/
-	        letstart();
-        }
-        </script>
 
     </head>
     <body>
-        <!--Header-part-->
+        
+<!--Header-part-->
 <div id="header">
     <div class="logodiv">
-        <img src="/FengHuang/Admin/View//Public/images/logo.png" alt="上海烽凰文化传播有限公司"/>
-    </div>
-  
+        <img src="/Public/static/admin/images/logo.png" alt="上海烽凰文化传播有限公司"/>
+    </div> 
 </div>
 <!--close-Header-part--> 
 
@@ -62,6 +42,7 @@
   </ul>
 </div>
 <!--close-top-Header-menu-->
+
 <!--start-top-serch close-top-serch-->
 <div id="search">
     <form action="<?php echo U('index/search');?>" method="post">
@@ -74,11 +55,8 @@
 <div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i></a>
   <ul>
       <li><a href="<?php echo U('index/index');?>"><i class="icon icon-home"></i> <span>主页</span></a> </li>
-    <li class="submenu"><a href="#"><i class="icon icon-home"></i> <span>烽凰文化</span></a>
-          <ul>
-            <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>">烽凰简介</a></li>
-            <li><a href="<?php echo U('intro/index',array('category'=>'2'));?>">烽凰团队</a></li>
-          </ul>
+    <li><a href="<?php echo U('intro/index',array('category'=>'1'));?>"><i class="icon icon-home"></i> <span>烽凰简介</span></a>
+
     </li>
     <li> <a href="<?php echo U('article/index',array('category'=>'0'));?>"><i class="icon icon-inbox"></i> <span>烽凰方法论</span></a>   
     </li>
@@ -104,11 +82,7 @@
     </li>
     <li> <a href="<?php echo U('contact/index');?>"><i class="icon icon-th-list"></i> <span>联系我们</span></a>
     </li>
-    <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>视频集锦</span></a>
-        <ul>
-            <li><a href="<?php echo U('video/index');?>">网络视频</a></li>
-            <li><a href="<?php echo U('localvideo/index');?>">本地视频</a></li>
-        </ul>
+    <li> <a href="<?php echo U('video/index',array('category'=>'31'));?>"><i class="icon icon-file"></i> <span>视频集锦</span></a>
     </li>
     <li> <a href="<?php echo U('picture/index');?>"><i class="icon icon-file"></i> <span>轮播图片</span></a>
     </li>
@@ -123,52 +97,12 @@
 </div>
 <!--sidebar-menu-->
 
-        <script src="/FengHuang/Admin/View//Public/Script/excanvas.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.ui.custom.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/bootstrap-modal.js"></script>
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.flot.resize.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.peity.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/fullcalendar.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.dashboard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.gritter.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.interface.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.chat.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.validate.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.form_validation.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.wizard.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.uniform.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/select2.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.popover.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/jquery.dataTables.min.js"></script> 
-        <script src="/FengHuang/Admin/View//Public/Script/matrix.tables.js"></script> 
-
-        <script type="text/javascript">
-            function goPage (newURL) {
-                if (newURL != "") {
-                    if (newURL == "-" ) {
-                        resetMenu();            
-                    } 
-                    else {  
-                    document.location.href = newURL;
-                    }
-                }
-            }
-            function resetMenu() {
-                 document.gomenu.selector.selectedIndex = 2;
-            }
-        </script>
-    </body>
-</html>
+        
 
 <div id="content">
 <div id="content-header">
-  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('video/index');?>" class="tip-bottom">网络视频管理</a> <a href="#" class="current">修改网络视频</a> </div>
-  <h1>网络视频</h1>
+  <div id="breadcrumb"> <a href="<?php echo U('index/index');?>" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> 主页</a> <a href="<?php echo U('video/index');?>" class="tip-bottom">视频锦集管理</a> <a href="#" class="current">修改视频锦集</a> </div>
+  <h1>修改视频锦集</h1>
 </div>
 <div class="container-fluid">
   <hr>
@@ -176,11 +110,13 @@
     <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>修改网络视频</h5>
+          <h5>修改视频锦集</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="<?php echo U('video/update');?>" method="post" class="form-horizontal" enctype="multipart/form-data">
               <input type="hidden" name="id" value="<?php echo ($model["id"]); ?>">
+              <input type="hidden" name="flag" value="<?php echo ($model["flag"]); ?>">
+              <input type="hidden" name="category" value="<?php echo ($model["category"]); ?>">
             <div class="control-group">
               <label for="normal" class="control-label">视频标题</label>
               <div class="controls">
@@ -193,21 +129,27 @@
                   <textarea name="intro" class="textarea_editor span8" rows="6"><?php echo ($model["intro"]); ?></textarea>
                </div>
             </div>
-       
-            <div class="control-group">
+       <?php if($model['flag'] == 0): ?><div class="control-group">
               <label for="text" class="control-label">视频链接地址</label>
               <div class="controls">
                  <textarea id="editor" name="videoURL" class="span8" rows="6"><?php echo ($model["videourl"]); ?></textarea>
               </div>
             </div>
-
+           <?php else: ?>
+              <div class="control-group">
+              <label for="text" class="control-label">上传本地视频</label>
+              <div class="controls">
+                 <input type="file" id="videourl" name="videourl"/>
+                  <input type="hidden" name="exvideo" value="<?php echo ($model["videourl"]); ?>">
+              </div>
+            </div><?php endif; ?>
             <div class="control-group">
               <label class="control-label">上传视频封面图片</label>
               <div class="controls">
                   <div class="alert alert-warning">上传图片大小：宽830px、高550px</div>
                <input type="file" id="imageUpload" name="imageURL"/>
                 <input type="hidden" name="eximg" value="<?php echo ($model["imageurl"]); ?>">
-                <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["intro"]); ?>"/></div>
+                <div id="eximg" class="preview" style="position: absolute; float: left;"><img src="<?php echo ($model["imageurl"]); ?>" alt="<?php echo ($model["title"]); ?>"/></div>
 				<div id="preview" class="preview"></div>
               </div>
                 <style>
@@ -291,14 +233,15 @@
             <div class="control-group">
               <label for="normal" class="control-label">发表时间：</label>
               <div class="controls">
-                <span class="span8"><?php echo ($time); ?></span> </div>
+                <input type="datetime-local" name="createDate" value="<?php echo ($model["createdate"]); ?>"/>
+              </div>
             </div>
             <div class="control-group">
                 <input type="hidden" name="exishome" value="<?php echo ($model["ishome"]); ?>">
             <div class="controls">
                 <div class="checkbox">
                     <label>
-                        <?php if($model['ishome'] == 'yes'): ?><input type="checkbox" name="ishome">取消放到首页 
+                        <?php if($model['ishome'] == '是'): ?><input type="checkbox" name="ishome">取消放到首页 
                             <?php else: ?>
                                 <input type="checkbox" name="ishome">放到首页<?php endif; ?>
                     </label>
@@ -307,8 +250,8 @@
         </div>
             <div class="control-group">
               <div class="controls">
-                  <button type="submit" name="submit" name="submit" class="btn btn-primary">提交</button>
-                  <button type="reset" name="submit" class="btn btn-primary">清空</button> </div>
+                  <button type="submit" class="btn btn-primary">提交</button>
+                  <button type="reset" class="btn btn-primary">重置</button> </div>
             </div>
           </form>
         </div>
@@ -317,7 +260,8 @@
   </div>
 </div>
 </div>
-<footer class="row-fluid">
+
+        <footer class="row-fluid">
 <!--Footer-part-->
   <div id="footer" class="span12">
         <p>
@@ -329,3 +273,71 @@
   </div>
 <!--end-Footer-part-->
 </footer>
+
+
+
+
+        <script src="/Public/static/admin/Script/excanvas.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.ui.custom.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap.min.js"></script> 
+        <script src="/Public/static/admin/Script/bootstrap-modal.js"></script>
+        <script src="/Public/static/admin/Script/jquery.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.flot.resize.min.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.peity.min.js"></script> 
+        <script src="/Public/static/admin/Script/fullcalendar.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.dashboard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.gritter.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.interface.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.chat.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.validate.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.form_validation.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.wizard.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.uniform.js"></script> 
+        <script src="/Public/static/admin/Script/select2.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.popover.js"></script> 
+        <script src="/Public/static/admin/Script/jquery.dataTables.min.js"></script> 
+        <script src="/Public/static/admin/Script/matrix.tables.js"></script> 
+        
+        <script type="text/javascript">
+            function showtime(){
+            var now=new Date();
+            var year=now.getFullYear();
+            var month=now.getMonth()+1;
+            var day=now.getDate();
+            var hours=now.getHours();
+            var minutes=now.getMinutes();
+            var seconds=now.getSeconds();
+            time=year+'/'+month+'/'+day +'/'+hours+':'+minutes+':'+seconds;
+            var clock=document.getElementById('clock');
+            clock.innerHTML=time;
+            }
+            function letstart(){
+            taskId=setInterval(showtime,500);
+            }
+
+            window.onload=function(){
+	            /*var div1=document.getElementById('div1');
+	            div1.onclick=letstart;*/
+	            letstart();
+            }
+        </script>
+        <script type="text/javascript">
+            function goPage (newURL) {
+                if (newURL != "") {
+                    if (newURL == "-" ) {
+                        resetMenu();            
+                    } 
+                    else {  
+                    document.location.href = newURL;
+                    }
+                }
+            }
+            function resetMenu() {
+                 document.gomenu.selector.selectedIndex = 2;
+            }
+        </script>
+    </body>
+</html>

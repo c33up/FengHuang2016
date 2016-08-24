@@ -3,30 +3,35 @@
 <block name="content">
      
 <div class="container">
-<section id="callaction">
-	
-		
-            <div class="col-md-12 pading30">
-            <div class="page-header">    
-                 <p class="psize20 marginleft20"><strong>视频集锦</strong></p>          
-            </div>
+    <section id="callaction">
+        <div class="row">			
+            <div class="col-md-12 pad0">
+                <div class="page-header marginlr20">    
+                     <p>视频集锦</p>          
+                </div>
 
-            <div class="row">
-                <foreach name="article" item="a">
-                    <div class="col-md-4 marginbot30">
-                         <a href="{:U('video/detail',array('id'=>$a['id']))}"><img  class="img-thumbnail" src="{$a.imageurl}" alt="{$a.intro}" width="100%"/>  </a>  
-                        
-                        <a href="{:U('video/detail',array('id'=>$a['id']))}"><h4 class="intro">{$a.intro}</h4> </a>       
-                    </div>
-		
-                </foreach>
-            </div>
+                <div class="col-md-12 pad0">
+                    <foreach name="article" item="a">
+                        <div class="col-md-4 marginbot30">
+                            <a href="{:U('video/detail',array('id'=>$a['id']))}" title="{$a.title}">
+                                <div class="thumbnail">
+                                    <img src="{$a.imageurl}" alt="{$a.intro}"/>    
+                                    <div class="caption">
+                                        <h4>{$a.title}</h4>
+                                        <p>{$a.intro}</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>		
+                    </foreach>
+                </div>
 
-            <div class="col-md-12">
-                <div class="pull-right">
+                <div class="col-md-12 ">
+                    <div class="pull-right marginlr20">
                        {$page}
-                  </div>
+                    </div>
             </div>
-</div>
+            </div>
+        </div>
 	</section>
-	</div></block>
+</div></block>

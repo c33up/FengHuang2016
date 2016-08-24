@@ -2,17 +2,14 @@
 <block name="content"> <div class="container">
     	<section class="callaction">
 		<div class="row">
-         <div class="col-md-12">
-             <div class="col-md-6">
-                 <div class="page-header">
+         <div class="col-md-12 pad0">
+             <div class="col-md-6 pad0">
+                 <div class="page-header marginlr20">
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="{:U('article/index')}">more</a></li>
                       <li>烽凰方法论</li>
                     </ul>
-                 </div>
-		 
-                <div class="col-md-12">	
-                <div class="row service-v1">
+                 </div>           
                  <foreach name="article" item="a">
                       <div class="col-md-6">                           <div class="thumbnail">
 		                    <a href="{:U('article/detail',array('id'=>$a['id']))}"><img class="img-responsive" src="{$a.imageurl}" alt="" width="100%"/>
@@ -24,21 +21,17 @@
 			                </div>
                        </div>
              
-                       </foreach>
-		        </div>
+                       </foreach>   
                 </div>
-        </div>
-                <div class="col-md-6" >
-                 <div class="page-header" >
+                <div class="col-md-6 pad0" >
+                 <div class="page-header marginlr20" >
                     <ul class="list-unstyled">
                       <li class="pull-right"><a href="{:U('video/index')}">more</a></li>
                       <li>视频中心</li>
                     </ul>
             
                  </div>
-		 
-                <div class="col-md-12">	
-                <div class="row">
+
                  <foreach name="video" item="a">
                       <div class="col-md-6">                            <div class="thumbnail">
 		                        <a href="{:U('video/detail',array('id'=>$a['id']))}" title="{$a.title}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.title}"/>
@@ -50,23 +43,22 @@
                             </div>
                         </div>
                        </foreach>
-		        </div>
+		       
                 </div>
-            </div>
              </div>
         
 
 
 
-            <div class="col-md-12">
-              <div class="page-header">
+            <div class="col-md-12 pad0">
+              <div class="page-header marginlr20">
                   <ul class="list-unstyled">
                       <li class="pull-right"><a href="{:U('fhcase/index')}">more</a></li>
                       <li>案例赏析</li>
                   </ul>
             </div>
-	        </div>
-            <div class="col-md-12">
+	       
+            
                <foreach name="case" item="a">
               <div class="col-md-3 marginbot40">                   <div class="thumbnail">
 		            <a href="{:U('fhcase/detail',array('cid'=>$a['category'],'id'=>$a['id']))}" title="{$a.title}"><img class="img-responsive" src="{$a.imageurl}" alt="{$a.title}"/>
@@ -79,8 +71,8 @@
              </div>
                    
                </foreach>
-              </div>
+           
             </div> 
-	           </section> 
+	    </div>        </section> 
     </div>
 </block>

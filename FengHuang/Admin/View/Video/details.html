@@ -1,11 +1,15 @@
 <extend name="Public/layout" />
-<block name="title">网络视频详情-上海烽凰后台管理</block>
+<block name="title">视频锦集详情-上海烽凰后台管理</block>
 <block name="content">
 
 <div id="content">
     <div id="content-header">
-    <div id="breadcrumb"> <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a> <a href="{:U('video/index')}" class="current">网络视频管理</a>  <a href="#" class="current">网络视频详情</a></div>
-    <h1>网络视频详情</h1>
+        <div id="breadcrumb">
+            <a href="{:U('index/index')}" title="返回主页" class="tip-bottom"><i class="icon-home"></i> 首页</a>
+            <a href="{:U('video/index',array('category'=>'31'))}" class="current">视频锦集管理</a>
+            <a href="#" class="current">视频锦集详情</a>
+        </div>
+        <h1>视频锦集详情</h1>
   </div>
   <div class="container-fluid">
 
@@ -13,9 +17,9 @@
       <div class="span10">
        
           <div class="widget-title">
-            <a href="{:U('video/index')}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
-              <a href="{:U('video/update',array('id'=>$model['id']))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
-              <a href="{:U('video/delete',array('id'=>$model['id']))}" class="btn btn-primary">删除</a>
+            <a href="{:U('video/index',array('category'=>'31'))}" class="btn btn-primary">返回</a>&nbsp&nbsp&nbsp
+              <a href="{:U('video/update',array('id'=>$model['id'],'category'=>'31'))}" class="btn btn-primary">修改</a>&nbsp&nbsp&nbsp
+              <a href="{:U('video/delete',array('id'=>$model['id'],'category'=>'31'))}" class="btn btn-primary">删除</a>
           </div>
                <div class="span10">
               
@@ -24,7 +28,7 @@
             </div>
             <div class="span10">
                 
-                    <div class="span2">
+                    <div class="span6">
                         <img src="{$model.imageurl}" alt="{$model.title}"/>
                    </div>
                    <div class="span4">
@@ -42,8 +46,16 @@
                
             </div>
               <div class="span10">
-          
-                  {$videourl}
+                <if condition="$model['flag'] eq 0">
+                    {$model.videourl}
+                <else />
+                     <video width="640" height="480" controls>
+                          <source src="{$model.videourl}" type="video/mp4"/>
+                          <source src="{$model.videourl}" type="video/wmv"/>
+                          <source src="{$model.videourl}" type="video/avi"/>
+                      </video>
+                </if>
+                  
                </div>
           
             </div>

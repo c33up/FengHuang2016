@@ -108,12 +108,12 @@
 	
 		    <div class="row">
            
-                    <div class="col-md-12 pading30">
+                    <div class="col-md-12">
                         <div class="page-header">    
-                              <h3 class="marginleft20"><?php echo ($model["title"]); ?> </h3>       
+                              <h3><?php echo ($model["title"]); ?> </h3>       
                          </div>
            
-                     <div class="pading30" id="content">
+                     <div class="padlr30 marginlr20" id="content">
                          <?php echo ($content); ?>
                      </div>
 		            </div>
