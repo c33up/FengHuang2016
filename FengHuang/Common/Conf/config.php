@@ -6,7 +6,7 @@ return array(
 	//'DEFAULT_MODULE'    =>    'Home',  // 默认模块	
 	'SHOW_PAGE_TRACE'   =>  FALSE, 
 	'URL_CASE_INSENSITIVE'  =>  true,  //url不区分大小写
-	'URL_MODEL'   =>1,
+	//'URL_MODEL'   =>2,//伪静态的话要把这句放到相应模块的conf文件中，不能在公共模块
 	'URL_HTML_SUFFIX'  =>'html',
 	//'DEFAULT_FILTER'        => 'htmlspecialchars',
 	'SUPER_ADMIN_ID'=>1,  //超级管理员id 删除用户的时候用这个禁止删除

@@ -1,0 +1,1128 @@
+[ 2016-08-25T10:08:26+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+
+[ 2016-08-25T10:49:47+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-08-25T12:32:17+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-08-25T12:34:41+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000531s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+
+[ 2016-08-25T12:35:12+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001523s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+
+[ 2016-08-25T12:35:29+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+
+[ 2016-08-25T12:35:45+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+
+[ 2016-08-25T12:36:01+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000562s ]
+
+[ 2016-08-25T12:36:28+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-08-25T12:36:28+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000481s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000557s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000510s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-08-25T12:38:51+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+
+[ 2016-08-25T12:40:08+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+
+[ 2016-08-25T12:45:50+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+
+[ 2016-08-25T12:47:44+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000506s ]
+
+[ 2016-08-25T12:48:37+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-08-25T13:00:54+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000414s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000668s ]
+
+[ 2016-08-25T13:04:28+08:00 ] ::1 /fhcase/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+
+[ 2016-08-25T13:04:28+08:00 ] ::1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000768s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000157s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005325s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000348s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000495s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-08-25T13:04:37+08:00 ] ::1 /article/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+
+[ 2016-08-25T13:04:37+08:00 ] ::1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000571s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008438s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000533s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-08-25T13:05:22+08:00 ] ::1 /login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `user` WHERE ( username = 'admin' and password= '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: UPDATE `user` SET `update_at`='1472101521',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000036s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.284967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.285002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000457s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-08-25T13:05:23+08:00 ] ::1 /Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000778s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000941s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051049s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051111s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000486s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-08-25T13:05:24+08:00 ] ::1 /article/index/category/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '0' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '0' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000557s ]
+
+[ 2016-08-25T13:05:29+08:00 ] ::1 /intro/index/category/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+SQL: SHOW COLUMNS FROM `intro` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `intro` WHERE `category` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `intro` WHERE `category` = '1' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000115s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022523s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2016-08-25T13:05:32+08:00 ] ::1 /intro/update/category/1/id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `intro` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `intro` WHERE `id` = 3 AND `category` = '1' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000099s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049049s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000405s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-08-25T13:05:40+08:00 ] ::1 /login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-08-25T13:05:40+08:00 ] ::1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005564s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000487s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-08-25T13:06:27+08:00 ] ::1 /service/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000553s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-08-25T13:06:27+08:00 ] ::1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005303s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005338s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000514s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-08-25T13:07:16+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-08-25T13:07:57+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000572s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+
+[ 2016-08-25T13:46:11+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000432s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-08-25T13:46:33+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-08-25T13:46:33+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000596s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000060s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000142s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013637s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000706s ]
+
+[ 2016-08-25T14:11:03+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-08-25T14:11:03+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004996s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000646s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2016-08-25T14:11:20+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000570s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000479s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE ( username = 'admin' and password= '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: UPDATE `user` SET `update_at`='1472105480',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000061s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000176s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007173s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-08-25T14:11:21+08:00 ] ::1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000909s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000237s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016958s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017043s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000489s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000736s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2016-08-25T14:11:28+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000561s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010218s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000862s ]
+
+[ 2016-08-25T14:11:31+08:00 ] ::1 /admin.php/article/add/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000402s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000521s ]
+
+[ 2016-08-25T14:12:50+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000737s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012499s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000841s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000869s ]
+
+[ 2016-08-25T14:12:52+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000574s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','','&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 21px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;烽凰文化：品牌推广的另类玩法&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 19px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;从十月妈咪推广谈品牌营销&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;十月妈咪是中国孕妇装第一品牌，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年其广告歌曲《十月妈咪驾到》风靡各大音乐排行榜。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;4-6&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;月，只要百度输入&lt;/span&gt;“中国歌曲排行榜”就会跳出“十月妈咪驾到”这首歌，很多人在&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;KTV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;看到推荐的歌曲也是《十月妈咪驾到》时，颇觉不可思议：十月妈咪，太强大了吧？它不明明是孕妇装嘛，品牌推广竟然无孔不入！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年《十月妈咪驾到》歌曲连续多周登陆《红歌榜》和《中联榜》两大歌曲排行榜冠军引发轰动。登陆红歌榜的当天在北京富丽城的大屏幕上从下午&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;15:00&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;开始一直滚动播出直至晚上，引发无数路人驻足。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;这首歌曲背后的策划及推广机构上海烽凰文化传播有限公司（&lt;/span&gt;&lt;a href=&quot;http://www.fenghuangsh.com&quot;&gt;&lt;span style=&quot;;font-family:Calibri;color:rgb(0,0,0);font-size:16px&quot;&gt;www.fenghuangsh.com&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;）由此浮出水面，烽凰文化另类品牌推广的玩法开始引人关注。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160825/1472105545903624.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;b.jpg&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;满城尽是《十月妈咪驾到》&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《红歌榜》、《中联榜》是中国最具权威的两大榜单。《十月妈咪驾到》能在同期汇集了孙楠、李健、阿朵、尚雯婕等众多明星的榜单中胜出，让人意外。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《十月妈咪驾到》连续&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;周占据腾迅娱乐、新浪娱乐等首页新闻，中国原创音乐网，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;QQ&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;音乐播放器等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;100&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;家音乐网站进行了推荐，试听量每周以百万速度递增。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;随即中央电视台等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;30&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多家电视台播出了其&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;MV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;条动车视频还有一些机构也将其作为公益歌曲播出。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;有趣的是，《十月妈咪驾到》随后在大街小巷的音像店中可见到，被收录到&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;网络好歌集&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;》、《&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;车载音乐十大歌曲&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;等各大音碟中，并被疯狂盗版，以至于一度在南京音像市场中，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;10&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;张碟片中有&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;张中就有这首歌。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;现在&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;当你走进麦乐迪、钱柜等全国&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;8000&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多家&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;KTV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，都可以点唱这首歌。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;更让人没有想到的是，一些大的&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;SP&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;商争相拿出中国移动、联通、电信的资源与其合作，还有&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;UC&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;浏览器等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多个免费传播的资源推这首歌曲。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;与此同时十月妈咪的娱乐化创新营销被高校作为案例收录在《现代服装文化概论》第三版，此教材是纺织服装高等教育&lt;/span&gt;“十一五”部委级规划教材、东华大学服装设计专业核心系统教材。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;品牌推广的最高境界当是进入教材，这将是影响新生代最有效的方法之一，也是很多品牌梦寐以求的营销最高段位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;争议也是传播，品牌要尽可能娱乐化传播&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;其实&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;这则视频的卡通版在&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2009&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年就曾火爆一时。&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2009&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年，《十月妈咪驾到》这首歌曲的卡通版在北京、上海地铁投放，霸道孕妇形象一下子引发网友热议。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;在网络上，支持者认为：这首歌提倡给孕妇让座良好风气，反对者则认为：视频中刻画了过分高调、嚣张的孕妇形象，简直就是丑化孕妇。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;各大报纸、网络也争相报道，上海青年报整版：&lt;/span&gt;“地铁让座公益广告引发争议，最牛孕妇霸道，奶爸作者叫屈”新闻晚报整版“在家是孕妇，出门成弃妇？”新华社则以“十月妈咪公益广告叫好又叫座”为整个内容定了位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;这首歌曲的策划人丁丁说，我们要的效果达到了。其实在做这首歌曲的策划时，我们就知道，&lt;/span&gt;“让座”这一公益性质的话题必会引发争议。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;争议是传播的一种形式，但是需要注意的是，争议不可以是产品质量中的争议，否则对品牌会有伤害。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;此后，烽凰文化又配合十月妈咪在全国北京&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;所孕妇妇保医院、山东、黑龙江等地展开中国最大规模的孕妇徽章发放。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;无疑，十月妈咪的公益化营销和娱乐化营销是非常成功的，十月妈咪的品牌影响力深入人心。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;据悉，烽凰文化除了是十月妈咪的独家品牌推广机构外，也是水立方授权的&lt;/span&gt;“水立方中国”公益品牌的唯一推广机构。在恒源祥、好孩子、波司登·冰洁、沙驰国际、伊顿幼教、常春滕国际学校等多家品牌推广中都有其不俗之笔。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;烽凰方法论：新闻营销、公益营销、娱乐化营销等要综合运用&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160825/1472105562569353.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;s.jpg&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;有很多企业认为，品牌推广一定是费钱的，所以要等企业有钱之后才进行品牌推广。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;丁丁说，这是一个误区，任何企业的品牌推广都应在品牌诞生之日起开始，日积月累的进行，品牌才会有持续发力的可能。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;如果你没钱，可以做些免费的推广，百度词条、百度知道、微博等的传播。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“低成本的事件营销也是方法之一，当然，事件中要有新闻点，就算再小的品牌也能找到新闻点，我们要尽量把品牌和社会热点结合起来，才会有新闻价值”&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“娱乐化传播是当今消费类品牌推广的直通车，比如当年蒙牛赞助的“超级女声”。当然，我们非常反对仅仅是一个品牌冠名而同企业没有任何的互动，这样的投放是事倍功半的”，丁丁强调。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;公益营销在近年来也成为企业品牌营销的方法之一。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;恒源祥的恒爱行动是公益品牌推广的典范。恒源祥要让中国&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;60&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多万孤残儿童穿上毛衣，首批一万斤毛线如何操作？丁丁同恒源祥的袁老师研究的方案是把毛线分给各省市的妇联，号召爱心妈妈来领毛线。恒爱行动引来&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;300&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;多位名人及数千市民的参与。丁丁撰写的&lt;/span&gt;“中国孤残儿童生存报告”被香港大公报发布头条新闻后引来相关领导人批示责成民政部门调研并给孤儿们发放了补助金。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;在中国网络童装第一品牌绿盒子的品牌推广中烽凰文化的策略也可圈可点。丁丁力劝绿盒子老总吴芳芳放弃选用七位数代言费的林妙可，而选择中国达人秀中的小周立波张冯喜。因为对传播来说，张冯喜更有&lt;/span&gt;“记忆”的特点，当时的广告投放又是在上海，上海人人皆知张冯喜。张冯喜的一则广告“今天我演我自已，不演周立波”一下子吸引住观众，并且当年掀起的“绿盒子关注童装安全”成童装行业事件，与同期小陶虹、翁虹、斯琴高娃等众多明星共同呼吁的关注童装安全相呼应。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;个月就可提升品牌知名度，但是要打造品牌力需要的是很长时间的坚持，而且方法要得当，我们要做到的是用最少的投入达到最大的效果，最可怕的是企业拿个&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;3000&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;万直接砸广告，最后效果没起来，全打了水漂。&lt;/span&gt;”丁丁说。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','/Uploads/Image/2016-08-25/1472105572.jpg','11','yes') [ RunTime:0.0059s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000099s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000531s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000560s ]
+
+[ 2016-08-25T14:12:53+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010207s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-08-25T14:12:59+08:00 ] ::1 /admin.php/article/update/category/11/id/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article` WHERE `id` = 12 AND `category` = '11' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050084s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050123s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000596s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2016-08-25T14:12:59+08:00 ] ::1 /admin.php/article/update/category/11/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `article` WHERE `id` = 0 AND `category` = '11' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000632s ]
+
+[ 2016-08-25T14:13:09+08:00 ] ::1 /admin.php/article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法',`intro`='十月妈咪是中国孕妇装第一品牌，2012年其广告歌曲《十月妈咪驾到》风靡各大音乐排行榜。
+2012年4-6月，只要百度输入“中国歌曲排行榜”就会跳出“十月妈咪驾到”这首歌，很多人在KTV看到推荐的歌曲也是《十月妈咪驾到》时，颇觉不可思议：十月妈咪，太强大了吧？它不明明是孕妇装嘛，品牌推广竟然无孔不入！
+2012年《十月妈咪驾到》歌曲连续多周登陆《红歌榜》和《中联榜》两大歌曲排行榜冠军引发轰动。登陆红歌榜的当天在北京富丽城的大屏幕上从下午15:00开始一直滚动播出直至晚上，引发无数路人驻足。',`content`='&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 21px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;烽凰文化：品牌推广的另类玩法&lt;/span&gt;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 19px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;从十月妈咪推广谈品牌营销&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;十月妈咪是中国孕妇装第一品牌，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年其广告歌曲《十月妈咪驾到》风靡各大音乐排行榜。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;4-6&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;月，只要百度输入&lt;/span&gt;“中国歌曲排行榜”就会跳出“十月妈咪驾到”这首歌，很多人在&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;KTV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;看到推荐的歌曲也是《十月妈咪驾到》时，颇觉不可思议：十月妈咪，太强大了吧？它不明明是孕妇装嘛，品牌推广竟然无孔不入！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年《十月妈咪驾到》歌曲连续多周登陆《红歌榜》和《中联榜》两大歌曲排行榜冠军引发轰动。登陆红歌榜的当天在北京富丽城的大屏幕上从下午&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;15:00&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;开始一直滚动播出直至晚上，引发无数路人驻足。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;这首歌曲背后的策划及推广机构上海烽凰文化传播有限公司（&lt;/span&gt;&lt;a href=&quot;http://www.fenghuangsh.com&quot;&gt;&lt;span style=&quot;;font-family:Calibri;color:rgb(0,0,0);font-size:16px&quot;&gt;www.fenghuangsh.com&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;）由此浮出水面，烽凰文化另类品牌推广的玩法开始引人关注。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160825/1472105545903624.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;b.jpg&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;满城尽是《十月妈咪驾到》&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《红歌榜》、《中联榜》是中国最具权威的两大榜单。《十月妈咪驾到》能在同期汇集了孙楠、李健、阿朵、尚雯婕等众多明星的榜单中胜出，让人意外。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《十月妈咪驾到》连续&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;8&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;周占据腾迅娱乐、新浪娱乐等首页新闻，中国原创音乐网，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;QQ&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;音乐播放器等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;100&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;家音乐网站进行了推荐，试听量每周以百万速度递增。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;随即中央电视台等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;30&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多家电视台播出了其&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;MV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;条动车视频还有一些机构也将其作为公益歌曲播出。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;有趣的是，《十月妈咪驾到》随后在大街小巷的音像店中可见到，被收录到&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;网络好歌集&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;》、《&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;车载音乐十大歌曲&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;等各大音碟中，并被疯狂盗版，以至于一度在南京音像市场中，&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;10&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;张碟片中有&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;7&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;张中就有这首歌。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;现在&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;当你走进麦乐迪、钱柜等全国&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;8000&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多家&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;KTV&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，都可以点唱这首歌。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;更让人没有想到的是，一些大的&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;SP&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;商争相拿出中国移动、联通、电信的资源与其合作，还有&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;UC&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;浏览器等&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;20&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多个免费传播的资源推这首歌曲。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;与此同时十月妈咪的娱乐化创新营销被高校作为案例收录在《现代服装文化概论》第三版，此教材是纺织服装高等教育&lt;/span&gt;“十一五”部委级规划教材、东华大学服装设计专业核心系统教材。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;品牌推广的最高境界当是进入教材，这将是影响新生代最有效的方法之一，也是很多品牌梦寐以求的营销最高段位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;争议也是传播，品牌要尽可能娱乐化传播&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;其实&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;这则视频的卡通版在&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2009&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年就曾火爆一时。&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;2009&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;年，《十月妈咪驾到》这首歌曲的卡通版在北京、上海地铁投放，霸道孕妇形象一下子引发网友热议。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;在网络上，支持者认为：这首歌提倡给孕妇让座良好风气，反对者则认为：视频中刻画了过分高调、嚣张的孕妇形象，简直就是丑化孕妇。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;各大报纸、网络也争相报道，上海青年报整版：&lt;/span&gt;“地铁让座公益广告引发争议，最牛孕妇霸道，奶爸作者叫屈”新闻晚报整版“在家是孕妇，出门成弃妇？”新华社则以“十月妈咪公益广告叫好又叫座”为整个内容定了位。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;这首歌曲的策划人丁丁说，我们要的效果达到了。其实在做这首歌曲的策划时，我们就知道，&lt;/span&gt;“让座”这一公益性质的话题必会引发争议。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;争议是传播的一种形式，但是需要注意的是，争议不可以是产品质量中的争议，否则对品牌会有伤害。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;此后，烽凰文化又配合十月妈咪在全国北京&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;19&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;所孕妇妇保医院、山东、黑龙江等地展开中国最大规模的孕妇徽章发放。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;无疑，十月妈咪的公益化营销和娱乐化营销是非常成功的，十月妈咪的品牌影响力深入人心。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;据悉，烽凰文化除了是十月妈咪的独家品牌推广机构外，也是水立方授权的&lt;/span&gt;“水立方中国”公益品牌的唯一推广机构。在恒源祥、好孩子、波司登·冰洁、沙驰国际、伊顿幼教、常春滕国际学校等多家品牌推广中都有其不俗之笔。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;烽凰方法论：新闻营销、公益营销、娱乐化营销等要综合运用&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160825/1472105562569353.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;s.jpg&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;line-height:27px&quot;&gt;&lt;strong&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&lt;/span&gt;&lt;/strong&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;有很多企业认为，品牌推广一定是费钱的，所以要等企业有钱之后才进行品牌推广。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;丁丁说，这是一个误区，任何企业的品牌推广都应在品牌诞生之日起开始，日积月累的进行，品牌才会有持续发力的可能。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;如果你没钱，可以做些免费的推广，百度词条、百度知道、微博等的传播。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“低成本的事件营销也是方法之一，当然，事件中要有新闻点，就算再小的品牌也能找到新闻点，我们要尽量把品牌和社会热点结合起来，才会有新闻价值”&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“娱乐化传播是当今消费类品牌推广的直通车，比如当年蒙牛赞助的“超级女声”。当然，我们非常反对仅仅是一个品牌冠名而同企业没有任何的互动，这样的投放是事倍功半的”，丁丁强调。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;公益营销在近年来也成为企业品牌营销的方法之一。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;恒源祥的恒爱行动是公益品牌推广的典范。恒源祥要让中国&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;60&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;多万孤残儿童穿上毛衣，首批一万斤毛线如何操作？丁丁同恒源祥的袁老师研究的方案是把毛线分给各省市的妇联，号召爱心妈妈来领毛线。恒爱行动引来&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;300&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;多位名人及数千市民的参与。丁丁撰写的&lt;/span&gt;“中国孤残儿童生存报告”被香港大公报发布头条新闻后引来相关领导人批示责成民政部门调研并给孤儿们发放了补助金。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;在中国网络童装第一品牌绿盒子的品牌推广中烽凰文化的策略也可圈可点。丁丁力劝绿盒子老总吴芳芳放弃选用七位数代言费的林妙可，而选择中国达人秀中的小周立波张冯喜。因为对传播来说，张冯喜更有&lt;/span&gt;“记忆”的特点，当时的广告投放又是在上海，上海人人皆知张冯喜。张冯喜的一则广告“今天我演我自已，不演周立波”一下子吸引住观众，并且当年掀起的“绿盒子关注童装安全”成童装行业事件，与同期小陶虹、翁虹、斯琴高娃等众多明星共同呼吁的关注童装安全相呼应。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:32px;line-height:27px&quot;&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;“&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;个月就可提升品牌知名度，但是要打造品牌力需要的是很长时间的坚持，而且方法要得当，我们要做到的是用最少的投入达到最大的效果，最可怕的是企业拿个&lt;/span&gt;&lt;span style=&quot;font-family: Calibri;font-size: 16px&quot;&gt;3000&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;font-size: 16px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;万直接砸广告，最后效果没起来，全打了水漂。&lt;/span&gt;”丁丁说。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`imageURL`='/Uploads/Image/2016-08-25/1472105572.jpg',`ishome`='yes' WHERE `id` = 12 AND `category` = '11' [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004982s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000530s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000684s ]
+
+[ 2016-08-25T14:13:10+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000737s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011431s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000592s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000618s ]
+
+[ 2016-08-25T14:13:25+08:00 ] ::1 /admin.php/login/logout.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000460s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000824s ]
+
+[ 2016-08-25T14:13:25+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006607s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000486s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000946s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000979s ]
+
+[ 2016-08-25T14:28:45+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+
+[ 2016-08-25T14:28:46+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006672s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-08-25T14:29:19+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-08-25T14:29:19+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000575s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000056s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000463s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000594s ]
+
+[ 2016-08-25T14:30:57+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000593s ]
+
+[ 2016-08-25T14:30:57+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000432s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006091s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006143s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001575s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001643s ]
+
+[ 2016-08-25T15:16:36+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000647s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+
+[ 2016-08-25T15:16:36+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006233s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000766s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000832s ]
+
+[ 2016-08-25T15:21:44+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-08-25T15:22:54+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-08-25T15:24:17+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-08-25T15:26:51+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+
+[ 2016-08-25T15:27:36+08:00 ] ::1 /fhcase/fhcase/cid/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000538s ]
+
+[ 2016-08-25T15:27:36+08:00 ] ::1 /Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000435s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000152s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000427s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000575s ]
+
+[ 2016-08-25T16:14:16+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001284s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001404s ]
+
+[ 2016-08-25T16:14:55+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006297s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.007585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006383s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000766s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.006636s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000850s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000892s ]
+
+[ 2016-08-25T16:15:33+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002271s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000722s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004682s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000436s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000156s ]
+INFO: [ template_filter ] --END-- [ RunTime:-0.005783s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007289s ]
+INFO: [ view_parse ] --END-- [ RunTime:-0.000581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000007s ]
+INFO: [ view_filter ] --END-- [ RunTime:-0.007487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-08-25T16:42:10+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000516s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000532s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000577s ]
+
+[ 2016-08-25T16:42:52+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000417s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000175s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011460s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000828s ]
+
+[ 2016-08-25T17:00:03+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000539s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000595s ]
+ERR: 无法加载控制器:Admin.php
+
+[ 2016-08-25T17:00:16+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000495s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2016-08-25T17:00:52+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000082s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000799s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2016-08-25T17:15:32+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009331s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000764s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000693s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2016-08-25T17:15:50+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+
+[ 2016-08-25T17:15:50+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000758s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005246s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005289s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-08-25T17:15:58+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000473s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `user` WHERE ( username = 'admin' and password= '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: UPDATE `user` SET `update_at`='1472116558',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000583s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000664s ]
+
+[ 2016-08-25T17:15:59+08:00 ] ::1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010101s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000330s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000357s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-08-25T17:16:01+08:00 ] ::1 /admin.php/article/index/category/12.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000442s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '12' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` WHERE `category` = '12' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008741s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000462s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000488s ]
+

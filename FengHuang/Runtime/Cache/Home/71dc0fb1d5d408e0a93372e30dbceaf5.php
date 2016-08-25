@@ -104,20 +104,17 @@
      
 
 <div class="container">
-    <section class="callaction">
-	
-		    <div class="row">
-           
-                    <div class="col-md-12">
-                        <div class="page-header">    
-                              <h3><?php echo ($model["title"]); ?> </h3>       
-                         </div>
-           
-                     <div class="padlr30 marginlr20" id="content">
-                         <?php echo ($content); ?>
-                     </div>
-		            </div>
-		        </div>
+    <section class="callaction">	
+		<div class="row">           
+            <div class="col-md-12">
+                <div class="page-header">    
+                    <h3><?php echo ($model["title"]); ?></h3>       
+                </div>           
+                <div class="padlr30 marginlr20" id="content">
+                    <?php echo ($content); ?>
+                </div>
+		    </div>
+		</div>
 	</section></div>
     <div class="container">
     <footer>
