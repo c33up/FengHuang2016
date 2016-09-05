@@ -137,7 +137,7 @@ class ArticleController extends BaseController {
             }else{
             if(isset($_FILES['imageURL'])){
                 $upload = new \Think\Upload();// 实例化上传类
-                //$upload->maxSize = 3145728 ;// 设置附件上传大小
+                $upload->maxSize = 2147483648 ;// 设置附件上传大小
                 $upload->saveName ='time';
                 $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
                 $upload->rootPath = './Uploads/Image/'; // 设置附件上传根目录
@@ -253,7 +253,7 @@ class ArticleController extends BaseController {
                 $imageurl=$eximgurl;
             }else{
                 $upload = new \Think\Upload();// 实例化上传类
-                //$upload->maxSize = 3145728 ;// 设置附件上传大小
+                $upload->maxSize = 2147483648 ;// 设置附件上传大小
                 $upload->saveName ='time';
                 $upload->exts = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型
                 $upload->rootPath = './Uploads/Image/'; // 设置附件上传根目录
