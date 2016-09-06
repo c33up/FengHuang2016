@@ -103,37 +103,35 @@
 
      
 <div class="container">
-    <section class="callaction">
-	
+    <section class="callaction">	
 		<div class="row ">
             <div class="col-md-12">
-               <div class="page-header"> 
+                <div class="page-header"> 
                     <p><?php echo ($category); ?></p>               
-                 </div>
+                </div>
 		 
                 <?php if(is_array($article)): foreach($article as $key=>$n): ?><div class="col-md-12 pad0 marginbot30">
-                         <div class="thumbnail-1">
-                              <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
-                                    <div class="col-md-4">
+                        <div class="thumbnail-1">
+                            <a href="<?php echo U('fhcase/detail',array('cid'=>$n['category'],'id'=>$n['id']));?>" title="<?php echo ($n["title"]); ?>">
+                                <div class="col-md-4">
                                     <img src="<?php echo ($n["imageurl"]); ?>" alt="<?php echo ($n["intro"]); ?>"/>
-                                    </div>
-                                    <div class="col-md-8">
+                                </div>
+                                <div class="col-md-8">
                                     <div class="caption"> 
-                                    <h4><?php echo ($n["title"]); ?></h4>
-                                    <p><?php echo ($n["intro"]); ?></p>
+                                        <h4><?php echo ($n["title"]); ?></h4>
+                                        <p><?php echo ($n["intro"]); ?></p>
                                     </div>
-                                    </div>  
-                                </a>
-                            </div>
+                                </div>  
+                            </a>
+                        </div>
 		            </div><?php endforeach; endif; ?>
                 <div class="col-md-12">
-                    <div class="pull-right">
+                    <div class="pull-right marginlr20">
                            <?php echo ($page); ?>
-                      </div>
+                    </div>
                 </div>
 		    </div>
-		</div>
-	
+		</div>	
 	</section></div>
     <div class="container">
     <footer>

@@ -2,22 +2,14 @@
 namespace Home\Controller;
 use Think\Controller;
 class VideoController extends BaseController {
-     public function index($key=""){   
-         
-        if($key === ""){
-            
-        }else{
-            $condition['title'] = array('like',"%$key%");
-            $condition['intro'] = array('like',"%$key%");
-            $condition['_logic'] = 'or';
-            $where['_complex']=$condition;
-        } 
-        $model = M('video')->where($where); 
-        $count  = $model->where($where)->count();// 查询满足要求的总记录数
+     public function index(){   
+         $data=I('');
+        $model = M('video'); 
+        $count  = $model->count();// 查询满足要求的总记录数
         $Page = new \Think\Page($count,9);// 实例化分页类 传入总记录数和每页显示的记录数(10)
-        $Page->parameter = $where;
+        $Page->parameter = $data;
         $show = $Page->show();// 分页显示输出
-        $article = $model->limit($Page->firstRow.','.$Page->listRows)->where($where)->order('id DESC')->select();
+        $article = $model->limit($Page->firstRow.','.$Page->listRows)->order('id DESC')->select();
         //dump($article);
         $this->assign('article', $article);
         $this->assign('page',$show);

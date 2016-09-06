@@ -1,0 +1,1326 @@
+[ 2016-09-06T15:44:13+08:00 ] ::1 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-09-06T15:44:13+08:00 ] ::1 /admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000047s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017075s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000255s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000426s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000464s ]
+
+[ 2016-09-06T15:44:21+08:00 ] ::1 /admin.php/login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `user` WHERE ( username = 'admin' and password= '21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: UPDATE `user` SET `update_at`='1473147861',`login_ip`='0.0.0.0' WHERE `id` = 1 [ RunTime:0.0202s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066727s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000559s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-09-06T15:44:22+08:00 ] ::1 /admin.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000173s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000584s ]
+
+[ 2016-09-06T15:44:24+08:00 ] ::1 /admin.php/article/index/category/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '15' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `article` WHERE `category` = '15' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000466s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-09-06T15:44:27+08:00 ] ::1 /admin.php/article/add/category/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000475s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000286s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000363s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000387s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000487s ]
+
+[ 2016-09-06T15:47:25+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000755s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000921s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013928s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000586s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000616s ]
+
+[ 2016-09-06T15:47:28+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000810s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('aaaa','dddd','&lt;p&gt;adfa&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473147976666992.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;b.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;adfadsfadf&lt;span style=&quot;box-sizing: border-box; color: rgb(59, 59, 59); text-indent: 32px; line-height: 24px; font-family: 宋体; background-color: rgb(255, 255, 255);&quot;&gt;Fazeya&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(59, 59, 59); text-indent: 32px; line-height: 24px; font-family: 宋体; background-color: rgb(255, 255, 255);&quot;&gt;诞生于2003年初，是恒源祥品牌事业发展的一个重要的里程碑。品牌名称来源于恒源祥中国羊年吉祥物“彩羊”，其商标原型就是由陕西宝鸡凤翔县民间艺人胡新民创作的“泥塑彩羊”，此彩羊被国家邮政局认定为2003年羊年生肖邮票的主图案，使得Fazeya成了第一个走上国家名片----邮票的品牌。&lt;/span&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;text-align:center&quot;&gt;&lt;img src=&quot;http://localhost:12839/ueditor/php/upload/image/20160906/1473147976666992.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;b.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;adfadsfadf&lt;span style=&quot;box-sizing: border-box; color: rgb(59, 59, 59); text-indent: 32px; line-height: 24px; font-family: 宋体; background-color: rgb(255, 255, 255);&quot;&gt;Fazeya&lt;/span&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(59, 59, 59); text-indent: 32px; line-height: 24px; font-family: 宋体; background-color: rgb(255, 255, 255);&quot;&gt;诞生于2003年初，是恒源祥品牌事业发展的一个重要的里程碑。品牌名称来源于恒源祥中国羊年吉祥物“彩羊”，其商标原型就是由陕西宝鸡凤翔县民间艺人胡新民创作的“泥塑彩羊”，此彩羊被国家邮政局认定为2003年羊年生肖邮票的主图案，使得Fazeya成了第一个走上国家名片----邮票的品牌。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;box-sizing: border-box; color: rgb(59, 59, 59); text-indent: 32px; line-height: 24px; font-family: 宋体; background-color: rgb(255, 255, 255);&quot;&gt;&lt;img src=&quot;http://localhost:12839/ueditor/php/upload/image/20160906/1473147976666992.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;b.jpg&quot; width=&quot;932&quot; height=&quot;297&quot;/&gt;&lt;/span&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473148048.jpg','15','yes') [ RunTime:0.0133s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005135s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000465s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-09-06T15:47:29+08:00 ] ::1 /admin.php/article/index/category/15.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000475s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '15' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '15' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000264s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016936s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000501s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000615s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000642s ]
+
+[ 2016-09-06T15:49:21+08:00 ] ::1 /admin.php/article/index/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '13' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article` WHERE `category` = '13' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000166s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000221s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009995s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000474s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000551s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-09-06T15:49:22+08:00 ] ::1 /admin.php/article/add/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000388s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000238s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011379s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000496s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000561s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-09-06T15:50:17+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001208s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000149s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000545s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2016-09-06T15:50:20+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('是恒源祥品牌事业发展的一个重要的里程碑。品牌名称来源于恒源祥中国羊年吉祥物“彩羊”，','dfadsfadfFazeya诞生于2003年初，是恒源祥品牌事业发展的一个重要的里程碑。品牌名称来源于恒源祥中国羊年吉祥物“彩羊”，其商标原型就是由陕西宝鸡凤翔县民间艺人胡新民创作的“泥塑彩羊”，此彩羊被国家邮政局认定为2003年羊年生肖邮票的主图案，使得Fazeya成了第一个走上国家名片----邮票的品牌。','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473148180227164.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;首页.jpg&quot;/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473148220.jpg','13','no') [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004518s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2016-09-06T15:50:21+08:00 ] ::1 /admin.php/article/index/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '13' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '13' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010274s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000573s ]
+
+[ 2016-09-06T15:57:01+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021434s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001188s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001254s ]
+
+[ 2016-09-06T15:57:03+08:00 ] ::1 /admin.php/article/add/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000471s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000296s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000423s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011631s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011678s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000760s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2016-09-06T15:57:51+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000155s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011605s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000541s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000568s ]
+
+[ 2016-09-06T15:57:53+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('在跻身福布斯最佳潜力企业之后，十月妈咪2013年3月荣获服装行业最','在跻身福布斯最佳潜力企业之后，十月妈咪2013年3月荣获服装行业最高奖项——“中国服装品牌年度大奖之策划大奖”。人们开始恍然大悟：2012年《十月妈咪驾到》歌曲连续多周登陆《红歌榜》和《中联榜》两大歌曲排行榜冠军引发轰动。那时，只要百度输入“中国歌曲排行榜”就会跳出“十月妈咪驾到”这首歌，很多人在KTV看到推荐的歌曲也是《十月妈咪驾到》时，颇觉不可思议：十月妈咪，太强大了吧？它不明明是孕妇装嘛，品牌推广竟然无孔不入！','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473148654687992.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;首页图.jpg&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;在跻身福布斯最佳潜力企业之后，十月妈咪&lt;/span&gt;2013&lt;span style=&quot;font-family:宋体&quot;&gt;年&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;3&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;月荣获服装行业最高奖项——“中国服装品牌年度大奖之策划大奖”。人们开始恍然大悟&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;：&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;2012&lt;span style=&quot;font-family:宋体&quot;&gt;年《十月妈咪驾到》歌曲连续多周登陆《红歌榜》和《中联榜》两大歌曲排行榜冠军引发轰动。那时，只要百度输入“中国歌曲排行榜”就会跳出“十月妈咪驾到”这首歌，很多人在&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;KTV&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;看到推荐的歌曲也是《十月妈咪驾到》时，颇觉不可思议：十月妈咪，太强大了吧？它不明明是孕妇装嘛，品牌推广竟然无孔不入！&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;《红歌榜》、《中联榜》是中国最具权威的两大榜单。《十月妈咪驾到》能在同期汇集了孙楠、李健、阿朵、尚雯婕等众多明星的榜单中胜出，让人意外。《十月妈咪驾到》连续&lt;/span&gt;8&lt;span style=&quot;font-family:宋体&quot;&gt;周占据腾讯娱乐、新浪娱乐等首页新闻，中国原创音乐网，&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;QQ&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;音乐播放器等&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;100&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;家音乐网站进行了推荐，试听量每周以百万速度递增。随即中央电视台等&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;30&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;多家电视台播出了其&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;MV&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;15&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;条动车视频还有一些机构也将其作为公益歌曲播出。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;十月妈咪在&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;数年内迅速升位&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;中国孕妇装第一品牌，背后的上海烽凰文化传播有限公司由此浮出水面，其品牌推广的玩法开始引人关注；&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;其&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;娱乐化创新营销被高校作为案例收录在《现代服装文化概论》第三版，此教材是纺织服装高等教育&lt;/span&gt;“十一五”部委级规划教材。品牌推广的最高段位，当是进入教材，影响新生代。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;孕妇装是一个相对狭窄的产业，然而十月妈咪董事长赵浦却&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;找到&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;烽&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;凰文化，持续&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;创新品牌推广&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;打造了一个年销售十亿以上、拥有上百家门店、在电商渠道上占比&lt;/span&gt;75%&lt;span style=&quot;font-family:宋体&quot;&gt;以上的母婴类品牌。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;　　1992&lt;span style=&quot;font-family:宋体&quot;&gt;年，赵浦与夫人涂文虹在杭州开了家小店，销售自有品牌孕妇装“十月妈咪”，同时也代理丹麦&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;Lego&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;和意大利&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;Chico&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;玩具。“十月妈咪”迅速扩张为连锁店，赵浦也开始意识到代理商的身份和坚持自有品牌“十月妈咪”之间的矛盾。在这条岔路口，赵浦毅然决然停止了所有的代理，开始在发展自有品牌的方向上发力。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;　　防辐射的需求是&lt;/span&gt;“十月妈咪”在&lt;span style=&quot;font-family:Calibri&quot;&gt;90&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;年代末销量迅速飞涨的主要原因。采取专营店与加盟店共同发展的低成本扩张，很快让“十月妈咪”出现在全国各地的商场之中。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;2001&lt;span style=&quot;font-family:宋体&quot;&gt;年后，作为共同的创始人，赵浦与妻子涂文虹在十月妈咪发展速度越来越快，年销售额超过千万之后，就遭遇了如何协同管理的问题。赵浦与涂文虹之间有着完全不同的管理理念，更为具体的纷争体现在，如何打造十月妈咪这个品牌；是否应该将十月妈咪迁至上海，从一家杭州地方企业发展为一家全国范围的连锁品牌？赵浦找到烽凰文化&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;在小&lt;/span&gt;S&lt;span style=&quot;font-family:宋体&quot;&gt;的代言上，他们施用了巧劲。小&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;S&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;当时还在给宝洁的清扬做广告，高密度的广告实际上产生了协同效应，广告量上去后就产生了品牌差距。小&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;S&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;的代言形象广告深入&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;目标群&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，十月妈咪成功塑造了一个全国品牌。从&lt;/span&gt;2007&lt;span style=&quot;font-family:宋体&quot;&gt;年至&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;2012&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;年，五年内十月妈咪的销售额连续翻了十倍，达到近十亿的销售额。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;　　“事实证明，我们的广告打得非常准。”赵浦说。比如他是地铁小屏幕广告吃螃蟹的第一人，“我要打的广告是要打孕妇背后的五到六个人，所以我打了地铁广告。一直要把它打透，打透和不打透，量变和质变是完全不一样的。”那一年，赵浦一口气签了时长五年，市值近五个亿的广告单，其中两亿用于地铁投放。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;　　在品牌营销领域，赵浦以胆大、善谋、精细著称。世博会开会前一年，地铁广告商&lt;/span&gt;DMG&lt;span style=&quot;font-family:宋体&quot;&gt;提出在世博会期间广告费上涨&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;1.8&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;倍。所有人都认为这个决定太离谱，尤其是已经签订的多年合同怎么能突然涨价。赵浦反其道行之，他主动找到广告商，以当时价格的&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;1.7&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;倍签订了两年合同，而三个月后世博期间上海地铁广告价格涨至六倍。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;　　他曾经为了投广告，一个人在上海来来回回地坐地铁，仔细比较各种地铁广告之间的关系，津津乐道于&lt;/span&gt;“把竞争对手的广告都收进自己的笼子”。“广告投入能够直接拉动销售。将销售额的&lt;span style=&quot;font-family:Calibri&quot;&gt;10%&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;拿出来投放广告是值得的。”赵浦说，而在行业内，这个比例可能只在&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;3%&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，甚至更低。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;　　“很多人说你为什么不做&lt;span style=&quot;font-family:Calibri&quot;&gt;JIT&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，引进流水线操作？实际上，未来我们将不再是一家服装公司，准确地说，我们是一家&lt;/span&gt;&lt;span style=&quot;font-family:Calibri&quot;&gt;TMT&lt;/span&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;公司。”赵浦反复强调这句话。“你注意到没有，在地铁电视里的十月妈咪广告，都写得是十月妈咪驾到！在专业人士看来违背广告原则：第一没有提及产品，第二没有任何属性。但这就是我想要塑造的概念，未来，十月妈咪是一种认同和体验。”&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;　　“我们一直在诉求一个性价比最好的产品。我们不是价格最低的，但从品牌、设计、面料各方面而言，我们要做性价比最好的产品，最终这个价值链将形成一个平台。”&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;2009&lt;span style=&quot;font-family:宋体&quot;&gt;年，《十月妈咪驾到》这首歌曲的卡通版在北京、上海地铁投放，霸道孕妇形象一下子引发网友热议。在网络上，支持者认为：这首歌提倡给孕妇让座良好风气，反对者则认为：视频中刻画了过分高调、嚣张的孕妇形象，简直就是丑化孕妇。新闻晚报整版报道&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;，&lt;/span&gt;&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;“在家是孕妇，出门成弃妇？”新华社则以“十月妈咪公益广告叫好又叫座”为整个内容定了位。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;这首歌曲的策划人丁丁说，我们要的效果达到了。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;此后，烽凰文化又配合十月妈咪在全国北京&lt;/span&gt;19&lt;span style=&quot;font-family:宋体&quot;&gt;所孕妇妇保医院、山东、黑龙江等地展开中国最大规模的孕妇徽章发放。无疑，十月妈咪的公益化营销和娱乐化营销是非常成功的，十月妈咪的品牌影响力深入人心。&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;text-indent:28px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;&lt;span style=&quot;font-family:宋体&quot;&gt;据悉，烽凰文化作为十月妈咪的独家品牌推广机构，也是水立方授权的&lt;/span&gt;“水立方中国”公益品牌的唯一推广机构；在恒源祥、好孩子、波司登•冰洁、沙驰国际、伊顿幼教、常春滕国际学校等多家品牌推广中都留下不俗之笔。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:Calibri;font-size:14px&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473148673.jpg','11','no') [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000046s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000089s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005385s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000409s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000538s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-09-06T15:57:55+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0068s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000145s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000187s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013127s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2016-09-06T15:59:41+08:00 ] ::1 /admin.php/article/index/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000978s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000793s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '13' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '13' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000167s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010779s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010854s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000744s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000775s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000694s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2016-09-06T15:59:42+08:00 ] ::1 /admin.php/article/add/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000135s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011249s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011324s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000863s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000902s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000599s ]
+
+[ 2016-09-06T16:00:18+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000518s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000265s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010045s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010088s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000634s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000660s ]
+
+[ 2016-09-06T16:00:20+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000522s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0016s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473148800179227.jpg&quot; title=&quot;1473148800179227.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473148800128815.jpg&quot; title=&quot;1473148800128815.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473148820.JPG','13','no') [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000075s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005993s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006029s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000463s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000488s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000721s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000768s ]
+
+[ 2016-09-06T16:00:21+08:00 ] ::1 /admin.php/article/index/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '13' LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` WHERE `category` = '13' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000635s ]
+
+[ 2016-09-06T16:12:11+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009330s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000980s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2016-09-06T16:12:11+08:00 ] ::1 /admin.php/article/add/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000170s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2016-09-06T16:12:57+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000146s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000189s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000493s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2016-09-06T16:12:58+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473149560113646.jpg&quot; title=&quot;1473149560113646.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473149560638548.jpg&quot; title=&quot;1473149560638548.jpg&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473149578.jpg','14','no') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004734s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000418s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000511s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000536s ]
+
+[ 2016-09-06T16:12:59+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001387s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000126s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011587s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-09-06T16:20:10+08:00 ] ::1 /admin.php/article/update/category/14/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001169s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `article` WHERE `id` = 19 AND `category` = '14' LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000259s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056820s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000926s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001265s ]
+
+[ 2016-09-06T16:20:10+08:00 ] ::1 /admin.php/article/update/category/14/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001191s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `article` WHERE `id` = 0 AND `category` = '14' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000188s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001162s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000744s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2016-09-06T16:22:32+08:00 ] ::1 /admin.php/article/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000866s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 252 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: UPDATE `article` SET `title`='​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法',`intro`='​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法',`content`='&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473149560113646.jpg&quot; title=&quot;&quot; width=&quot;817&quot; height=&quot;1297&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473149560638548.jpg&quot; title=&quot;&quot; width=&quot;920&quot; height=&quot;1571&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;',`imageURL`='/Uploads/Image/2016-09-06/1473149578.jpg',`ishome`='no' WHERE `id` = 19 AND `category` = '14' [ RunTime:0.0043s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000595s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000758s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000799s ]
+
+[ 2016-09-06T16:22:33+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001595s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002593s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0072s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000130s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009758s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000512s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000853s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000930s ]
+
+[ 2016-09-06T16:24:26+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000576s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000601s ]
+
+[ 2016-09-06T16:24:27+08:00 ] ::1 /admin.php/article/update/category/11/id/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` WHERE `id` = 7 AND `category` = '11' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009622s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000567s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000614s ]
+
+[ 2016-09-06T16:24:28+08:00 ] ::1 /admin.php/article/update/category/11/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000554s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `article` WHERE `id` = 0 AND `category` = '11' LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018510s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018608s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001135s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000836s ]
+
+[ 2016-09-06T16:24:34+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000404s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000941s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010705s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000440s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2016-09-06T16:24:37+08:00 ] ::1 /admin.php/article/update/category/14/id/19.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001225s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `article` WHERE `id` = 19 AND `category` = '14' LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000150s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010507s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010548s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000994s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001392s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001461s ]
+
+[ 2016-09-06T16:24:37+08:00 ] ::1 /admin.php/article/update/category/14/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `article` WHERE `id` = 0 AND `category` = '14' LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014014s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000923s ]
+
+[ 2016-09-06T16:26:35+08:00 ] ::1 /admin.php/article/index/category/13.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '13' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `article` WHERE `category` = '13' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000198s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000272s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011465s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011503s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000585s ]
+
+[ 2016-09-06T16:26:39+08:00 ] ::1 /admin.php/article/index/category/11.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '11' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '11' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010949s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000462s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000546s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000588s ]
+
+[ 2016-09-06T16:26:44+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009446s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000807s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000968s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2016-09-06T16:26:46+08:00 ] ::1 /admin.php/article/add/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000251s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011416s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000830s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000748s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000774s ]
+
+[ 2016-09-06T16:27:56+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000535s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011259s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000652s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000712s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000833s ]
+
+[ 2016-09-06T16:28:00+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','啊都fads','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473150422309656.jpg&quot; title=&quot;&quot; width=&quot;717&quot; height=&quot;475&quot; alt=&quot;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473150422350622.jpg&quot; title=&quot;1473150422350622.jpg&quot; width=&quot;588&quot; height=&quot;865&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473150480.jpg','14','yes') [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004596s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000580s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000535s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000561s ]
+
+[ 2016-09-06T16:28:01+08:00 ] ::1 /admin.php/article/index/category/14.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '14' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '14' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000454s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000592s ]
+
+[ 2016-09-06T17:05:57+08:00 ] ::1 /admin.php/article/index/category/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '22' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '22' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010488s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000668s ]
+
+[ 2016-09-06T17:06:00+08:00 ] ::1 /admin.php/article/add/category/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000848s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001385s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001513s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009676s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000516s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000546s ]
+
+[ 2016-09-06T17:06:21+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000652s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000152s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010667s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000916s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000960s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000923s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2016-09-06T17:06:23+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000893s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽','凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473152764288571.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;照片 042.jpg&quot;/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473152783.JPG','22','no') [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007169s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000548s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000599s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000657s ]
+
+[ 2016-09-06T17:06:24+08:00 ] ::1 /admin.php/article/index/category/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '22' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '22' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000190s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000832s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2016-09-06T17:06:26+08:00 ] ::1 /admin.php/article/add/category/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000675s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000239s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013476s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000769s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-09-06T17:06:40+08:00 ] ::1 /admin.php/article/add/images/big.cur
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 129 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000202s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012266s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001321s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001383s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000918s ]
+
+[ 2016-09-06T17:06:41+08:00 ] ::1 /admin.php/article/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000441s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\ArticleController.class.php 第 135 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `article` (`title`,`intro`,`content`,`imageURL`,`category`,`ishome`) VALUES ('凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','&lt;p&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160906/1473152796653997.jpg&quot; title=&quot;正在上传...&quot; alt=&quot;IMG_0719.JPG&quot;/&gt;&lt;/p&gt;','/Uploads/Image/2016-09-06/1473152801.jpg','22','no') [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000086s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005764s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000629s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000663s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001093s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001138s ]
+
+[ 2016-09-06T17:06:42+08:00 ] ::1 /admin.php/article/index/category/22.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `category` = '22' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `category` = '22' ORDER BY id ASC LIMIT 0,10   [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000145s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011410s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011449s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000857s ]
+
+[ 2016-09-06T17:11:51+08:00 ] ::1 /admin.php/video/index/category/31.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000686s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `video` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 23 行.
+SQL: SELECT * FROM `video` ORDER BY id ASC LIMIT 0,6   [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000511s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000672s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000698s ]
+
+[ 2016-09-06T17:11:52+08:00 ] ::1 /admin.php/video/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000819s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000374s ]
+NOTIC: [8] Undefined variable: category D:\My Web Sites\FengHuang2016\FengHuang\Runtime\Cache\Admin\c5446710579f3c6aacaf53eeaf4f18ba.php 第 251 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000883s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000568s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000602s ]
+
+[ 2016-09-06T17:12:28+08:00 ] ::1 /admin.php/video/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 73 行.
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 76 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant tmp_name - assumed 'tmp_name' D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 89 行.
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: validate D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1185 行.
+NOTIC: [8] Undefined index: auto D:\My Web Sites\FengHuang2016\ThinkPHP\Library\Think\Model.class.php 第 1128 行.
+SQL: INSERT INTO `video` (`category`,`title`,`intro`,`createDate`,`ishome`,`flag`,`videoURL`,`imageUrl`) VALUES ('31','​烽凰文化：从十月妈咪推广谈品','牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法​烽凰文化：从十月妈咪推广谈品牌营销的另类玩法','2016-09-06T17:11','是','1','/Uploads/Video/2016-09-06/1473153147.mp4','/Uploads/Video/2016-09-06/1473153148.jpg') [ RunTime:0.0087s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005635s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005671s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000395s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000543s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000569s ]
+
+[ 2016-09-06T17:12:29+08:00 ] ::1 /admin.php/video/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `video` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 19 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `video` LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 21 行.
+NOTIC: [8] Undefined variable: where D:\My Web Sites\FengHuang2016\FengHuang\Admin\Controller\VideoController.class.php 第 23 行.
+SQL: SELECT * FROM `video` ORDER BY id ASC LIMIT 0,6   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013235s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013287s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000467s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000556s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000581s ]
+
